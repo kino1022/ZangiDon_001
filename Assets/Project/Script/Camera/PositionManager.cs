@@ -9,7 +9,10 @@ namespace Project.Script.Camera {
         [SerializeField] protected Vector3 m_position;
 
         [SerializeField] protected IOffsetHolder m_offset;
-        
 
+
+        public Vector3 GetPosition() {
+            return m_position;
+        }
     }
 }
