@@ -7,6 +7,15 @@
       "dependencies": {},
       "hash": "f213ff497e4ff462a77319cf677cf20cc0860ca9"
     },
+    "com.kino1022.unitycommonmodule": {
+      "version": "https://github.com/kino1022/UnityCommonModule.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.5.10"
+      },
+      "hash": "681a5c1f27746b99a24f476bbf3e0b2dabd9f784"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.6",
       "depth": 0,
