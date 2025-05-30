@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Project.Script.Status {
     public class CorrectableStatus : StatusBase, ICorrectable {
 
-        [SerializeReference] protected CorrectedValueElements m_corrected; 
+        [SerializeField] protected CorrectedValueElements m_corrected; 
 
         [SerializeField] protected CorrectionManager m_correction;
         

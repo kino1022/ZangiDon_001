@@ -7,16 +7,16 @@ namespace Project.Script.Status {
     /// ステータスの値という要素を管理するクラス
     /// </summary>
     [Serializable]
-    public class AStatusElement : IValueChangeHandler<float> {
+    public abstract class AStatusElement : IValueChangeHandler<float> {
         
-        [SerializeField] protected float _value;
+        protected float _value;
 
         protected float m_value {
             get { return _value; }
             set {
-                m_value = value;
+                _value = value;
                 OnValueChanged();
-                ValueChangeEvent?.Invoke(m_value);
+                ValueChangeEvent?.Invoke(_value);
             }
         }
         
