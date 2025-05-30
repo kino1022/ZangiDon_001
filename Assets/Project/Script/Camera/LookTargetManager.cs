@@ -6,8 +6,6 @@ namespace Project.Script.Camera {
     public class LookTargetManager : SerializedMonoBehaviour , ITargetHolder<Transform> {
         
         [SerializeField] protected GameObject m_target;
-
-        [SerializeField] protected IManyTargetHolder<GameObject> m_candidate;
         
         //-----------------------API Methods----------------------------------------
         

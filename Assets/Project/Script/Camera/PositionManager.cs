@@ -28,7 +28,7 @@ namespace Project.Script.Camera {
         public Vector3 CalculatePosition() {
             var direction = CalculateOffsetDirection();
             var offset = m_offset.GetOffset();
-            return new Vector3(direction.x * offset.x, offset.y, direction.z * offset.z);
+            return new Vector3(direction.x * offset.x, offset.y, direction.z * offset.z) + m_master.GetTarget().position;
         }
 
         protected Vector3 CalculateOffsetDirection() {
