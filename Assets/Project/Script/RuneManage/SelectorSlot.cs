@@ -11,7 +11,7 @@ namespace Project.Script.RuneManage {
         [SerializeField] public ARuneBase rune;
         
         /// <summary>
-        /// 際補充までの時間
+        /// 再補充までの時間
         /// </summary>
         [SerializeField] public float resupplyTime;
 

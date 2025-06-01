@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Project.Script.Interface;
 using Project.Script.Rune.Effect;
 using Project.Script.Rune.Effect.Definition;
 using UnityEngine;
@@ -24,8 +25,10 @@ namespace Project.Script.Rune {
         [InspectorName("発動する効果")]
         [OdinSerialize]
         protected List<AEffectBase> m_effects;
-        
-        public SupportEffect() {}
+
+        public SupportEffect() {
+            
+        }
         
         //-------------API　Methods----------------------------
 
@@ -64,6 +67,10 @@ namespace Project.Script.Rune {
             ExecuteEffectFromList(effects);
             DecreaseAmount(1);
         }
+        
+        //-----------------setup methods-------------------------------
+        
+        
         
         //-----------------Logical methods-----------------------------
         
