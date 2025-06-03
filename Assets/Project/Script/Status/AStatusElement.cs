@@ -1,5 +1,6 @@
 using System;
 using Project.Script.Status.Interface;
+using Sirenix.Serialization;
 using UnityEngine;
 
 namespace Project.Script.Status {
@@ -8,9 +9,9 @@ namespace Project.Script.Status {
     /// </summary>
     [Serializable]
     public abstract class AStatusElement : IValueChangeHandler<float> {
-        
+        [OdinSerialize]
         protected float _value;
-
+        
         protected float m_value {
             get { return _value; }
             set {

@@ -1,9 +1,10 @@
+using Project.Script.Rune.Effect.Interface;
 using Project.Script.Status.Interface;
 using UnityCommonModule.Correction;
 using UnityEngine;
 
 namespace Project.Script.Status {
-    public class CorrectableStatus : StatusBase, ICorrectable {
+    public class CorrectableStatus : StatusBase, ICorrectable{
 
         [SerializeField] protected CorrectedValueElements m_corrected; 
 

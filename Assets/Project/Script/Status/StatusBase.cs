@@ -1,4 +1,5 @@
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,11 +9,14 @@ namespace Project.Script.Status {
         /// <summary>
         /// 補正などをしない元々の値
         /// </summary>
+        [OdinSerialize]
         protected BaseValueElement m_baseValue;
         
-        [SerializeField] protected StatusData m_statusData;
+        [SerializeField] 
+        protected StatusData m_statusData;
 
-        [SerializeField] public UnityEvent<float> ValueChangeUEvent;
+        [SerializeField] 
+        public UnityEvent<float> ValueChangeUEvent;
 
         private void Start() {
             SetUpBaseValue();
