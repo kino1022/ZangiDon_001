@@ -1,6 +1,6 @@
 using System;
+using Project.Script.Asset.Status.Health;
 using Project.Script.Rune.Effect.Interface;
-using Project.Script.Status.Asset;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
@@ -13,7 +13,7 @@ namespace Project.Script.Asset.EffectHolder {
     public class HealHealth : IEffectHolder {
         
         [OdinSerialize,LabelText("回復量")]
-        protected float m_value;
+        protected int m_value;
         
         public void Apply(GameObject target) {
             var health = target.GetComponent<Health>();
@@ -22,8 +22,8 @@ namespace Project.Script.Asset.EffectHolder {
                 Debug.Log($"{target.name}に体力のコンポーネントが存在しませんでした");
                 return;
             }
-            
-            health.Heal(m_value);
+
+            health.Healable.Heal(m_value);
         }
     }
 }
