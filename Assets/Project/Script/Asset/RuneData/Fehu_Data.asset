@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84da3bf3f48b4d9a8aaa351e446d84ce, type: 3}
-  m_Name: Rune
+  m_Name: Fehu_Data
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,6 +21,9 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
+    - Name: m_cast
+      Entry: 6
+      Data: 
     - Name: m_effect
       Entry: 7
       Data: 0|Project.Script.Rune.SupportEffect, Assembly-CSharp
@@ -36,10 +39,7 @@ MonoBehaviour:
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 6
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -49,8 +49,5 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  m_effect:
-    amount: 0
-    timing: 0
-    effects:
-    - {fileID: 0}
+  RuneName: Fehu
+  RuneSprite: {fileID: 0}

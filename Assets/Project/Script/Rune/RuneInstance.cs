@@ -3,6 +3,7 @@ using Project.Script.Rune.Definition;
 using Project.Script.Rune.InstanceElement;
 using Project.Script.Rune.Interface;
 using Project.Script.Rune.Manage.Definition;
+using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
@@ -10,11 +11,16 @@ namespace Project.Script.Rune {
     [Serializable]
     public class RuneInstance {
         
-        [SerializeField, OdinSerialize] protected AmountCounter m_amount;
+        [SerializeField,LabelText("ルーン名")] protected string m_name;
+        
+        [SerializeField, OdinSerialize, LabelText("使用回数")] 
+        protected AmountCounter m_amount;
 
-        [SerializeField, OdinSerialize] protected ICastable m_magic;
+        [SerializeField, OdinSerialize, LabelText("魔術")] 
+        protected ICastable m_magic;
 
-        [SerializeField, OdinSerialize] protected SupportEffect m_effect;
+        [SerializeField, OdinSerialize, LabelText("補助効果")] 
+        protected SupportEffect m_effect;
         
         /// <summary>
         /// 使用回数が0になる等でルーンが除去される際に呼び出されるイベント

@@ -12,11 +12,11 @@ namespace Project.Script.Rune.Effect {
     public class EffectInstance : SerializedScriptableObject {
 
         [OdinSerialize]
-        [SerializeReference]
+        [SerializeReference,LabelText("対象")]
         protected ITargetSelector m_selector;
         
         [OdinSerialize]
-        [SerializeReference]
+        [SerializeReference,LabelText("発動する効果")]
         protected List<IEffectHolder> m_effects;
 
         /// <summary>

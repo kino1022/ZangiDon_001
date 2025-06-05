@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Project.Script.Rune.Definition;
 using Project.Script.Rune.Effect;
+using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
@@ -12,13 +13,13 @@ namespace Project.Script.Rune {
     [Serializable]
     public class SupportEffect {
         
-        [OdinSerialize]
+        [OdinSerialize,LabelText("使用回数")]
         protected int amount;
         
-        [OdinSerialize]
+        [OdinSerialize,LabelText("効果発動タイミング")]
         protected ActivateTiming timing;
         
-        [OdinSerialize]
+        [OdinSerialize,LabelText("発動する効果")]
         protected List<EffectInstance> effects;
         
         //---------------------API methods-------------------------------
