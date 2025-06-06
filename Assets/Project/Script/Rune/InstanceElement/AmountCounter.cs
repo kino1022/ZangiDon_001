@@ -3,6 +3,7 @@ using Sirenix.Serialization;
 using UnityEngine;
 
 namespace Project.Script.Rune.InstanceElement {
+    
     [Serializable]
     public class AmountCounter {
         

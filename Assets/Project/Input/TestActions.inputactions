@@ -1,0 +1,74 @@
+{
+    "name": "TestActions",
+    "maps": [
+        {
+            "name": "OnButtlePlayer",
+            "id": "cc165dd3-79df-4ee9-a97c-1617faa6077b",
+            "actions": [
+                {
+                    "name": "L2Trigger",
+                    "type": "Button",
+                    "id": "2268a8c9-a2e5-453b-b9ef-bd51b58c40d0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RStick",
+                    "type": "Value",
+                    "id": "e0197a91-5eca-4b6c-919c-74f29197692e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LStick",
+                    "type": "Value",
+                    "id": "81eca486-3fe7-4525-a887-ee6fc16a9c22",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "071131ff-cc3a-4d1b-9bfd-26a96cd09e17",
+                    "path": "<DualShockGamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "L2Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ca01f19-80a5-4819-a8e7-beb48a5ce212",
+                    "path": "<DualShockGamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RStick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "37100db1-7524-4b2e-afbf-4f4f0821fd90",
+                    "path": "<DualShockGamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LStick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
