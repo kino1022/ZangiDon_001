@@ -96,7 +96,7 @@ namespace Project.Script.Rune {
             }
 
             protected virtual void OnSupportCast (GameObject caster) {
-                if (m_effect.GetTiming() == ActivateTiming.OnCast) {
+                if (m_effect.timing == ActivateTiming.OnCast) {
                     m_effect.Activate(caster);
                 }
             }
@@ -129,9 +129,9 @@ namespace Project.Script.Rune {
             /// <param name="caster"></param>
             protected virtual void OnSupportSelect(GameObject caster) {
                 
-                SetUpCounter(m_effect.GetAmount());
+                SetUpCounter(m_effect.amount);
                 
-                if (m_effect.GetTiming() == ActivateTiming.OnSelect) {
+                if (m_effect.timing == ActivateTiming.OnSelect) {
                     m_effect.Activate(caster);
                 }
                 
@@ -143,7 +143,7 @@ namespace Project.Script.Rune {
             /// <param name="bullet"></param>
             protected virtual void OnBulletInitialize(GameObject bullet) {
 
-                if (m_effect.GetTiming() == ActivateTiming.OnHit) {
+                if (m_effect.timing == ActivateTiming.OnHit) {
                     //弾丸の効果保持コンポーネントに対して渡す処理を記述
                 }
                 
