@@ -21,8 +21,5 @@ namespace Project.Script.Rune.Manage {
         [SerializeField, OdinSerialize, LabelText("<UNK>")] protected RuneListModule m_list;
         
         public IRuneListHolder List => m_list;
-        
-        
-        
     }
 }
