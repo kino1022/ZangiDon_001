@@ -8,12 +8,12 @@ using Unity.VisualScripting;
 
 namespace Project.Script.Rune.Manage.Modules {
     /// <summary>
-    /// ƒ‹[ƒ“‚ªg—p‚³‚ê‚½‰ñ”‚ğŠÇ—‚·‚éƒNƒ‰ƒX
+    /// ãƒ«ãƒ¼ãƒ³ãŒä½¿ç”¨ã•ã‚ŒãŸå›æ•°ã‚’ç®¡ç†ã™ã‚‹ã‚¯ãƒ©ã‚¹
     /// </summary>
     [Serializable]
     public class RuneCastCountModule : IRuneDisposeHandler {
 
-        [OdinSerialize, LabelText("c‚è‚Ìg—p‰ñ”")] private int _count;
+        [OdinSerialize, LabelText("æ®‹ã‚Šã®ä½¿ç”¨å›æ•°")] private int _count;
 
         protected int m_count {
             get { return _count; }
@@ -24,22 +24,27 @@ namespace Project.Script.Rune.Manage.Modules {
             }
         }
 
-        [OdinSerialize, LabelText("ŠÇ—‚µ‚Ä‚¢‚éƒ‹[ƒ“")] protected RuneInstance m_rune;
+        [OdinSerialize, LabelText("ç®¡ç†ã—ã¦ã„ã‚‹ãƒ«ãƒ¼ãƒ³")] protected RuneInstance m_rune;
 
         public Action<RuneInstance> RuneDisposeEvent { get; set; }
 
         public RuneCastCountModule (int amount,RuneInstance rune) {
 
             if (amount <= 0) {
-                UnityEngine.Debug.Log("ƒ‹[ƒ“‚Ìg—p‰ñ”‚ª0ˆÈ‰º‚Å‰Šú‰»‚³‚ê‚Ü‚µ‚½Bˆ—‚ğ’†~‚µ‚Ü‚·B");
+                UnityEngine.Debug.Log("ãƒ«ãƒ¼ãƒ³ã®ä½¿ç”¨å›æ•°ãŒ0ä»¥ä¸‹ã§åˆæœŸåŒ–ã•ã‚Œã¾ã—ãŸã€‚å‡¦ç†ã‚’ä¸­æ­¢ã—ã¾ã™ã€‚");
             }
 
             m_count = amount;
             m_rune = rune;
         }
+        
+        public void OnCast () {
+            m_count--;
+        }
 
 
-        protected virtual int OnPreChangeCount (int value) {
+        protected virtual int OnPreChangeCount(int value)
+        {
             return value;
         }
 

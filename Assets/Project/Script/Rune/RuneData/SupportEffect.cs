@@ -14,13 +14,13 @@ namespace Project.Script.Rune {
     public class SupportEffect {
         
         [OdinSerialize,LabelText("使用回数")]
-        protected int amount;
+        public int amount;
         
         [OdinSerialize,LabelText("効果発動タイミング")]
-        protected ActivateTiming timing;
+        public ActivateTiming timing;
         
         [OdinSerialize,LabelText("発動する効果")]
-        protected List<EffectInstance> effects;
+        public List<EffectInstance> effects;
         
         //---------------------API methods-------------------------------
 
@@ -29,22 +29,6 @@ namespace Project.Script.Rune {
                 effect.Activate(caster);
             }
         }
-
-        #region Amount
-
-        public int GetAmount() {
-            return amount;
-        }
-
-        #endregion
-
-        #region ActivateTiming
-
-        public ActivateTiming GetTiming() {
-            return timing;
-        }
-
-        #endregion
 
     }
 }

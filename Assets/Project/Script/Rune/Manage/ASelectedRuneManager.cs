@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Project.Script.Rune.Manage {
     /// <summary>
-    /// 選択されたルーンを管理するクラスの基底クラス
+    /// 驕ｸ謚槭＆繧後◆繝ｫ繝ｼ繝ｳ繧堤ｮ｡逅�縺吶ｋ繧ｯ繝ｩ繧ｹ縺ｮ蝓ｺ蠎輔け繝ｩ繧ｹ
     /// </summary>
     [Serializable]
     public abstract class ASelectedRuneManager : ARuneManager {
