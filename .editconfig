@@ -1,0 +1,22 @@
+# .editorconfig
+
+# C# ファイルに適用する
+[*.cs]
+
+# ■■■ ここが重要な設定です ■■■
+# 型宣言の波括弧の前に改行を入れない (class, struct, interface, enum)
+csharp_new_line_before_open_brace_in_types = false
+
+# メソッドやプロパティなどのメンバー宣言の波括弧の前に改行を入れない
+csharp_new_line_before_open_brace_in_methods = false
+csharp_new_line_before_open_brace_in_properties = false
+csharp_new_line_before_open_brace_in_accessors = false
+csharp_new_line_before_open_brace_in_anonymous_methods = false
+csharp_new_line_before_open_brace_in_local_functions = false
+
+# 制御構文(if, for, whileなど)の波括弧の前に改行を入れない
+csharp_new_line_before_open_brace_in_control_blocks = false
+
+# オブジェクト初期化子などの波括弧の前に改行を入れない
+csharp_new_line_before_open_brace_in_object_initializers = false
+csharp_new_line_before_open_brace_in_anonymous_type_initializers = false
