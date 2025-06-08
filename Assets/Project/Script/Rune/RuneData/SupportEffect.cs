@@ -13,13 +13,25 @@ namespace Project.Script.Rune {
     [Serializable]
     public class SupportEffect {
         
-        [OdinSerialize,LabelText("使用回数")]
+        [OdinSerialize,LabelText("使用回数"),ProgressBar(0,20)]
         public int amount;
+
+        [OdinSerialize, LabelText("効果値補正"), ProgressBar(-100, 100)]
+        public float correction;
+
+        [OdinSerialize, LabelText("弾速補正"), ProgressBar(-10, 10)]
+        public float bulletSpeed;
+
+        [OdinSerialize, LabelText("縦方向誘導率補正"), ProgressBar(-10, 10)]
+        public float verticalHoming;
+        
+        [OdinSerialize, LabelText("横方向誘導率補正"), ProgressBar(-10, 10)]
+        public float horizontalHoming;
         
         [OdinSerialize,LabelText("効果発動タイミング")]
         public ActivateTiming timing;
         
-        [OdinSerialize,LabelText("発動する効果")]
+        [OdinSerialize,SerializeField,LabelText("発動する効果")]
         public List<EffectInstance> effects;
         
         //---------------------API methods-------------------------------

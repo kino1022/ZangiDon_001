@@ -10,8 +10,8 @@ namespace Project.Script.Rune.Manage {
 
         [OdinSerialize,SerializeField] 
         protected List<RuneData> m_datas;
-
-
+        
+        
         public RuneInstance SupplyRune() {
             return new RuneInstance(GetRandomRuneData());
         }

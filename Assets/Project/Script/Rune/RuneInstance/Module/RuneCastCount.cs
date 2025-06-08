@@ -24,18 +24,19 @@ namespace Project.Script.Rune.Manage.Modules {
             }
         }
 
-        [OdinSerialize, LabelText("管理しているルーン")] protected RuneInstance m_rune;
+        public Action RuneDisposeEvent { get; set; }
 
-        public Action<RuneInstance> RuneDisposeEvent { get; set; }
-
-        public RuneCastCountModule (int amount,RuneInstance rune) {
+        public RuneCastCountModule (int amount ) {
 
             if (amount <= 0) {
                 UnityEngine.Debug.Log("ルーンの使用回数が0以下で初期化されました。処理を中止します。");
             }
 
             m_count = amount;
-            m_rune = rune;
+        }
+
+        public int GetAmount() {
+            return m_count;
         }
         
         public void OnCast () {
@@ -51,7 +52,7 @@ namespace Project.Script.Rune.Manage.Modules {
         protected virtual void OnPostChangeCount () {
 
             if (_count <= 0) {
-                RuneDisposeEvent?.Invoke(m_rune);
+                RuneDisposeEvent?.Invoke();
                 return;
             }
 

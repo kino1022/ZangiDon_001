@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Project.Script.Rune.Effect.Interface;
 using Sirenix.OdinInspector;
@@ -8,8 +9,8 @@ namespace Project.Script.Rune.Effect {
     /// <summary>
     /// 対象と効果を一まとまりにした効果のアセット
     /// </summary>
-    [CreateAssetMenu(menuName = "Project/Effect/EffectInstance")]
-    public class EffectInstance : SerializedScriptableObject {
+    [Serializable]
+    public class EffectInstance {
 
         [OdinSerialize]
         [SerializeReference,LabelText("対象")]

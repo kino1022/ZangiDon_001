@@ -2,12 +2,12 @@ using System;
 
 namespace Project.Script.Rune.Manage.Interface { 
     /// <summary>
-    /// ‰½‚ç‚©‚Ì—vˆö‚ÅŠÇ—‚µ‚Ä‚¢‚éƒ‹[ƒ“‚ª–³Œø‰»‚³‚ê‚éÛ‚É”­‰Î‚³‚ê‚éƒCƒxƒ“ƒg‚ğ‚à‚ÂƒNƒ‰ƒX‚É‘Î‚µ‚Ä–ñ‘©‚·‚éƒCƒ“ƒ^[ƒtƒF[ƒX
+    /// ä½•ã‚‰ã‹ã®è¦å› ã§ç®¡ç†ã—ã¦ã„ã‚‹ãƒ«ãƒ¼ãƒ³ãŒç„¡åŠ¹åŒ–ã•ã‚Œã‚‹éš›ã«ç™ºç«ã•ã‚Œã‚‹ã‚¤ãƒ™ãƒ³ãƒˆã‚’ã‚‚ã¤ã‚¯ãƒ©ã‚¹ã«å¯¾ã—ã¦ç´„æŸã™ã‚‹ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
     /// </summary>
     public interface IRuneDisposeHandler {
         /// <summary>
-        /// ƒ‹[ƒ“‚ª–³Œø‰»‚³‚ê‚éÛ‚É”­‰Î‚³‚ê‚éƒCƒxƒ“ƒg
+        /// ãƒ«ãƒ¼ãƒ³ãŒç„¡åŠ¹åŒ–ã•ã‚Œã‚‹éš›ã«ç™ºç«ã•ã‚Œã‚‹ã‚¤ãƒ™ãƒ³ãƒˆ
         /// </summary>
-        public Action<RuneInstance> RuneDisposeEvent { get; set; }
+        public Action RuneDisposeEvent { get; set; }
     }
 }
