@@ -1,4 +1,5 @@
 using System;
+using Project.Script.Rune.Manage.Interface;
 using Project.Script.Rune.Manage.Modules;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -9,6 +10,8 @@ namespace Project.Script.Rune {
     public class SupportEffectInstance {
         
         [OdinSerialize,LabelText("使用回数")] protected RuneCastCountModule m_count;
+
+        public IRuneDisposeHandler DisposeHandler => m_count;
 
         public Action<GameObject> Activate;
         

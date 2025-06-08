@@ -44,8 +44,7 @@ namespace Project.Script.Rune.Manage.Modules {
         }
 
 
-        protected virtual int OnPreChangeCount(int value)
-        {
+        protected virtual int OnPreChangeCount(int value) {
             return value;
         }
 
