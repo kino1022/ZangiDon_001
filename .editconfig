@@ -1,5 +1,25 @@
 # .editorconfig
 
+# .editorconfig
+
+# このディレクトリがプロジェクトのルートであることを示す
+# これより上の階層にある .editorconfig を探さないようにする
+root = true
+
+# すべてのファイル (*) に適用するルール
+[*]
+# 改行コードをCRLFに統一 (Windows標準)
+end_of_line = lf
+
+# 文字コードをUTF-8 (BOMなし) に統一
+charset = utf-8
+
+# ファイルの末尾に必ず改行を入れる
+insert_final_newline = true
+
+# 行末の余分な半角スペースを削除する
+trim_trailing_whitespace = true
+
 # C# ファイルに適用する
 [*.cs]
 
