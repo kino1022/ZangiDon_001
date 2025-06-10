@@ -17,10 +17,10 @@ namespace Project.Script.Rune.Manage.RuneSelector.Module {
 
         public IReceiver<RuneInstance> GetTarget() {
             
-            if (m_mainSlot.List.GetIsFullList()) {
+            if (m_mainSlot.GetIsFullList()) {
                 return m_mainSlot.Receiver;
             }
-            else if (m_supportSlot.List.GetIsFullList()) {
+            else if (m_supportSlot.GetIsFullList()) {
                 return m_supportSlot.Receiver;
             }
             else {

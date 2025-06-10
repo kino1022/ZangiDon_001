@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
 using Project.Script.Rune.Manage.Interface;
+using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
 namespace Project.Script.Rune.Manage {
     [Serializable]
-    public class RuneFactory : IRuneSupplier {
+    public class RuneFactory : SerializedMonoBehaviour, IRuneSupplier {
 
         [OdinSerialize,SerializeField] 
         protected List<RuneData> m_datas;
-        
         
         public RuneInstance SupplyRune() {
             return new RuneInstance(GetRandomRuneData());

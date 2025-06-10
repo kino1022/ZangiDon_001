@@ -48,9 +48,7 @@ namespace Project.Script.Rune {
 		#region Hook 
 
         protected virtual void OnDisposeHandle () {
-
-
-
+            
             Dispose();
         }
 

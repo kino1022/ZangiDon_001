@@ -10,6 +10,7 @@ namespace Project.Script.Rune.Manage.Modules {
     /// </summary>
     [Serializable]
     public class RuneSenderModule : ISender<RuneInstance> {
+        
         [OdinSerialize,LabelText("ルーン受信側インスタンス")]
         protected IReceiver<RuneInstance> m_receiver;
 
@@ -24,7 +25,8 @@ namespace Project.Script.Rune.Manage.Modules {
         }
 
         public void Send(RuneInstance instance) {
-
+            m_receiver.Receive(instance);
         }
+        
     }
 }

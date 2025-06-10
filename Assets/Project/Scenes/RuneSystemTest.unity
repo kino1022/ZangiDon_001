@@ -240,6 +240,37 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &212667018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212667019}
+  m_Layer: 0
+  m_Name: Status
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &212667019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212667018}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1570857052}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &724901619
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +363,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1570857047
+--- !u!1 &1102043867
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -340,50 +371,102 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1570857052}
-  - component: {fileID: 1570857051}
-  - component: {fileID: 1570857050}
-  - component: {fileID: 1570857049}
-  - component: {fileID: 1570857048}
-  - component: {fileID: 1570857053}
-  - component: {fileID: 1570857054}
+  - component: {fileID: 1102043868}
+  - component: {fileID: 1102043870}
+  - component: {fileID: 1102043869}
   m_Layer: 0
-  m_Name: DummyCharacter
+  m_Name: RuneManage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1570857048
+--- !u!4 &1102043868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102043867}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1570857052}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1102043869
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1570857047}
+  m_GameObject: {fileID: 1102043867}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4142dcb70454bee8a413279acd75f84, type: 3}
+  m_Script: {fileID: 11500000, guid: 574068b06a0645e09e49affc6241bc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: runes
+      Entry: 6
+      Data: 
+    - Name: m_manageAmount
+      Entry: 3
+      Data: 0
+    - Name: m_sender
+      Entry: 7
+      Data: 0|Project.Script.Rune.Manage.Modules.RuneSenderModule, Assembly-CSharp
+    - Name: m_receiver
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_receiver
+      Entry: 7
+      Data: 1|Project.Script.Rune.Manage.Modules.RuneReceiverModule, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+  runes: []
+  m_manageAmount: 0
+--- !u!114 &1102043870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102043867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e694af084f2406e939bafb733563906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 192de8ff219174d918f9b00956de2d26, type: 2}
     - {fileID: 11400000, guid: 05d54233fb450498c9317bb51407ce78, type: 2}
+    - {fileID: 11400000, guid: 192de8ff219174d918f9b00956de2d26, type: 2}
     - {fileID: 11400000, guid: 0bbecb75087c14b0ebb4d7de1bef46df, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: m_supplyer
-      Entry: 7
-      Data: 0|Project.Script.Rune.Manage.RuneFactory, Assembly-CSharp
     - Name: m_datas
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[Project.Script.Rune.RuneData, Assembly-CSharp]],
+      Data: 0|System.Collections.Generic.List`1[[Project.Script.Rune.RuneData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -403,15 +486,32 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: stockRune
-      Entry: 6
-      Data: 
-    - Name: castRune
-      Entry: 6
-      Data: 
+  m_datas:
+  - {fileID: 11400000, guid: 05d54233fb450498c9317bb51407ce78, type: 2}
+  - {fileID: 11400000, guid: 192de8ff219174d918f9b00956de2d26, type: 2}
+  - {fileID: 11400000, guid: 0bbecb75087c14b0ebb4d7de1bef46df, type: 2}
+--- !u!1 &1570857047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1570857052}
+  - component: {fileID: 1570857051}
+  - component: {fileID: 1570857050}
+  - component: {fileID: 1570857049}
+  - component: {fileID: 1570857053}
+  - component: {fileID: 1570857054}
+  - component: {fileID: 1570857055}
+  m_Layer: 0
+  m_Name: DummyCharacter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!65 &1570857049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -498,7 +598,9 @@ Transform:
   m_LocalPosition: {x: 3, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1102043868}
+  - {fileID: 212667019}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1570857053
@@ -562,24 +664,59 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: m_correction
-      Entry: 6
+      Entry: 7
+      Data: 4|UnityCommonModule.Correction.Instant.InstantCorrectionManager, UnityCommonModule
+    - Name: m_list
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[UnityCommonModule.Correction.ACorrectionList`1[[UnityCommonModule.Correction.Instant.InstantCorrection,
+        UnityCommonModule]], UnityCommonModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_priority
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[UnityCommonModule.Correction.Definition.CorrectionType,
+        UnityCommonModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: m_damageModule
       Entry: 7
-      Data: 4|Project.Script.Asset.Status.Health.DamageModule, Assembly-CSharp
+      Data: 7|Project.Script.Asset.Status.Health.DamageModule, Assembly-CSharp
     - Name: DamageUEvent
       Entry: 7
-      Data: 5|UnityEngine.Events.UnityEvent`2[[UnityEngine.GameObject, UnityEngine.CoreModule],[System.Int32,
+      Data: 8|UnityEngine.Events.UnityEvent`2[[UnityEngine.GameObject, UnityEngine.CoreModule],[System.Int32,
         mscorlib]], UnityEngine.CoreModule
     - Name: m_PersistentCalls
       Entry: 7
-      Data: 6|UnityEngine.Events.PersistentCallGroup, UnityEngine.CoreModule
+      Data: 9|UnityEngine.Events.PersistentCallGroup, UnityEngine.CoreModule
     - Name: m_Calls
       Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[UnityEngine.Events.PersistentCall,
+      Data: 10|System.Collections.Generic.List`1[[UnityEngine.Events.PersistentCall,
         UnityEngine.CoreModule]], mscorlib
     - Name: 
       Entry: 12
@@ -597,7 +734,42 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: m_correction
-      Entry: 6
+      Entry: 7
+      Data: 11|UnityCommonModule.Correction.Instant.InstantCorrectionManager, UnityCommonModule
+    - Name: m_list
+      Entry: 7
+      Data: 12|System.Collections.Generic.List`1[[UnityCommonModule.Correction.ACorrectionList`1[[UnityCommonModule.Correction.Instant.InstantCorrection,
+        UnityCommonModule]], UnityCommonModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_priority
+      Entry: 7
+      Data: 13|System.Collections.Generic.List`1[[UnityCommonModule.Correction.Definition.CorrectionType,
+        UnityCommonModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
@@ -675,6 +847,60 @@ MonoBehaviour:
       Entry: 8
       Data: 
   m_initialData: {fileID: 0}
+--- !u!114 &1570857055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570857047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574068b06a0645e09e49affc6241bc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: runes
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Project.Script.Rune.RuneInstance,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_manageAmount
+      Entry: 3
+      Data: 6
+    - Name: m_sender
+      Entry: 7
+      Data: 1|Project.Script.Rune.Manage.Modules.RuneSenderModule, Assembly-CSharp
+    - Name: m_receiver
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_receiver
+      Entry: 7
+      Data: 2|Project.Script.Rune.Manage.Modules.RuneReceiverModule, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+  runes: []
+  m_manageAmount: 6
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -12,8 +12,10 @@ namespace Project.Script.Rune.Manage.Modules {
         [OdinSerialize,LabelText("管理しているルーン")]　protected List<RuneInstance> m_list = new List<RuneInstance>();
 
         [OdinSerialize, LabelText("ルーンの最大数")] protected int m_maxList;
-        
-        protected RuneListModule() {}
+
+        public RuneListModule(int length) {
+            m_maxList = length;
+        }
         
         public List<RuneInstance> List => m_list;
 
