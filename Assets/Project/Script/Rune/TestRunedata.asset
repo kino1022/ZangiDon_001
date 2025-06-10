@@ -22,14 +22,12 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes:
     - Name: m_cast
-      Entry: 6
-      Data: 
-    - Name: m_effect
       Entry: 7
-      Data: 0|Project.Script.Rune.SupportEffect, Assembly-CSharp
+      Data: 0|Project.Script.Rune.MainEffectWithBullet, Assembly-CSharp
     - Name: amount
       Entry: 3
       Data: 0
+<<<<<<< Updated upstream
     - Name: correction
       Entry: 4
       Data: 0
@@ -43,17 +41,49 @@ MonoBehaviour:
       Entry: 4
       Data: 0
     - Name: timing
+=======
+    - Name: m_prefab
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_effect
+      Entry: 7
+      Data: 1|Project.Script.Rune.SupportEffect, Assembly-CSharp
+    - Name: amount
+>>>>>>> Stashed changes
       Entry: 3
       Data: 0
+    - Name: correction
+      Entry: 4
+      Data: 0
+    - Name: bulletSpeed
+      Entry: 4
+      Data: 0
+    - Name: verticalHoming
+      Entry: 4
+      Data: 0
+    - Name: horizontalHoming
+      Entry: 4
+      Data: 0.025062561
+    - Name: timing
+      Entry: 3
+      Data: 2
     - Name: effects
       Entry: 7
+<<<<<<< Updated upstream
       Data: 1|System.Collections.Generic.List`1[[Project.Script.Rune.Effect.EffectInstance,
+=======
+      Data: 2|System.Collections.Generic.List`1[[Project.Script.Rune.Effect.EffectInstance,
+>>>>>>> Stashed changes
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
+<<<<<<< Updated upstream
       Data: 2|Project.Script.Rune.Effect.EffectInstance, Assembly-CSharp
     - Name: m_selector
       Entry: 7
@@ -61,22 +91,40 @@ MonoBehaviour:
     - Name: range
       Entry: 4
       Data: 0
+=======
+      Data: 3|Project.Script.Rune.Effect.EffectInstance, Assembly-CSharp
+    - Name: m_selector
+      Entry: 7
+      Data: 4|Project.Script.Asset.TargetSelector.SelfSelector, Assembly-CSharp
+>>>>>>> Stashed changes
     - Name: 
       Entry: 8
       Data: 
     - Name: m_effects
       Entry: 7
+<<<<<<< Updated upstream
       Data: 4|Unity.Plastic.Antlr3.Runtime.Misc.ListStack`1[[Project.Script.Rune.Effect.Interface.IEffectHolder,
         Assembly-CSharp]], Unity.Plastic.Antlr3.Runtime
+=======
+      Data: 5|System.Collections.Generic.List`1[[Project.Script.Rune.Effect.Interface.IEffectHolder,
+        Assembly-CSharp]], mscorlib
+>>>>>>> Stashed changes
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
+<<<<<<< Updated upstream
       Data: 5|Project.Script.Asset.EffectHolder.HealHealth, Assembly-CSharp
     - Name: m_value
       Entry: 3
       Data: 62
+=======
+      Data: 6|Project.Script.Asset.EffectHolder.HealHealth, Assembly-CSharp
+    - Name: m_value
+      Entry: 3
+      Data: 30
+>>>>>>> Stashed changes
     - Name: 
       Entry: 8
       Data: 
@@ -105,6 +153,7 @@ MonoBehaviour:
     correction: 0
     bulletSpeed: 0
     verticalHoming: 0
+<<<<<<< Updated upstream
     horizontalHoming: 0
     timing: 0
     effects:
@@ -120,5 +169,21 @@ MonoBehaviour:
       data:
         range: 0
     - rid: 9053502084878434305
+=======
+    horizontalHoming: 0.025062561
+    timing: 2
+    effects:
+    - m_selector:
+        rid: 8015149683764363350
+      m_effects:
+      - rid: 8015149683764363351
+  references:
+    version: 2
+    RefIds:
+    - rid: 8015149683764363350
+      type: {class: SelfSelector, ns: Project.Script.Asset.TargetSelector, asm: Assembly-CSharp}
+      data: 
+    - rid: 8015149683764363351
+>>>>>>> Stashed changes
       type: {class: HealHealth, ns: Project.Script.Asset.EffectHolder, asm: Assembly-CSharp}
       data: 
