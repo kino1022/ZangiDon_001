@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3af667334a454aa49e764a61b9fc07, type: 3}
+  m_Name: New Bullet Data
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: speedData
+      Entry: 7
+      Data: 0|Project.Script.Bullet.Data.SpeedData, Assembly-CSharp
+    - Name: speed
+      Entry: 4
+      Data: 0
+    - Name: acceleration
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: initializeHoming
+      Entry: 7
+      Data: 1|Project.Script.Bullet.Data.HomingData, Assembly-CSharp
+    - Name: horizontal
+      Entry: 4
+      Data: 0
+    - Name: upward
+      Entry: 4
+      Data: 0
+    - Name: downward
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: homingData
+      Entry: 7
+      Data: 2|Project.Script.Bullet.Data.HomingData, Assembly-CSharp
+    - Name: horizontal
+      Entry: 4
+      Data: 0
+    - Name: upward
+      Entry: 4
+      Data: 0
+    - Name: downward
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+  speedData:
+    speed: 0
+    acceleration: 0
+  initializeHoming:
+    horizontal: 0
+    upward: 0
+    downward: 0
+  homingData:
+    horizontal: 0
+    upward: 0
+    downward: 0
