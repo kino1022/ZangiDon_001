@@ -21,15 +21,10 @@ namespace Project.Script.Rune {
 
             m_mainEffect = new MainEffectInstance(data);
             m_supportEffect = new SupportEffectInstance(data);
-<<<<<<< Updated upstream
 
             AddListenerDisposeHandler(m_mainEffect.DisposeHandler);
             AddListenerDisposeHandler (m_supportEffect.DisposeHandler);
-
-=======
             
-            
->>>>>>> Stashed changes
         }
 
 
