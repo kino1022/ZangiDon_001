@@ -1,3 +1,5 @@
+using System;
+
 namespace Project.Script.Interface {
     /// <summary>
     /// データを受信するクラスに対して約束するインターフェース
@@ -7,5 +9,6 @@ namespace Project.Script.Interface {
         
         public void Receive(T data);
         
+        public Action<T> ReceiveEvent { get; set; }
     }
 }

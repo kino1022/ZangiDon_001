@@ -1,6 +1,5 @@
 using System;
 using Project.Script.Rune.Interface;
-using Project.Script.Rune.Manage.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;

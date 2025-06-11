@@ -1,8 +1,8 @@
-using Project.Script.Rune.Manage.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
 using System.Diagnostics;
+using Project.Script.Rune.Interface;
 using UnityEngine;
 using Unity.VisualScripting;
 

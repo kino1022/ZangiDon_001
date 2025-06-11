@@ -1,6 +1,5 @@
 using System;
 using Project.Script.Rune.Interface;
-using Project.Script.Rune.Manage.Interface;
 using Project.Script.Rune.Manage.Modules;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -13,7 +12,7 @@ namespace Project.Script.Rune {
         [OdinSerialize, LabelText("使用回数")] protected RuneCastCountModule m_count;
 
         public IRuneDisposeHandler DisposeHandler => m_count;
-        
+
         protected Action<GameObject> m_OnCast;
 
         public int GetAmount() {

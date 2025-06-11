@@ -1,5 +1,5 @@
 using System;
-using Project.Script.Rune.Manage.Interface;
+using Project.Script.Rune.Interface;
 using Project.Script.Rune.Manage.Modules;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
