@@ -30,10 +30,16 @@ namespace Project.Script.Rune.Manage {
         
         #endregion
         
+        
+        
         #region ListInterfaces
 
         public RuneInstance GetRune(int index) {
             return runes[index];
+        }
+
+        public List<RuneInstance> GetRuneList() {
+            return runes;
         }
 
         public virtual void SetRune(RuneInstance rune) {
