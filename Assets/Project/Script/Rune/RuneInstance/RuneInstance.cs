@@ -32,7 +32,7 @@ namespace Project.Script.Rune {
 
         protected void ObserveActiveInstance()
         {
-
+            
         }
 	}
 }
