@@ -555,6 +555,7 @@ GameObject:
   - component: {fileID: 1570857049}
   - component: {fileID: 1570857055}
   - component: {fileID: 1570857056}
+  - component: {fileID: 1570857057}
   m_Layer: 0
   m_Name: DummyCharacter
   m_TagString: Untagged
@@ -769,6 +770,33 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 8
+      Data: 
+--- !u!114 &1570857057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570857047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea0c705513640ac8ebd413375c4b7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_mainSlot
+      Entry: 6
+      Data: 
+    - Name: m_subSlot
+      Entry: 6
       Data: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
