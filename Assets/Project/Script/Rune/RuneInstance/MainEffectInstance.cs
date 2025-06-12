@@ -15,7 +15,7 @@ namespace Project.Script.Rune {
 
         protected Action<GameObject> CastAction;
 
-        public bool isActive = true;
+        public  bool m_isActive = true;
         
 
         public MainEffectInstance(RuneData data)
@@ -26,12 +26,16 @@ namespace Project.Script.Rune {
 
         public void Dispose()
         {
-            isActive = false;
+            m_isActive = false;
         }
 
         public int GetAmount()
         {
             return m_countModule.GetAmount();
+        }
+
+        public bool GetIsActive() {
+            return m_isActive;
         }
 
 

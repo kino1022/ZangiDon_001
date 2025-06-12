@@ -21,21 +21,27 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: m_cast
+    - Name: runeName
+      Entry: 6
+      Data: 
+    - Name: runeSprite
+      Entry: 6
+      Data: 
+    - Name: Main
       Entry: 7
       Data: 0|Project.Script.Asset.Castable.DummyCastable, Assembly-CSharp
     - Name: amount
       Entry: 3
-      Data: 20
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
-    - Name: m_effect
+    - Name: Sub
       Entry: 7
-      Data: 1|Project.Script.Rune.SupportEffect, Assembly-CSharp
+      Data: 1|Project.Script.Rune.SubEffect, Assembly-CSharp
     - Name: amount
       Entry: 3
-      Data: 20
+      Data: 13
     - Name: correction
       Entry: 4
       Data: 0
@@ -52,81 +58,31 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: effects
-      Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[Project.Script.Rune.Effect.EffectInstance,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 3|Project.Script.Rune.Effect.EffectInstance, Assembly-CSharp
-    - Name: m_selector
-      Entry: 7
-      Data: 4|Project.Script.Asset.TargetSelector.SelfSelector, Assembly-CSharp
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: m_effects
-      Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[Project.Script.Rune.Effect.Interface.IEffectHolder,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 6|Project.Script.Asset.EffectHolder.ApplyStatusEffect, Assembly-CSharp
-    - Name: m_effect
-      Entry: 7
-      Data: 7|Project.Script.Asset.StatusEffect.HealCorrect, Assembly-CSharp
-    - Name: m_correction
       Entry: 6
       Data: 
     - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  RuneName: Uruz
-  RuneSprite: {fileID: 0}
-  m_effect:
-    amount: 20
-    correction: 0
-    bulletSpeed: 0
-    verticalHoming: 0
-    horizontalHoming: 0
-    timing: 0
-    effects:
-    - m_selector:
-        rid: 8015149767130349697
-      m_effects:
-      - rid: 8015149767130349698
+  runeName: 
+  runeSprite: {fileID: 0}
+  Main:
+    rid: 8015149772619120832
+  Sub:
+    rid: 8015149772619120833
   references:
     version: 2
     RefIds:
-    - rid: 8015149767130349697
-      type: {class: SelfSelector, ns: Project.Script.Asset.TargetSelector, asm: Assembly-CSharp}
-      data: 
-    - rid: 8015149767130349698
-      type: {class: ApplyStatusEffect, ns: Project.Script.Asset.EffectHolder, asm: Assembly-CSharp}
-      data: 
+    - rid: 8015149772619120832
+      type: {class: DummyCastable, ns: Project.Script.Asset.Castable, asm: Assembly-CSharp}
+      data:
+        amount: 10
+    - rid: 8015149772619120833
+      type: {class: SubEffect, ns: Project.Script.Rune, asm: Assembly-CSharp}
+      data:
+        amount: 13
+        correction: 0
+        bulletSpeed: 0
+        verticalHoming: 0
+        horizontalHoming: 0
+        timing: 0
+        effects: []

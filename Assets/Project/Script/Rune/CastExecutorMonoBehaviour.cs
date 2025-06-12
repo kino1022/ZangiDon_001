@@ -30,7 +30,6 @@ namespace Project.Script.Rune {
         [Button("魔術実行")]
         public void OnCast()
         {
-    
             SubEffectExecute(GetSubEffectFromTiming(ActivateTiming.OnPreCast));
             m_mainSlot.GetRune(0).Main.OnCast(this.gameObject);
             SubEffectExecute(GetSubEffectFromTiming(ActivateTiming.OnPostCast));

@@ -6,5 +6,7 @@ namespace Project.Script.Rune.Manager {
             : base(amount, receiver, sender) {
             
         }
+        
+        
     }
 }
