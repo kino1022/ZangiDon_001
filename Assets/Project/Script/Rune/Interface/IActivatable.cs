@@ -7,10 +7,11 @@ namespace Project.Script.Rune.Interface {
     /// </summary>
     public interface IActivatable {
         
-        public ActivateTiming timing {get; set;}
+        public ActivateTiming Timing {get; set;}
 
         public int GetAmount();
         
         public void Activate(GameObject caster);
+        
     }
 }

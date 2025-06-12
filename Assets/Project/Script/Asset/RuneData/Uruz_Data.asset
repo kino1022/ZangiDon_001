@@ -24,6 +24,9 @@ MonoBehaviour:
     - Name: m_cast
       Entry: 7
       Data: 0|Project.Script.Asset.Castable.DummyCastable, Assembly-CSharp
+    - Name: amount
+      Entry: 3
+      Data: 20
     - Name: 
       Entry: 8
       Data: 
@@ -32,7 +35,7 @@ MonoBehaviour:
       Data: 1|Project.Script.Rune.SupportEffect, Assembly-CSharp
     - Name: amount
       Entry: 3
-      Data: 0
+      Data: 20
     - Name: correction
       Entry: 4
       Data: 0
@@ -107,7 +110,7 @@ MonoBehaviour:
   RuneName: Uruz
   RuneSprite: {fileID: 0}
   m_effect:
-    amount: 0
+    amount: 20
     correction: 0
     bulletSpeed: 0
     verticalHoming: 0
@@ -115,15 +118,15 @@ MonoBehaviour:
     timing: 0
     effects:
     - m_selector:
-        rid: 8015149753297272975
+        rid: 8015149767130349697
       m_effects:
-      - rid: 8015149753297272976
+      - rid: 8015149767130349698
   references:
     version: 2
     RefIds:
-    - rid: 8015149753297272975
+    - rid: 8015149767130349697
       type: {class: SelfSelector, ns: Project.Script.Asset.TargetSelector, asm: Assembly-CSharp}
       data: 
-    - rid: 8015149753297272976
+    - rid: 8015149767130349698
       type: {class: ApplyStatusEffect, ns: Project.Script.Asset.EffectHolder, asm: Assembly-CSharp}
       data: 

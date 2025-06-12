@@ -34,7 +34,7 @@ namespace Project.Script.Rune.Manager {
             return m_rune[index];
         }
 
-        public List<RuneInstance> GetRunes() {
+        public List<RuneInstance> GetRuneList() {
             return m_rune;
         }
 

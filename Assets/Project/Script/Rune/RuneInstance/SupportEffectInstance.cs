@@ -1,4 +1,5 @@
 using System;
+using Project.Script.Rune.Definition;
 using Project.Script.Rune.Interface;
 using Project.Script.Rune.Manage.Modules;
 using Sirenix.OdinInspector;
@@ -13,10 +14,18 @@ namespace Project.Script.Rune {
 
         public IRuneDisposeHandler DisposeHandler => m_count;
 
-        public Action<GameObject> Activate;
+        protected ActivateTiming m_timing;
+
+        protected Action<GameObject> Activate;
         
         public SupportEffectInstance(RuneData data) {
-            Activate += data.m_effect.Activate;
+            m_count = new RuneCastCountModule(data.m_effect.amount);
+            m_timing = data.m_effect.timing;
+            Activate = data.m_effect.Activate;
+        }
+
+        public ActivateTiming GetTiming() {
+            return m_timing;
         }
 
         public void OnActivate(GameObject caster) {

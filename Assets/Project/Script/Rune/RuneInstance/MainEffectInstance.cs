@@ -21,7 +21,7 @@ namespace Project.Script.Rune {
 
         public MainEffectInstance(RuneData data) {
 
-            m_OnCast += data.m_cast.OnCast;
+            m_OnCast = data.m_cast.OnCast;
 
             m_count = new RuneCastCountModule(data.m_cast.GetAmount());
         }
