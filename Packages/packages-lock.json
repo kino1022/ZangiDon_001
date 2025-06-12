@@ -37,7 +37,7 @@
       "dependencies": {
         "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.5.10"
       },
-      "hash": "2b2d430af5ee1756264a4f3a2b2cd42425a4fc58"
+      "hash": "83afc0ed271d6b6c9d8ed4b90824c4e5fc060c6c"
     },
     "com.unity.ai.navigation": {
       "version": "2.0.6",

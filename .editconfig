@@ -1,0 +1,42 @@
+# .editorconfig
+
+# .editorconfig
+
+# このディレクトリがプロジェクトのルートであることを示す
+# これより上の階層にある .editorconfig を探さないようにする
+root = true
+
+# すべてのファイル (*) に適用するルール
+[*]
+# 改行コードをCRLFに統一 (Windows標準)
+end_of_line = lf
+
+# 文字コードをUTF-8 (BOMなし) に統一
+charset = utf-8
+
+# ファイルの末尾に必ず改行を入れる
+insert_final_newline = true
+
+# 行末の余分な半角スペースを削除する
+trim_trailing_whitespace = true
+
+# C# ファイルに適用する
+[*.cs]
+
+# ■■■ ここが重要な設定です ■■■
+# 型宣言の波括弧の前に改行を入れない (class, struct, interface, enum)
+csharp_new_line_before_open_brace_in_types = false
+
+# メソッドやプロパティなどのメンバー宣言の波括弧の前に改行を入れない
+csharp_new_line_before_open_brace_in_methods = false
+csharp_new_line_before_open_brace_in_properties = false
+csharp_new_line_before_open_brace_in_accessors = false
+csharp_new_line_before_open_brace_in_anonymous_methods = false
+csharp_new_line_before_open_brace_in_local_functions = false
+
+# 制御構文(if, for, whileなど)の波括弧の前に改行を入れない
+csharp_new_line_before_open_brace_in_control_blocks = false
+
+# オブジェクト初期化子などの波括弧の前に改行を入れない
+csharp_new_line_before_open_brace_in_object_initializers = false
+csharp_new_line_before_open_brace_in_anonymous_type_initializers = false

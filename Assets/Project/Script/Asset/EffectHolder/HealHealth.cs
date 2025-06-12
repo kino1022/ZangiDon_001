@@ -12,7 +12,7 @@ namespace Project.Script.Asset.EffectHolder {
     [Serializable,LabelText("体力回復")]
     public class HealHealth : IEffectHolder {
         
-        [OdinSerialize,LabelText("回復量")]
+        [OdinSerialize,LabelText("回復量"),ProgressBar(0,500)]
         protected int m_value;
         
         public void Apply(GameObject target) {
