@@ -7,28 +7,39 @@ using UnityEngine;
 
 namespace Project.Script.Rune {
     [Serializable]
-    public class MainEffectInstance : ICastable {
+    public class MainEffectInstance : ICastable, IDisposable
+    {
+
+        protected RuneCastCountModule m_countModule;
+
+
+        protected Action<GameObject> CastAction;
+
+        public bool isActive = true;
         
-        [OdinSerialize, LabelText("使用回数")] protected RuneCastCountModule m_count;
 
-        public IRuneDisposeHandler DisposeHandler => m_count;
-
-        protected Action<GameObject> m_OnCast;
-
-        public int GetAmount() {
-            return m_count.GetAmount();
+        public MainEffectInstance(RuneData data)
+        {
+            CastAction = data.Main.OnCast;
+            m_countModule = new RuneCastCountModule(data.Sub.GetAmount(), this);
         }
 
-        public MainEffectInstance(RuneData data) {
-
-            m_OnCast = data.m_cast.OnCast;
-
-            m_count = new RuneCastCountModule(data.m_cast.GetAmount());
+        public void Dispose()
+        {
+            isActive = false;
         }
 
-        public void OnCast(GameObject caster) {
-            m_OnCast?.Invoke(caster);
-            m_count?.OnCast();
+        public int GetAmount()
+        {
+            return m_countModule.GetAmount();
         }
+
+
+        public void OnCast(GameObject caster)
+        {
+            CastAction?.Invoke(caster);
+            m_countModule.OnCast();
+        }
+        
     }
 }

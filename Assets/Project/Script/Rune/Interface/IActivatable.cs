@@ -6,8 +6,8 @@ namespace Project.Script.Rune.Interface {
     /// 効果を発動できるクラスに対して約束するインターフェース
     /// </summary>
     public interface IActivatable {
-        
-        public ActivateTiming Timing {get; set;}
+
+        public ActivateTiming GetTiming();
 
         public int GetAmount();
         

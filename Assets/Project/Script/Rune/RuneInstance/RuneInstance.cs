@@ -3,54 +3,36 @@ using Project.Script.Rune.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
+using UnityEngine.InputSystem.Utilities;
+using UnityEngine.Rendering;
 
 namespace Project.Script.Rune {
     [Serializable]
-    public class RuneInstance : IDisposable {
+    public class RuneInstance : IDisposable
+    {
 
-        [OdinSerialize, LabelText("一文字目の時の効果")] protected MainEffectInstance m_mainEffect;
+        protected MainEffectInstance m_main;
 
-        [OdinSerialize, LabelText("二文字目以降の際の効果")] protected SupportEffectInstance m_supportEffect;
+        protected SubEffectInstance m_sub;
 
-        public ICastable Cast => m_mainEffect;
+        public ICastable Main => m_main;
 
-        public SupportEffectInstance Support => m_supportEffect;
+        public IActivatable Sub => m_sub;
 
-        public RuneInstance (RuneData data) {
-
-            m_mainEffect = new MainEffectInstance(data);
-            m_supportEffect = new SupportEffectInstance(data);
-
-            AddListenerDisposeHandler(m_mainEffect.DisposeHandler);
-            AddListenerDisposeHandler (m_supportEffect.DisposeHandler);
-            
+        public RuneInstance(RuneData data)
+        {
+            m_main = new MainEffectInstance(data);
+            m_sub = new SubEffectInstance(data);
         }
 
+        public void Dispose()
+        {
 
-        public void Dispose () {
-            RemoveListenerDisposeHandler(m_mainEffect.DisposeHandler);
-            RemoveListenerDisposeHandler(m_supportEffect.DisposeHandler);
         }
 
-        #region Listener 
+        protected void ObserveActiveInstance()
+        {
 
-        public void AddListenerDisposeHandler (IRuneDisposeHandler handler) {
-            handler.RuneDisposeEvent += OnDisposeHandle;
         }
-
-        public void RemoveListenerDisposeHandler (IRuneDisposeHandler handler) {
-            handler.RuneDisposeEvent -= OnDisposeHandle;
-        }
-
-		#endregion
-
-		#region Hook 
-
-        protected virtual void OnDisposeHandle () {
-            
-            Dispose();
-        }
-
-		#endregion
 	}
 }

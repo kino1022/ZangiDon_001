@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Project.Script.Rune.Definition;
 using Project.Script.Rune.Effect;
+using Project.Script.Rune.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
@@ -11,7 +12,7 @@ namespace Project.Script.Rune {
     /// 二文字目以降に選択した場合の性能を管理するクラス
     /// </summary>
     [Serializable]
-    public class SupportEffect {
+    public class SubEffect : IActivatable {
         
         [OdinSerialize,LabelText("使用回数"),ProgressBar(0,20)]
         public int amount;
@@ -33,11 +34,23 @@ namespace Project.Script.Rune {
         
         [OdinSerialize,SerializeField,LabelText("発動する効果")]
         public List<EffectInstance> effects;
-        
+
         //---------------------API methods-------------------------------
 
-        public void Activate(GameObject caster) {
-            foreach (var effect in effects) {
+        public int GetAmount()
+        {
+            return amount;
+        }
+
+        public ActivateTiming GetTiming()
+        {
+            return timing;
+        }
+
+        public void Activate(GameObject caster)
+        {
+            foreach (var effect in effects)
+            {
                 effect.Activate(caster);
             }
         }

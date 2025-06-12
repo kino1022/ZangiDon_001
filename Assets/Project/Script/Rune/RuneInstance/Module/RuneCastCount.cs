@@ -15,9 +15,13 @@ namespace Project.Script.Rune.Manage.Modules {
 
         [OdinSerialize, LabelText("残りの使用回数")] private int _count;
 
-        protected int m_count {
+        protected IDisposable m_disposable;
+
+        protected int m_count
+        {
             get { return _count; }
-            set {
+            set
+            {
                 value = OnPreChangeCount(value);
                 _count = value;
                 OnPostChangeCount();
@@ -26,13 +30,21 @@ namespace Project.Script.Rune.Manage.Modules {
 
         public Action RuneDisposeEvent { get; set; }
 
-        public RuneCastCountModule (int amount ) {
+        public RuneCastCountModule(int amount, IDisposable disposable)
+        {
 
-            if (amount <= 0) {
+            if (amount <= 0)
+            {
                 UnityEngine.Debug.Log("ルーンの使用回数が0以下で初期化されました。処理を中止します。");
             }
-
             m_count = amount;
+
+            if (disposable == null)
+            {
+                UnityEngine.Debug.Log("Disposeする対象が見つかりません");
+                return;
+            }
+            m_disposable = disposable;
         }
 
         public int GetAmount() {
@@ -52,6 +64,7 @@ namespace Project.Script.Rune.Manage.Modules {
 
             if (_count <= 0) {
                 RuneDisposeEvent?.Invoke();
+                m_disposable.Dispose();
                 return;
             }
 
