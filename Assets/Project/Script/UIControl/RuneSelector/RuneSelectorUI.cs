@@ -14,16 +14,14 @@ namespace Project.Script.UIControl.RuneSelector {
         [OdinSerialize, LabelText("セレクターのインスタンス")]
         protected ISelectableRuneList m_list;
         
-        [OdinSerialize, LabelText("ルーンスプライト")]
-        protected List<Image> m_sprites;
-        
+        [OdinSerialize, LabelText("要素ボックスのprefab")]
+        protected GameObject m_elementPrefab;
+
+        protected GameObject m_character;
+
         [Inject]
-        public void Construct(GameObject character) {
-            m_list = character
-                .GetComponent<RuneManagerMonoBehaviour>()
-                .Selector;
+        public void Construct() {
+            
         }
-        
-        
     }
 }
