@@ -8,6 +8,5 @@ namespace Project.Script.UIControl.RuneSelector {
             
         }
         
-        
     }
 }

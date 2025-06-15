@@ -20,8 +20,10 @@ namespace Project.Script.UIControl.RuneSelector {
         protected GameObject m_character;
 
         [Inject]
-        public void Construct() {
-            
+        public void Construct(GameObject player) {
+            m_list = player.GetComponent<ISelectableRuneList>();
         }
+        
+        
     }
 }
