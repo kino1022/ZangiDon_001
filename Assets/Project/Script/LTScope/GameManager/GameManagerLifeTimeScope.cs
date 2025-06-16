@@ -1,10 +1,12 @@
 using VContainer;
 using VContainer.Unity;
 
-namespace Project.Script.LifeTimeScope.Character {
-    public class CharacterLifeTimeScope : LifetimeScope {
+namespace Project.Script.LTScope.GameManager {
+    public class GameManagerLifeTimeScope : LifetimeScope {
+        
         protected override void Configure(IContainerBuilder builder) {
             
         }
+        
     }
 }
