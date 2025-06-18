@@ -2,16 +2,11 @@ using System;
 using System.Collections.Generic;
 using Project.Script.Rune.Interface;
 using R3;
-using Sirenix.OdinInspector;
-using Sirenix.Serialization;
-using UnityEngine;
-using UnityEngine.InputSystem.Utilities;
-using UnityEngine.Rendering;
 using Observable = R3.Observable;
 
 namespace Project.Script.Rune {
     [Serializable]
-    public class RuneInstance : IDisposable 
+    public class RuneInstance : IDisposable , IRune
     {
 
         protected MainEffectInstance m_main;
