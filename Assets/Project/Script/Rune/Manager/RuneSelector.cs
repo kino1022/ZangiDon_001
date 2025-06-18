@@ -1,25 +1,41 @@
 using System;
 using Project.Script.Interface;
+using Project.Script.Rune.Interface;
 using Project.Script.Rune.Manager.Interface;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
+using UnityEngine;
 
 namespace Project.Script.Rune.Manager {
-    public class RuneSelector : ARuneManager , ISelectableRuneList {
+    /// <summary>
+    /// ルーン選択欄のコンポーネント
+    /// </summary>
+    public class RuneSelector : ARuneManager, IRuneSelector {
         
+        [SerializeField, OdinSerialize, LabelText("ルーン供給元")]
         protected IRuneSupplier m_supplier;
+        
+        public void RuneSelected(int index) {
 
-        public Action<RuneInstance> SelectRuneEvent { get; set; }
-
-        public RuneSelector(IRuneSupplier supplier,int amount, IReceiver<RuneInstance> receiver, ISender<RuneInstance> sender) 
-            : base(amount, receiver, sender) {
-            m_supplier = supplier;
-
-            for (int i = 0; i < m_amount; i++) {
-                m_rune.Add(supplier.SupplyRune());
+            if (index < 0 || index > m_amount - 1) {
+                Debug.LogError($"選択されたルーンのIndexが不正です、ルーン選択のコードを見直してください");
+                return;
             }
+            
+            var rune = List[index];
+
+            if (rune == null) {
+                Debug.LogError("ルーンの入っていない選択欄が選択されました");
+                return;
+            } 
+            
+            m_sender.Send(rune);
         }
 
-        public void SelectRune(int index) {
-            throw new System.NotImplementedException();
+        protected override void OnReceiveRune(IRune rune) {
+            Debug.Log("ルーンを受信したのでリストに追加します");
+            Add(rune);
         }
+        
     }
 }
