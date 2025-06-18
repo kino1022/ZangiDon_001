@@ -1,4 +1,5 @@
-using UnityCommonModule.Correction.Instant;
+
+using UnityCommonModule.Correction.Interface;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -23,13 +24,13 @@ namespace Project.Script.Asset.Status.Health.Interface {
         /// 回復力に対して補正を課すメソッド
         /// </summary>
         /// <param name="correction"></param>
-        public void AddHealCorrection (InstantCorrection correction);
+        public void AddCorrection (ICorrection correction);
         
         
         /// <summary>
         /// 回復力にかかっている特定の補正を全て削除するメソッド
         /// </summary>
         /// <param name="target"></param>
-        public void RemoveHealCorrection (InstantCorrection target);
+        public void RemoveCorrection (ICorrection target);
     }
 }

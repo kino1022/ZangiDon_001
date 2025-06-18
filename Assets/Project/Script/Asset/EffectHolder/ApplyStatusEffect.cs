@@ -3,7 +3,7 @@ using Project.Script.Rune.Effect.Interface;
 using Project.Script.StatusEffect;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
-using UnityCommonModule.Correction.Instant;
+using UnityCommonModule.Correction;
 using UnityEngine;
 
 namespace Project.Script.Asset.EffectHolder {

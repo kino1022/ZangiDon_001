@@ -23,7 +23,7 @@ namespace Project.Script.Asset.EffectHolder {
                 return;
             }
 
-            health.Healable.Heal(m_value);
+            health.Heal.Heal(m_value);
         }
     }
 }

@@ -1,4 +1,5 @@
-using UnityCommonModule.Correction.Instant;
+
+using UnityCommonModule.Correction.Interface;
 
 namespace Project.Script.Asset.Status.Health.Interface {
     /// <summary>
@@ -10,9 +11,9 @@ namespace Project.Script.Asset.Status.Health.Interface {
         
         public void InstantDamage(int amount);
         
-        public void AddDamageCorrection(InstantCorrection correction);
+        public void AddCorrection(ICorrection correction);
         
-        public void RemoveDamageCorrection(InstantCorrection target);
+        public void RemoveCorrection(ICorrection target);
 
     }
 }
