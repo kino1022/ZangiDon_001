@@ -17,11 +17,14 @@ namespace Project.Script.Asset.Status.Health {
         protected IHealth m_health;
         
         protected ICorrector m_correction = new CorrectionManager();
+        
+        protected GameObject m_chracter;
 
         public UnityEvent<GameObject, int> HealUEvent { get; set; }
 
-        public HealModule(IHealth health) {
+        public HealModule(IHealth health,GameObject holder) {
             m_health = health;
+            m_chracter = holder; 
         }
 
         public void Heal(int amount) {
@@ -30,10 +33,12 @@ namespace Project.Script.Asset.Status.Health {
             value = (int) m_correction.Execute(amount);
             
             m_health.Increase(value);
+            HealUEvent?.Invoke(m_chracter, value);
         }
 
         public void InstantHeal(int amount) {
             m_health.Increase(amount);
+            HealUEvent?.Invoke(m_chracter, amount);
         }
 
         public void AddCorrection(ICorrection correction) {
