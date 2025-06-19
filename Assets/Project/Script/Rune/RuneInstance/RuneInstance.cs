@@ -2,18 +2,23 @@ using System;
 using System.Collections.Generic;
 using Project.Script.Rune.Interface;
 using R3;
+using UnityEngine;
 using Observable = R3.Observable;
 
 namespace Project.Script.Rune {
     [Serializable]
     public class RuneInstance : IDisposable , IRune
     {
-
+        
+        protected Sprite m_runeSprite;
+        
         protected MainEffectInstance m_main;
 
         protected SubEffectInstance m_sub;
         
         protected List<ReactiveProperty<bool>> activeObservers = new List<ReactiveProperty<bool>>();
+        
+        public Sprite RuneSprite => m_runeSprite;
 
         public ICastable Main => m_main;
 

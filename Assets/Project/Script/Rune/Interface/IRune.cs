@@ -1,5 +1,9 @@
+using UnityEngine;
+
 namespace Project.Script.Rune.Interface {
     public interface IRune {
+        
+        public Sprite RuneSprite { get; }
 
         public bool GetIsActive();
         
