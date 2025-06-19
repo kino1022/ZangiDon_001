@@ -4,6 +4,7 @@ using Project.Script.Rune.Manager.Interface;
 using Project.Script.UIControl.PlayerHUD.RuneSelector.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Project.Script.UIControl.PlayerHUD.RuneSelector {
@@ -21,6 +22,9 @@ namespace Project.Script.UIControl.PlayerHUD.RuneSelector {
         
         [OdinSerialize, LabelText("サブ効果の背景")]
         protected Image m_subBackGround;
+
+        [OdinSerialize, LabelText("デフォルトのルーンスプライト")]
+        protected Sprite m_defaultSprite;
         
 
         public void Set(IRune rune) {
@@ -37,8 +41,13 @@ namespace Project.Script.UIControl.PlayerHUD.RuneSelector {
         /// 現在保持しているルーンの状態に合わせて描画を更新する
         /// </summary>
         protected void UpdateSprite() {
-            m_runeSprite.sprite = m_rune.RuneSprite;
-            m_runeSprite.SetNativeSize();
+
+            if (m_rune == null) {
+                m_runeSprite.sprite = m_defaultSprite;
+            }
+            else {
+                m_runeSprite.sprite = m_rune.RuneSprite;
+            }
         }
     }
 }
