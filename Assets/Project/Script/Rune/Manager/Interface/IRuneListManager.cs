@@ -10,7 +10,6 @@ namespace Project.Script.Rune.Manager.Interface {
         public bool IsFull { get; }
         public IReadOnlyObservableList<IRune> List { get; }
         
-        public IReceiver<IRune> Receiver { get; }
 
         public void Add(IRune rune);
         

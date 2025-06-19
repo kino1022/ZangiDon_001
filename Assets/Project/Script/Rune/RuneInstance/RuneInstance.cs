@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using Project.Script.Rune.Interface;
 using R3;
+using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using UnityEngine;
 using Observable = R3.Observable;
 
@@ -9,11 +11,13 @@ namespace Project.Script.Rune {
     [Serializable]
     public class RuneInstance : IDisposable , IRune
     {
-        
+        [OdinSerialize, LabelText("スプライト")]
         protected Sprite m_runeSprite;
         
+        [OdinSerialize, LabelText("メイン効果")]
         protected MainEffectInstance m_main;
-
+        
+        [OdinSerialize, LabelText("サブ効果")]
         protected SubEffectInstance m_sub;
         
         protected List<ReactiveProperty<bool>> activeObservers = new List<ReactiveProperty<bool>>();
@@ -26,8 +30,8 @@ namespace Project.Script.Rune {
 
         protected bool m_isActive;
 
-        public RuneInstance(RuneData data)
-        {
+        public RuneInstance(RuneData data) {
+            m_runeSprite = data.runeSprite;
             m_main = new MainEffectInstance(data);
             m_sub = new SubEffectInstance(data);
             ObserveActiveInstance();

@@ -11,7 +11,8 @@ namespace Project.Script.UIControl.PlayerHUD.RuneSelector {
         
         [OdinSerialize,LabelText("プレイヤーを取得するクラス")]
         protected ITargetHolder<GameObject> m_player;
-
+        
+        [OdinSerialize]
         protected List<ISelectorSlot> m_slots = new List<ISelectorSlot>();
         
 

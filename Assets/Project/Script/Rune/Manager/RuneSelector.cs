@@ -17,7 +17,7 @@ namespace Project.Script.Rune.Manager {
         
         public void RuneSelected(int index) {
 
-            if (index < 0 || index > m_amount - 1) {
+            if (index < 0 || index > m_amount) {
                 Debug.LogError($"選択されたルーンのIndexが不正です、ルーン選択のコードを見直してください");
                 return;
             }
@@ -32,10 +32,15 @@ namespace Project.Script.Rune.Manager {
             m_sender.Send(rune);
         }
 
-        protected override void OnReceiveRune(IRune rune) {
-            Debug.Log("ルーンを受信したのでリストに追加します");
-            Add(rune);
+        [Button("ルーン補充")]
+        protected void GetSupply() {
+            //ルーンが満タンの際の終了処理
+            if (m_isFull) {
+                Debug.LogError($"ルーンが満タンな状態でルーンが補充されそうになりました");
+                return;
+            }
+            
+            Add(m_supplier.Supply());
         }
-        
     }
 }

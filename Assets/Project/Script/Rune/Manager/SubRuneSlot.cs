@@ -6,18 +6,7 @@ using UnityEngine;
 
 namespace Project.Script.Rune.Manager {
     public class SubRuneSlot : ARuneManager, ISubRuneSlot{
-        protected override void OnReceiveRune(IRune rune) {
-            if (m_isFull) {
-                Debug.LogError("");
-                return;
-            }
-            
-            Add(rune);
 
-            if (rune.Sub.GetTiming() == ActivateTiming.OnSelect) {
-                rune.Sub.Activate(this.gameObject);
-            }
-        }
 
         public void OnPreCast(GameObject caster) {
             foreach (var rune in m_runes) {

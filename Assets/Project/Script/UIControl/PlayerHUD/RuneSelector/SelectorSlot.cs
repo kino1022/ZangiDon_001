@@ -11,7 +11,6 @@ namespace Project.Script.UIControl.PlayerHUD.RuneSelector {
     public class SelectorSlot : SerializedMonoBehaviour, ISelectorSlot {
         
         protected IRune m_rune;
-        
         public IRune Rune => m_rune;
         
         [OdinSerialize,LabelText("ルーンのスプライト")]
@@ -39,6 +38,7 @@ namespace Project.Script.UIControl.PlayerHUD.RuneSelector {
         /// </summary>
         protected void UpdateSprite() {
             m_runeSprite.sprite = m_rune.RuneSprite;
+            m_runeSprite.SetNativeSize();
         }
     }
 }

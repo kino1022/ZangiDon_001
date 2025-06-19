@@ -15,21 +15,34 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: d53208df180a04c50876be77af4cd565, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: m_cast
-      Entry: 6
-      Data: 
-    - Name: m_effect
+    - Name: runeName
+      Entry: 1
+      Data: Fefu
+    - Name: runeSprite
+      Entry: 10
+      Data: 0
+    - Name: Main
       Entry: 7
-      Data: 0|Project.Script.Rune.SupportEffect, Assembly-CSharp
+      Data: 0|Project.Script.Asset.Castable.DummyCastable, Assembly-CSharp
     - Name: amount
       Entry: 3
-      Data: 0
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Sub
+      Entry: 7
+      Data: 1|Project.Script.Rune.SubEffect, Assembly-CSharp
+    - Name: amount
+      Entry: 3
+      Data: 10
     - Name: correction
       Entry: 4
       Data: 0
@@ -44,42 +57,36 @@ MonoBehaviour:
       Data: 0
     - Name: timing
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: effects
       Entry: 7
-      Data: 1|System.Collections.Generic.List`1[[Project.Script.Rune.Effect.EffectInstance,
+      Data: 2|System.Collections.Generic.List`1[[Project.Script.Rune.Effect.EffectInstance,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 2|Project.Script.Rune.Effect.EffectInstance, Assembly-CSharp
+      Data: 3|Project.Script.Rune.Effect.EffectInstance, Assembly-CSharp
     - Name: m_selector
       Entry: 7
-      Data: 3|Project.Script.Asset.TargetSelector.SelfSelector, Assembly-CSharp
+      Data: 4|Project.Script.Asset.TargetSelector.SelfSelector, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: m_effects
       Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[Project.Script.Rune.Effect.Interface.IEffectHolder,
+      Data: 5|System.Collections.Generic.List`1[[Project.Script.Rune.Effect.Interface.IEffectHolder,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 5|Project.Script.Asset.EffectHolder.ApplyStatusEffect, Assembly-CSharp
-    - Name: m_effect
-      Entry: 7
-      Data: 6|Project.Script.Asset.StatusEffect.HealCorrect, Assembly-CSharp
-    - Name: m_correction
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 6|Project.Script.Asset.EffectHolder.HealHealth, Assembly-CSharp
+    - Name: m_value
+      Entry: 3
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -101,26 +108,36 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  RuneName: Fehu
-  RuneSprite: {fileID: 0}
-  m_effect:
-    amount: 0
-    correction: 0
-    bulletSpeed: 0
-    verticalHoming: 0
-    horizontalHoming: 0
-    timing: 1
-    effects:
-    - m_selector:
-        rid: 8015149724854911165
-      m_effects:
-      - rid: 8015149724854911166
+  runeName: Fefu
+  runeSprite: {fileID: 21300000, guid: d53208df180a04c50876be77af4cd565, type: 3}
+  Main:
+    rid: 8015149928322957383
+  Sub:
+    rid: 8015149928322957384
   references:
     version: 2
     RefIds:
-    - rid: 8015149724854911165
+    - rid: 8015149928322957383
+      type: {class: DummyCastable, ns: Project.Script.Asset.Castable, asm: Assembly-CSharp}
+      data:
+        amount: 10
+    - rid: 8015149928322957384
+      type: {class: SubEffect, ns: Project.Script.Rune, asm: Assembly-CSharp}
+      data:
+        amount: 10
+        correction: 0
+        bulletSpeed: 0
+        verticalHoming: 0
+        horizontalHoming: 0
+        timing: 0
+        effects:
+        - m_selector:
+            rid: 8015149928322957385
+          m_effects:
+          - rid: 8015149928322957386
+    - rid: 8015149928322957385
       type: {class: SelfSelector, ns: Project.Script.Asset.TargetSelector, asm: Assembly-CSharp}
       data: 
-    - rid: 8015149724854911166
-      type: {class: ApplyStatusEffect, ns: Project.Script.Asset.EffectHolder, asm: Assembly-CSharp}
+    - rid: 8015149928322957386
+      type: {class: HealHealth, ns: Project.Script.Asset.EffectHolder, asm: Assembly-CSharp}
       data: 
