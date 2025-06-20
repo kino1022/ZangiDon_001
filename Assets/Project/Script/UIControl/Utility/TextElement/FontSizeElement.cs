@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Project.Script.UIControl.Utility.TextElement {
+namespace Teiwas.Script.UIControl.Utility.TextElement {
     [Serializable]
     public class FontSizeElement {
         

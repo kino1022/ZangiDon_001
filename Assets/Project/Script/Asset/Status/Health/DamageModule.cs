@@ -1,7 +1,7 @@
 using System;
-using Project.Script.Asset.Status.Health.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Asset.Status.Health.Interface;
 using UnityCommonModule.Correction;
 using UnityCommonModule.Correction.Interface;
 using UnityCommonModule.Status;
@@ -9,7 +9,7 @@ using UnityCommonModule.Status.Module.Calculator;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Project.Script.Asset.Status.Health {
+namespace Teiwas.Script.Asset.Status.Health {
     [Serializable]
     public class DamageModule : IDamageable {
         

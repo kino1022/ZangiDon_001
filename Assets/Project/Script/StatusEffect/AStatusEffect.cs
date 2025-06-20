@@ -1,10 +1,10 @@
 using System;
-using Project.Script.StatusEffect.Data;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.StatusEffect.Data;
 using UnityEngine;
 
-namespace Project.Script.StatusEffect {
+namespace Teiwas.Script.StatusEffect {
     [Serializable]
     public abstract class AStatusEffect {
         [OdinSerialize, LabelText("エフェクトの情報")]

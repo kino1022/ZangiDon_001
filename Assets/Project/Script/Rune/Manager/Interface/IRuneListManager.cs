@@ -1,8 +1,8 @@
 using ObservableCollections;
-using Project.Script.Interface;
-using Project.Script.Rune.Interface;
+using Teiwas.Script.Interface;
+using Teiwas.Script.Rune.Interface;
 
-namespace Project.Script.Rune.Manager.Interface {
+namespace Teiwas.Script.Rune.Manager.Interface {
     public interface IRuneListManager {
         /// <summary>
         /// ルーンのリストが満タンかどうか

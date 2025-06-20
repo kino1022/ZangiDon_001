@@ -1,13 +1,13 @@
-using Project.Script.Asset.Status.Health.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Asset.Status.Health.Interface;
 using UnityCommonModule.Status;
 using UnityCommonModule.Status.Asset;
 using UnityCommonModule.Status.Module.Calculator;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Project.Script.Asset.Status.Health {
+namespace Teiwas.Script.Asset.Status.Health {
     public class Health : AStatus<int,IntCalculator>, IHealth {
         
         [OdinSerialize, SerializeField, LabelText("最大体力管理コンポーネント")]

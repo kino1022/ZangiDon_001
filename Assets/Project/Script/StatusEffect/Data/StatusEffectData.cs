@@ -1,9 +1,9 @@
-using Project.Script.StatusEffect.Definition;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.StatusEffect.Definition;
 using UnityEngine.UI;
 
-namespace Project.Script.StatusEffect.Data {
+namespace Teiwas.Script.StatusEffect.Data {
     public class StatusEffectData : SerializedScriptableObject {
         
         [OdinSerialize, LabelText("アイコン")] public Image icon;

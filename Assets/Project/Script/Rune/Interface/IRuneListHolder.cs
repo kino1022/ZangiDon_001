@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Project.Script.Rune.Interface {
+namespace Teiwas.Script.Rune.Interface {
     public interface IRuneListHolder {
         
         public RuneInstance GetRune (int index);

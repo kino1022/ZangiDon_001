@@ -1,13 +1,13 @@
 using System;
-using Project.Script.Rune.Interface;
-using Project.Script.Rune.Manage.Modules;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Rune.Interface;
+using Teiwas.Script.Rune.Manage.Modules;
 using UnityEngine;
 
-namespace Project.Script.Rune {
+namespace Teiwas.Script.Rune {
     [Serializable]
-    public class MainEffectInstance : ICastable, IDisposable
+    public class MainEffectInstance : IMainEffect, IDisposable
     {
 
         protected RuneCastCountModule m_countModule;

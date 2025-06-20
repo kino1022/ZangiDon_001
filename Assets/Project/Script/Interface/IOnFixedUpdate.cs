@@ -1,4 +1,4 @@
-namespace Project.Script.Interface {
+namespace Teiwas.Script.Interface {
     /// <summary>
     /// FixedUpdate時に処理を行うクラスに対して約束するインターフェース
     /// </summary>

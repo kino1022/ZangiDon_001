@@ -1,12 +1,12 @@
 using System;
-using Project.Script.Asset.Status.Health;
-using Project.Script.StatusEffect;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Asset.Status.Health;
+using Teiwas.Script.StatusEffect;
 using UnityCommonModule.Correction.Interface;
 using UnityEngine;
 
-namespace Project.Script.Asset.StatusEffect {
+namespace Teiwas.Script.Asset.StatusEffect {
     [Serializable,LabelText("回復量補正")]
     public class HealCorrect : AStatusEffect {
 

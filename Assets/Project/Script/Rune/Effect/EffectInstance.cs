@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using Project.Script.Rune.Effect.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Rune.Effect.Interface;
 using UnityEngine;
 
-namespace Project.Script.Rune.Effect {
+namespace Teiwas.Script.Rune.Effect {
     /// <summary>
     /// 対象と効果を一まとまりにした効果のアセット
     /// </summary>

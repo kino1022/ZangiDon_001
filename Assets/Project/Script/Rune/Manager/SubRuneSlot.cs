@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using Project.Script.Rune.Definition;
-using Project.Script.Rune.Interface;
-using Project.Script.Rune.Manager.Interface;
+using Teiwas.Script.Rune.Definition;
+using Teiwas.Script.Rune.Interface;
+using Teiwas.Script.Rune.Manager.Interface;
 using UnityEngine;
 
-namespace Project.Script.Rune.Manager {
+namespace Teiwas.Script.Rune.Manager {
     public class SubRuneSlot : ARuneManager, ISubRuneSlot{
 
 
@@ -16,8 +16,8 @@ namespace Project.Script.Rune.Manager {
             }
         }
 
-        public List<IActivatable> GetEffectOnShot() {
-            var result = new List<IActivatable>();
+        public List<ISubEffect> GetEffectOnShot() {
+            var result = new List<ISubEffect>();
             
             foreach (var rune in m_runes) {
                 if (rune.Sub.GetTiming() == ActivateTiming.OnHit) {

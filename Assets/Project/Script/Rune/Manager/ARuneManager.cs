@@ -2,16 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using ObservableCollections;
-using Project.Script.Interface;
-using Project.Script.Rune.Interface;
-using Project.Script.Rune.Manager.Interface;
 using R3;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Interface;
+using Teiwas.Script.Rune.Interface;
+using Teiwas.Script.Rune.Manager.Interface;
 using UnityEngine;
 using VContainer;
 
-namespace Project.Script.Rune.Manager {
+namespace Teiwas.Script.Rune.Manager {
     /// <summary>
     /// ルーンを管理するクラスの基底クラス
     /// </summary>

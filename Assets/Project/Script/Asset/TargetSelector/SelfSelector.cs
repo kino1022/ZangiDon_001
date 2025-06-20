@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using Project.Script.Rune.Effect.Interface;
 using Sirenix.OdinInspector;
+using Teiwas.Script.Rune.Effect.Interface;
 using UnityEngine;
 
-namespace Project.Script.Asset.TargetSelector {
+namespace Teiwas.Script.Asset.TargetSelector {
     /// <summary>
     /// 自分を対象とするセレクター
     /// </summary>

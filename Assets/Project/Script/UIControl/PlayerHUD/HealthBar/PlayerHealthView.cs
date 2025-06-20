@@ -1,4 +1,4 @@
-namespace Project.Script.UIControl.PlayerHUD.HealthBar {
+namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
     public class PlayerHealthView {
         
         public void OnCurrentValueChanged(int newValue) {

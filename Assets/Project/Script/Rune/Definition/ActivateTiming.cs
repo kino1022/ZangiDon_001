@@ -1,4 +1,4 @@
-namespace Project.Script.Rune.Definition {
+namespace Teiwas.Script.Rune.Definition {
     public enum ActivateTiming {
         /// <summary>
         /// ルーン選択時に発動

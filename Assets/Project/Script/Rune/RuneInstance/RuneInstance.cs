@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
-using Project.Script.Rune.Interface;
 using R3;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Rune.Interface;
 using UnityEngine;
 using Observable = R3.Observable;
 
-namespace Project.Script.Rune {
+namespace Teiwas.Script.Rune {
     [Serializable]
     public class RuneInstance : IDisposable , IRune
     {
@@ -24,9 +24,9 @@ namespace Project.Script.Rune {
         
         public Sprite RuneSprite => m_runeSprite;
 
-        public ICastable Main => m_main;
+        public IMainEffect Main => m_main;
 
-        public IActivatable Sub => m_sub;
+        public ISubEffect Sub => m_sub;
 
         protected bool m_isActive;
 

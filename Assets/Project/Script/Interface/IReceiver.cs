@@ -1,6 +1,6 @@
 using System;
 
-namespace Project.Script.Interface {
+namespace Teiwas.Script.Interface {
     /// <summary>
     /// データを受信するクラスに対して約束するインターフェース
     /// </summary>

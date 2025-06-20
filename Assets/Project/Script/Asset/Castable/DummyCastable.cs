@@ -1,8 +1,8 @@
-using Project.Script.Rune;
-using Project.Script.Rune.Interface;
+using Teiwas.Script.Rune.Interface;
+using Teiwas.Script.Rune;
 using UnityEngine;
 
-namespace Project.Script.Asset.Castable {
+namespace Teiwas.Script.Asset.Castable {
     public class DummyCastable : AMainEffect {
         public override int GetAmount() {
             return amount;

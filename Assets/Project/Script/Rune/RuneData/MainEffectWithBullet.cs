@@ -1,10 +1,10 @@
 using System;
-using Project.Script.Rune.Interface;
+using Teiwas.Script.Rune.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
-namespace Project.Script.Rune {
+namespace Teiwas.Script.Rune {
     /// <summary>
     /// 弾の射出を伴う魔術に使用するICastable
     /// </summary>

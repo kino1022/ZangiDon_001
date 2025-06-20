@@ -1,4 +1,4 @@
-namespace Project.Script.Interface {
+namespace Teiwas.Script.Interface {
     /// <summary>
     /// データを送信するクラスに対して約束するインターフェース
     /// </summary>

@@ -1,11 +1,11 @@
-using Project.Script.UIControl.Utility;
 using R3;
 using Sirenix.OdinInspector;
+using Teiwas.Script.UIControl.Utility;
 using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
 
-namespace Project.Script.UIControl.StatusEffectUI {
+namespace Teiwas.Script.UIControl.StatusEffectUI {
     public class StatusEffectUI : SerializedMonoBehaviour {
         
         [SerializeField, LabelText("表示名")]

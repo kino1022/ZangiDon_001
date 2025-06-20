@@ -1,10 +1,10 @@
-using Project.Script.Rune.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Rune.Interface;
 using UnityEngine;
 
-namespace Project.Script.Rune {
-    public abstract class AMainEffect : ICastable {
+namespace Teiwas.Script.Rune {
+    public abstract class AMainEffect : IMainEffect {
 
         [OdinSerialize, LabelText("使用回数"), ProgressBar(0, 20)] 
         public int amount;

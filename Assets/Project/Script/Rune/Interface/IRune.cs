@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Project.Script.Rune.Interface {
+namespace Teiwas.Script.Rune.Interface {
     public interface IRune {
         
         public Sprite RuneSprite { get; }
@@ -10,12 +10,12 @@ namespace Project.Script.Rune.Interface {
         /// <summary>
         /// メインの効果
         /// </summary>
-        public ICastable Main { get; }
+        public IMainEffect Main { get; }
         
         /// <summary>
         /// サブの効果
         /// </summary>
-        public IActivatable Sub { get; }
+        public ISubEffect Sub { get; }
         
         
     }

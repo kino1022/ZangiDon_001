@@ -1,4 +1,4 @@
-namespace Project.Script.Interface {
+namespace Teiwas.Script.Interface {
     ///　Start時の処理を持つ非Monobehaviourクラスに対して約束するインターフェース
     public interface IOnStart {
         public void OnStart();

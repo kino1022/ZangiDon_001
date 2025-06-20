@@ -1,7 +1,7 @@
 
 using UnityCommonModule.Correction.Interface;
 
-namespace Project.Script.Asset.Status.Health.Interface {
+namespace Teiwas.Script.Asset.Status.Health.Interface {
     /// <summary>
     /// ダメージを受けれるクラスに対して約束するインターフェース
     /// </summary>

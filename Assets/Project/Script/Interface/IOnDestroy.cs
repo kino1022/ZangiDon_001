@@ -1,4 +1,4 @@
-namespace Project.Script.Interface {
+namespace Teiwas.Script.Interface {
     /// <summary>
     /// Destroy時に呼び出される処理を持つ非MonoBehaviourクラスに約束するインターフェース
     /// </summary>

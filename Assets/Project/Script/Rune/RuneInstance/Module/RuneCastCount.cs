@@ -2,11 +2,11 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using System;
 using System.Diagnostics;
-using Project.Script.Rune.Interface;
+using Teiwas.Script.Rune.Interface;
 using UnityEngine;
 using Unity.VisualScripting;
 
-namespace Project.Script.Rune.Manage.Modules {
+namespace Teiwas.Script.Rune.Manage.Modules {
     /// <summary>
     /// ルーンが使用された回数を管理するクラス
     /// </summary>
