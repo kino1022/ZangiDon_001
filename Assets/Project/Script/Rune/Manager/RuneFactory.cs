@@ -24,8 +24,9 @@ namespace Teiwas.Script.Rune.Manager {
             }
             
             foreach (var data in m_datas) {
-                m_instances.Add(new RuneInstance(data));
+                InstanceRuneInstance(data);
             }
+            
         }
         
         
@@ -36,7 +37,10 @@ namespace Teiwas.Script.Rune.Manager {
             
             return rune;
         }
-        
-        
+
+        [Button("インスタンス化")]
+        protected virtual void InstanceRuneInstance(RuneData data) {
+            m_instances.Add(new RuneInstance(data));
+        }
     }
 }

@@ -12,7 +12,6 @@ namespace Teiwas.Script.Rune {
 
         protected RuneCastCountModule m_countModule;
 
-
         protected Action<GameObject> CastAction;
 
         public  bool m_isActive = true;

@@ -10,5 +10,6 @@ namespace Teiwas.Script.Rune.Manager {
                 rune.Main.OnCast(caster);
             }
         }
+        
     }
 }

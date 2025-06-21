@@ -35,6 +35,7 @@ namespace Project.Script.UIControl.PlayerHUD.Rune.RuneUI {
         public void Remove() {
             m_effect = null;
             m_text.text = "Empty";
+            m_disposable.Dispose();
         }
 
         protected void RegisterObserveAmount() {

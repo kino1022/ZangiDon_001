@@ -21,31 +21,76 @@ namespace Project.Script.UIControl.PlayerHUD.Rune.RuneUI {
         protected RunePosition m_position;
         
         public RunePosition Position => m_position;
+
+        private void Awake() {
+            ViewUpdate();
+        }
         
         public void Set(IRune rune) {
             m_rune = rune;
             
-            UpdateView();
+            ViewUpdate();
         }
 
         public void Remove() {
             m_rune = null;
-        }
-
-        protected void UpdateView() {
-            m_sprite.sprite = m_rune.RuneSprite;
-            m_sprite.SetNativeSize();
             
+            ViewUpdate();
+        }
+        
+        /// <summary>
+        /// ルーンアイコン全体における描画の更新を行う
+        /// </summary>
+        protected void ViewUpdate() {
+            SpriteUpdate();
+            AmountUpdate();
+        }
+        
+        /// <summary>
+        /// スプライト要素の更新を行う
+        /// </summary>
+        protected virtual void SpriteUpdate() {
+            m_sprite.enabled = true;
+            
+            //ルーンが何もない時の処理
+            if (m_rune == null) {
+                m_sprite.enabled = false;
+                return;
+            }
+            else {
+                
+                //スプライト定義がない際の例外処理
+                if (m_rune.RuneSprite == null) {
+                    Debug.Log($"{m_rune.GetType().Name}にルーンのスプライトが定義されていませんでした");
+                    return;
+                }
+                
+                m_sprite.sprite = m_rune.RuneSprite;
+                m_sprite.SetNativeSize();
+            }
+        }
+        
+        /// <summary>
+        /// 回数表示要素の更新を行う
+        /// </summary>
+        protected virtual void AmountUpdate() {
+            
+            if (m_rune == null) {
+                m_amountUI.Remove();
+                return;
+            }
+
             if (m_position == RunePosition.Main) {
                 m_amountUI.Set(m_rune.Main);
+                return;
             }
             else if (m_position == RunePosition.Sub) {
                 m_amountUI.Set(m_rune.Sub);
+                return;
             }
             else {
                 m_amountUI.Remove();
             }
-            
         }
     }
 }

@@ -1,10 +1,12 @@
 using System;
 using System.Linq;
 using ObservableCollections;
+using Project.Script.UIControl.PlayerHUD.Rune;
 using R3;
 using Teiwas.Script.Rune.Interface;
 using Teiwas.Script.Rune.Manager.Interface;
 using Teiwas.Script.UIControl.PlayerHUD.RuneSelector.Interface;
+using Teiwas.Script.UIControl.Utility;
 using UnityEngine;
 
 namespace Teiwas.Script.UIControl.PlayerHUD.RuneSelector {
@@ -12,93 +14,20 @@ namespace Teiwas.Script.UIControl.PlayerHUD.RuneSelector {
     /// IRuneSelectorとIRuneSelectorViewの仲介をするクラス
     /// </summary>
     [Serializable]
-    public class RuneSelectorPresenter {
-
-        protected IRuneSelector m_model;
+    public class RuneSelectorPresenter : ARuneListPresenter<IRuneSelector,IRuneSelectorView> {
         
-        protected IRuneSelectorView m_view;
-
-        public RuneSelectorPresenter(GameObject character, IRuneSelectorView view) {
-            m_model = character.GetComponent<IRuneSelector>();
+        
+        protected override void InitializeView() {
 
             if (m_model == null) {
-                Debug.LogError("取得されたGameObjectにRuneSelectorのインスタンスが存在しませんでした");
+                Debug.Log("UIに反映させる対象が見つかりません処理を中断します");
                 return;
             }
-            
-            m_view = view;
 
-            InitializeView();
-            
-            RegisterObserver();
-        }
-
-        protected virtual void InitializeView() {
-            Debug.Log("RuneSelectorViewの初期化を開始します");
-            
-            var list = m_model.List.ToList();
-
-            for (int i = 0; i < list.Count; ++i) {
-                if (list[i] == null) {
-                    m_view.Remove(i);
-                }
-                m_view.Set(i, list[i]);
+            for (int i = 0; i < m_model.List.Count; i++) {
+                m_view.Set(i, m_model.List[i]);
             }
-        }
-        
-        
-        /// <summary>
-        /// IRuneSelector.Listの監視を開始するメソッド
-        /// </summary>
-        protected void RegisterObserver() {
             
-            //要素の追加の監視
-            m_model.List
-                .ObserveAdd()
-                .Subscribe(x => {
-                    Debug.Log("RuneSelectorでの要素追加を検知しました");
-                    OnModelAdd(x);
-                });
-            
-            //要素の除外の監視
-            m_model.List
-                .ObserveRemove()
-                .Subscribe(x => {
-                    Debug.Log("RuneSelectorでの要素除外を検知しました");
-                    OnModelRemove(x);
-                });
-            
-            //要素の移動の検知
-            m_model.List
-                .ObserveMove()
-                .Subscribe(x => {
-                    Debug.Log("RuneSelectorでの要素の移動を検知しました");
-                    OnModelMove(x);
-                });
-            
-            //要素のクリアの検知
-            m_model.List
-                .ObserveClear()
-                .Subscribe(x => {
-                    Debug.Log("RuneSelectorでのリストのクリアを検知しました");
-                    OnModelClear();
-                });
-        }
-
-        protected void OnModelAdd(CollectionAddEvent<IRune> x) {
-            m_view.Set(x.Index, x.Value);
-        }
-
-        protected void OnModelRemove(CollectionRemoveEvent<IRune> x) {
-            m_view.Remove(x.Index);
-        }
-
-        protected void OnModelMove(CollectionMoveEvent<IRune> x) {
-            InitializeView();
-        }
-
-        protected void OnModelClear() {
-            InitializeView();
         }
     }
 }

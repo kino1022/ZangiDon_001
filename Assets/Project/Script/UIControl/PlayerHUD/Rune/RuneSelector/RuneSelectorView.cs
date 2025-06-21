@@ -22,9 +22,19 @@ namespace Teiwas.Script.UIControl.PlayerHUD.RuneSelector {
             if (m_player == null) {
                 Debug.Log("インスペクター上でITargetHolder<GameObject>がアタッチされていないため自動取得します");
                 m_player = GetComponent<ITargetHolder<GameObject>>();
+
+                if (m_player == null) {
+                    Debug.Log("ITargetHolderが取得できなかったため、ペアレント全体から取得します");
+                    m_player = GetComponentInParent<ITargetHolder<GameObject>>();
+
+                    if (m_player == null) {
+                        Debug.Log("ITargetHolderがペアレント上にもなかったため処理を中断します");
+                        return;
+                    }
+                    
+                }
             }
             
-            new RuneSelectorPresenter(m_player.GetTarget(),this);
         }
 
         public void Set(int index, IRune rune) {
@@ -34,7 +44,5 @@ namespace Teiwas.Script.UIControl.PlayerHUD.RuneSelector {
         public void Remove(int index) {
             m_slots[index].Remove();
         }
-        
-        
     }
 }

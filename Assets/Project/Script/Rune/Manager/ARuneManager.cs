@@ -35,10 +35,22 @@ namespace Teiwas.Script.Rune.Manager {
         public bool IsFull => m_isFull;
 
         private void Awake() { Initialize(); }
-
+        
+        [Button("ルーン追加")]
         public void Add(IRune rune) { m_runes.Add(rune); }
-
+        
+        [Button("ルーン除外")]
         public void Remove(IRune rune) { m_runes.Remove(rune); }
+
+        [Button("ルーン除外(index)")]
+        public void Remove(int index) {
+
+            if (index < 0 && index > m_runes.Count) {
+                return;
+            }
+            
+            m_runes.RemoveAt(index);
+        }
 
         protected void Initialize() { OnInitialize(); }
 

@@ -15,6 +15,7 @@ namespace Teiwas.Script.Rune.Manager {
         [SerializeField, OdinSerialize, LabelText("ルーン供給元")]
         protected IRuneSupplier m_supplier;
         
+        [Button("ルーン選択")]
         public void RuneSelected(int index) {
 
             if (index < 0 || index > m_amount) {
@@ -30,6 +31,7 @@ namespace Teiwas.Script.Rune.Manager {
             } 
             
             m_sender.Send(rune);
+            Remove(index);
         }
 
         [Button("ルーン補充")]
