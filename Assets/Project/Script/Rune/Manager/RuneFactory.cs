@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using ObservableCollections;
-using Project.Script.Rune.Interface;
-using Project.Script.Rune.Manager.Interface;
+using Teiwas.Script.Rune.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Rune.Manager.Interface;
 using UnityEngine;
 using Random = System.Random;
 
-namespace Project.Script.Rune.Manager {
+namespace Teiwas.Script.Rune.Manager {
     public class RuneFactory : SerializedMonoBehaviour , IRuneSupplier {
         
         [SerializeField, OdinSerialize, LabelText("生成するルーンのデータ")]
@@ -24,8 +24,9 @@ namespace Project.Script.Rune.Manager {
             }
             
             foreach (var data in m_datas) {
-                m_instances.Add(new RuneInstance(data));
+                InstanceRuneInstance(data);
             }
+            
         }
         
         
@@ -36,7 +37,10 @@ namespace Project.Script.Rune.Manager {
             
             return rune;
         }
-        
-        
+
+        [Button("インスタンス化")]
+        protected virtual void InstanceRuneInstance(RuneData data) {
+            m_instances.Add(new RuneInstance(data));
+        }
     }
 }

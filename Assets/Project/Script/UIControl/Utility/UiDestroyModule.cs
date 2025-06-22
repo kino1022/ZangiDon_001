@@ -2,7 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace Project.Script.UIControl.Utility {
+namespace Teiwas.Script.UIControl.Utility {
     public class UiDestroyModule {
         
         protected GameObject m_ui;

@@ -1,4 +1,4 @@
-namespace Project.Script.Interface {
+namespace Teiwas.Script.Interface {
     /// <summary>
     /// Update時の処理を持つ非MonoBehaviourクラスに約束するインターフェース
     /// </summary>

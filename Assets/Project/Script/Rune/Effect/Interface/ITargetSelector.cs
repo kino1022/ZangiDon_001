@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Project.Script.Rune.Effect.Interface {
+namespace Teiwas.Script.Rune.Effect.Interface {
     /// <summary>
     /// 効果の対象を管理するクラスに対して約束するインターフェース
     /// </summary>

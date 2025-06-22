@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using Project.Script.Rune.Effect;
+using Teiwas.Script.Rune.Effect;
 
-namespace Project.Script.Bullet {
+namespace Teiwas.Script.Bullet {
     /// <summary>
     /// 弾丸のprefabを生成する際にprefabに対して渡す情報
     /// </summary>

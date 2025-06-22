@@ -1,38 +1,27 @@
 using System.Collections.Generic;
-using Project.Script.Rune.Definition;
-using Project.Script.Rune.Interface;
-using Project.Script.Rune.Manager.Interface;
+using Teiwas.Script.Rune.Definition;
+using Teiwas.Script.Rune.Interface;
+using Teiwas.Script.Rune.Manager.Interface;
 using UnityEngine;
 
-namespace Project.Script.Rune.Manager {
+namespace Teiwas.Script.Rune.Manager {
     public class SubRuneSlot : ARuneManager, ISubRuneSlot{
-        protected override void OnReceiveRune(IRune rune) {
-            if (m_isFull) {
-                Debug.LogError("");
-                return;
-            }
-            
-            Add(rune);
 
-            if (rune.Sub.GetTiming() == ActivateTiming.OnSelect) {
-                rune.Sub.Activate(this.gameObject);
-            }
-        }
 
         public void OnPreCast(GameObject caster) {
             foreach (var rune in m_runes) {
-                if (rune.Sub.GetTiming() == ActivateTiming.OnPreCast) {
-                    rune.Sub.Activate(caster);
+                if (rune.Value.Sub.GetTiming() == ActivateTiming.OnPreCast) {
+                    rune.Value.Sub.Activate(caster);
                 }
             }
         }
 
-        public List<IActivatable> GetEffectOnShot() {
-            var result = new List<IActivatable>();
+        public List<ISubEffect> GetEffectOnShot() {
+            var result = new List<ISubEffect>();
             
             foreach (var rune in m_runes) {
-                if (rune.Sub.GetTiming() == ActivateTiming.OnHit) {
-                    result.Add(rune.Sub);
+                if (rune.Value.Sub.GetTiming() == ActivateTiming.OnHit) {
+                    result.Add(rune.Value.Sub);
                 }
             }
 
@@ -45,8 +34,8 @@ namespace Project.Script.Rune.Manager {
 
         public void OnPostCast(GameObject caster) {
             foreach (var rune in m_runes) {
-                if (rune.Sub.GetTiming() == ActivateTiming.OnPostCast) {
-                    rune.Sub.Activate(caster);
+                if (rune.Value.Sub.GetTiming() == ActivateTiming.OnPostCast) {
+                    rune.Value.Sub.Activate(caster);
                 }
             }
         }

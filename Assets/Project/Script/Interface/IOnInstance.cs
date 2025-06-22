@@ -1,4 +1,4 @@
-namespace Project.Script.Interface {
+namespace Teiwas.Script.Interface {
     /// <summary>
     /// Prefabとしてインスタンスされた際に実況する処理があるクラスに対して約束するインターフェース
     /// </summary>

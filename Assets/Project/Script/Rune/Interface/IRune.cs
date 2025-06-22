@@ -1,17 +1,21 @@
-namespace Project.Script.Rune.Interface {
+using UnityEngine;
+
+namespace Teiwas.Script.Rune.Interface {
     public interface IRune {
+        
+        public Sprite RuneSprite { get; }
 
         public bool GetIsActive();
         
         /// <summary>
         /// メインの効果
         /// </summary>
-        public ICastable Main { get; }
+        public IMainEffect Main { get; }
         
         /// <summary>
         /// サブの効果
         /// </summary>
-        public IActivatable Sub { get; }
+        public ISubEffect Sub { get; }
         
         
     }

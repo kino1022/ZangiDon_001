@@ -2,11 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Sirenix.OdinInspector;
 
-namespace ZangiDon_001.Assets.Project.Script.Rune
-{
-    public class MagicCastModule
-    {
+namespace Teiwas.Project.Script.Rune {
+    public class MagicCastModule : SerializedMonoBehaviour {
         
     }
 }

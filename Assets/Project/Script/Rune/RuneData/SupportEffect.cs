@@ -1,18 +1,18 @@
 using System;
 using System.Collections.Generic;
-using Project.Script.Rune.Definition;
-using Project.Script.Rune.Effect;
-using Project.Script.Rune.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Rune.Definition;
+using Teiwas.Script.Rune.Effect;
+using Teiwas.Script.Rune.Interface;
 using UnityEngine;
 
-namespace Project.Script.Rune {
+namespace Teiwas.Script.Rune {
     /// <summary>
     /// 二文字目以降に選択した場合の性能を管理するクラス
     /// </summary>
     [Serializable]
-    public class SubEffect : IActivatable {
+    public class SubEffect : ISubEffect {
         
         [OdinSerialize,LabelText("使用回数"),ProgressBar(0,20)]
         public int amount;

@@ -1,11 +1,11 @@
 using System;
-using Project.Script.Asset.Status.Health;
-using Project.Script.Rune.Effect.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Asset.Status.Health;
+using Teiwas.Script.Rune.Effect.Interface;
 using UnityEngine;
 
-namespace Project.Script.Asset.EffectHolder {
+namespace Teiwas.Script.Asset.EffectHolder {
     /// <summary>
     /// 体力を回復する効果のアセット
     /// </summary>

@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using Project.Script.Rune.Effect.Interface;
 using Sirenix.Serialization;
+using Teiwas.Script.Rune.Effect.Interface;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Project.Script.Asset.TargetSelector {
+namespace Teiwas.Script.Asset.TargetSelector {
     /// <summary>
     /// 自分を中心とした球状範囲内にいるゲームオブジェクトを対象に取る
     /// </summary>

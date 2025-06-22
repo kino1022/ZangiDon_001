@@ -1,6 +1,6 @@
 using VContainer.Unity;
 
-namespace Project.Script.Spawner.Character {
+namespace Teiwas.Script.Spawner.Character {
     
     public class CharacterSpawner {
         

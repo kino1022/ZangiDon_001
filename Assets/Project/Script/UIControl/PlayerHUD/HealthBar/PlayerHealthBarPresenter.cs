@@ -1,10 +1,10 @@
-using Project.Script.Asset.Status.Health;
-using Project.Script.Asset.Status.Health.Interface;
 using VContainer;
 using R3;
+using Teiwas.Script.Asset.Status.Health;
+using Teiwas.Script.Asset.Status.Health.Interface;
 using UnityEngine;
 
-namespace Project.Script.UIControl.PlayerHUD.HealthBar {
+namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
     
     public class PlayerHealthBarPresenter {
 

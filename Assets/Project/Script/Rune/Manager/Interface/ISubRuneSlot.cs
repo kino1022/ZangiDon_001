@@ -1,13 +1,13 @@
 using System.Collections.Generic;
-using Project.Script.Rune.Interface;
+using Teiwas.Script.Rune.Interface;
 using UnityEngine;
 
-namespace Project.Script.Rune.Manager.Interface {
-    public interface ISubRuneSlot {
+namespace Teiwas.Script.Rune.Manager.Interface {
+    public interface ISubRuneSlot : IRuneListManager{
         
         public void OnPreCast(GameObject rune);
 
-        public List<IActivatable> GetEffectOnShot();
+        public List<ISubEffect> GetEffectOnShot();
         
         public void OnPostCast(GameObject rune);
         

@@ -1,6 +1,6 @@
 using System;
 
-namespace Project.Script.Interface {
+namespace Teiwas.Script.Interface {
     /// <summary>
     /// 情報を受け取った際に通知するクラスに対して与えられるインターフェース
     /// </summary>

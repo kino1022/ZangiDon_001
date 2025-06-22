@@ -1,12 +1,12 @@
 using System;
-using Project.Script.Interface;
-using Project.Script.Rune.Interface;
-using Project.Script.Rune.Manager.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Interface;
+using Teiwas.Script.Rune.Interface;
+using Teiwas.Script.Rune.Manager.Interface;
 using UnityEngine;
 
-namespace Project.Script.Rune.Manager {
+namespace Teiwas.Script.Rune.Manager {
     [Serializable]
     public class SelectedRuneReceiver : ISender<IRune> {
 
@@ -19,9 +19,11 @@ namespace Project.Script.Rune.Manager {
         public void Send(IRune rune) {
             if (!m_main.IsFull) {
                 m_main.Add(rune);
+                return;
             } 
             else if (!m_sub.IsFull) {
                 m_sub.Add(rune);
+                return;
             }
             else {
                 Debug.LogError("ルーンのスロットが満タンな状態でルーンが送信されました");

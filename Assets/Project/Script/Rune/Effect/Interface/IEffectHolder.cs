@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Project.Script.Rune.Effect.Interface {
+namespace Teiwas.Script.Rune.Effect.Interface {
     /// <summary>
     /// 対象に対して発動する効果の実処理を保持するクラスに対して約束するインターフェース
     /// </summary>

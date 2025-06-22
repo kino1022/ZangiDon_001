@@ -3,7 +3,7 @@ using UnityCommonModule.Correction.Interface;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Project.Script.Asset.Status.Health.Interface {
+namespace Teiwas.Script.Asset.Status.Health.Interface {
     public interface IHealable {
         
         public UnityEvent<GameObject,int> HealUEvent { get; set; }

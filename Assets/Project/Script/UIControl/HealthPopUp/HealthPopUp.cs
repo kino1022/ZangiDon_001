@@ -1,7 +1,7 @@
-using Project.Script.UIControl.HealthPopUp.Interface;
+using Teiwas.Script.UIControl.HealthPopUp.Interface;
 using VContainer;
 
-namespace Project.Script.UIControl.HealthPopUp {
+namespace Teiwas.Script.UIControl.HealthPopUp {
     public class HealthPopUp {
 
         [Inject]
