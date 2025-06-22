@@ -10,8 +10,8 @@ namespace Teiwas.Script.Rune.Manager {
 
         public void OnPreCast(GameObject caster) {
             foreach (var rune in m_runes) {
-                if (rune.Sub.GetTiming() == ActivateTiming.OnPreCast) {
-                    rune.Sub.Activate(caster);
+                if (rune.Value.Sub.GetTiming() == ActivateTiming.OnPreCast) {
+                    rune.Value.Sub.Activate(caster);
                 }
             }
         }
@@ -20,8 +20,8 @@ namespace Teiwas.Script.Rune.Manager {
             var result = new List<ISubEffect>();
             
             foreach (var rune in m_runes) {
-                if (rune.Sub.GetTiming() == ActivateTiming.OnHit) {
-                    result.Add(rune.Sub);
+                if (rune.Value.Sub.GetTiming() == ActivateTiming.OnHit) {
+                    result.Add(rune.Value.Sub);
                 }
             }
 
@@ -34,8 +34,8 @@ namespace Teiwas.Script.Rune.Manager {
 
         public void OnPostCast(GameObject caster) {
             foreach (var rune in m_runes) {
-                if (rune.Sub.GetTiming() == ActivateTiming.OnPostCast) {
-                    rune.Sub.Activate(caster);
+                if (rune.Value.Sub.GetTiming() == ActivateTiming.OnPostCast) {
+                    rune.Value.Sub.Activate(caster);
                 }
             }
         }

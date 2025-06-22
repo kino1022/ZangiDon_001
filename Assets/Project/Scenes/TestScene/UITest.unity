@@ -556,17 +556,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes:
     - Name: m_runes
-      Entry: 7
-      Data: 0|ObservableCollections.ObservableList`1[[Teiwas.Script.Rune.Interface.IRune,
-        Assembly-CSharp]], ObservableCollections
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
+      Entry: 6
       Data: 
     - Name: m_sender
       Entry: 6
@@ -594,17 +584,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes:
     - Name: m_runes
-      Entry: 7
-      Data: 0|ObservableCollections.ObservableList`1[[Teiwas.Script.Rune.Interface.IRune,
-        Assembly-CSharp]], ObservableCollections
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
+      Entry: 6
       Data: 
     - Name: m_sender
       Entry: 6
@@ -686,21 +666,11 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes:
     - Name: m_runes
-      Entry: 7
-      Data: 0|ObservableCollections.ObservableList`1[[Teiwas.Script.Rune.Interface.IRune,
-        Assembly-CSharp]], ObservableCollections
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
+      Entry: 6
       Data: 
     - Name: m_sender
       Entry: 7
-      Data: 1|Teiwas.Script.Rune.Manager.SelectedRuneReceiver, Assembly-CSharp
+      Data: 0|Teiwas.Script.Rune.Manager.SelectedRuneReceiver, Assembly-CSharp
     - Name: m_main
       Entry: 10
       Data: 0
@@ -902,6 +872,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1422324619274286192, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1422324619274286192, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
     - target: {fileID: 1529601685576055583, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -926,6 +900,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1749347720172715487, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1749347720172715487, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
     - target: {fileID: 1800663516259106950, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -982,6 +960,10 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 2207849117843621705, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
+    - target: {fileID: 2289552488880956524, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 2289552488880956524, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
     - target: {fileID: 2327339916285279162, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -1154,6 +1136,10 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 4194449422106163826, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
+    - target: {fileID: 4223267812261706077, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 4223267812261706077, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
     - target: {fileID: 4281311826183641910, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

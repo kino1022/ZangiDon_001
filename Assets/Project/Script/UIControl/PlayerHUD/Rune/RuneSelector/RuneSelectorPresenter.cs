@@ -25,7 +25,12 @@ namespace Teiwas.Script.UIControl.PlayerHUD.RuneSelector {
             }
 
             for (int i = 0; i < m_model.List.Count; i++) {
-                m_view.Set(i, m_model.List[i]);
+                if (m_model.List.ContainsKey(i) == false) {
+                    m_view.Remove(i);
+                }
+                else {
+                    m_view.Set(i, m_model.List[i]);
+                }
             }
             
         }

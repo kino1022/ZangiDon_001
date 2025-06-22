@@ -18,6 +18,10 @@ namespace Teiwas.Script.Rune.Manager {
         [Button("ルーン選択")]
         public void RuneSelected(int index) {
 
+            if (m_runes[index] == null) {
+                
+            }
+
             if (index < 0 || index > m_amount) {
                 Debug.LogError($"選択されたルーンのIndexが不正です、ルーン選択のコードを見直してください");
                 return;

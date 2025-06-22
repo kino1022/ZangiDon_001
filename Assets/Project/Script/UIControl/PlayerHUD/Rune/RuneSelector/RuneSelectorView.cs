@@ -10,32 +10,8 @@ using UnityEngine;
 namespace Teiwas.Script.UIControl.PlayerHUD.RuneSelector {
     public class RuneSelectorView : SerializedMonoBehaviour , IRuneSelectorView {
         
-        [OdinSerialize,LabelText("プレイヤーを取得するクラス")]
-        protected ITargetHolder<GameObject> m_player;
-        
         [OdinSerialize]
         protected List<IRuneUI> m_slots = new List<IRuneUI>();
-        
-
-        public void Start() {
-
-            if (m_player == null) {
-                Debug.Log("インスペクター上でITargetHolder<GameObject>がアタッチされていないため自動取得します");
-                m_player = GetComponent<ITargetHolder<GameObject>>();
-
-                if (m_player == null) {
-                    Debug.Log("ITargetHolderが取得できなかったため、ペアレント全体から取得します");
-                    m_player = GetComponentInParent<ITargetHolder<GameObject>>();
-
-                    if (m_player == null) {
-                        Debug.Log("ITargetHolderがペアレント上にもなかったため処理を中断します");
-                        return;
-                    }
-                    
-                }
-            }
-            
-        }
 
         public void Set(int index, IRune rune) {
             m_slots[index].Set(rune);

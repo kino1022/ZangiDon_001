@@ -58,7 +58,7 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
             
             //要素が追加されることに対する購読処理
             m_model.List
-                .ObserveAdd()
+                .ObserveDictionaryAdd()
                 .Subscribe(x => {
                     Debug.Log($"要素が追加されたのを検知しました");
                     OnAdd(x);
@@ -66,43 +66,34 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
             
             //要素が除外されることに対する購読処理
             m_model.List
-                .ObserveRemove()
+                .ObserveDictionaryRemove()
                 .Subscribe(x => {
                     Debug.Log("要素が除外された事を検知しました");
                     OnRemove(x);
                 }).AddTo(this);
             
-            //要素が移動されることに対する購読処理
-            m_model.List
-                .ObserveMove()
-                .Subscribe(x => {
-                    Debug.Log("リストの要素の移動を検知しました");
-                    OnMove(x);
-                }).AddTo(this);
             
             //要素がクリアされることに対する購読処理
             m_model.List
-                .ObserveClear()
+                .ObserveDictionaryReplace()
                 .Subscribe(x => {
                     Debug.Log("リストがクリアされた事を検知しました");
-                    OnClear();
+                    OnReplace(x);
                 }).AddTo(this);
         }
-
-        protected virtual void OnAdd(CollectionAddEvent<IRune> x) {
-            m_view.Set(x.Index,x.Value);
+        
+        #nullable enable
+        protected virtual void OnAdd(DictionaryAddEvent<int,IRune?> x) {
+           InitializeView();
         }
 
-        protected virtual void OnRemove(CollectionRemoveEvent<IRune> x) {
-            m_view.Set(x.Index,null);
-        }
-
-        protected virtual void OnMove(CollectionMoveEvent<IRune> x) {
+        protected virtual void OnRemove(DictionaryRemoveEvent<int,IRune?> x) {
             InitializeView();
         }
 
-        protected virtual void OnClear() {
+        protected virtual void OnReplace(DictionaryReplaceEvent<int, IRune?> x) {
             InitializeView();
         }
+        #nullable disable
     }
 }

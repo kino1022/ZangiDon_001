@@ -7,7 +7,7 @@ namespace Teiwas.Script.Rune.Manager {
 
         public void OnCasted(GameObject caster) {
             foreach (var rune in m_runes) {
-                rune.Main.OnCast(caster);
+                rune.Value.Main.OnCast(caster);
             }
         }
         
