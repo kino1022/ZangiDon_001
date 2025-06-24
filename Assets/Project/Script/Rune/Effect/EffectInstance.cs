@@ -10,7 +10,7 @@ namespace Teiwas.Script.Rune.Effect {
     /// 対象と効果を一まとまりにした効果のアセット
     /// </summary>
     [Serializable]
-    public class EffectInstance {
+    public class EffectInstance : IEffect {
 
         [OdinSerialize]
         [SerializeReference,LabelText("対象")]
