@@ -34,11 +34,13 @@ namespace Teiwas.Script.Rune.Manager {
         public IReadOnlyObservableDictionary<int, IRune?> List => m_runes;
 
         public bool IsFull => m_isFull;
-
+        
+#nullable enable
         private void Awake() {
             m_runes = new ObservableDictionary<int, IRune?>();
             Initialize();
         }
+#nullable disable
 
         [Button("ルーン追加")]
         public void Add(IRune rune) { 
@@ -107,8 +109,8 @@ namespace Teiwas.Script.Rune.Manager {
                     OnRuneDisActive(rune);
                 });
         }
-        
-        #nullable enable
+
+#nullable enable
         protected virtual void OnAddRune(DictionaryAddEvent<int,IRune?> x) {
 
             //追加ルーンでルーンが満タンになった際の処理
@@ -139,7 +141,7 @@ namespace Teiwas.Script.Rune.Manager {
             
         }
         
-        #nullable disable
+#nullable disable
 
         protected void OnRuneDisActive(IRune rune) { }
 

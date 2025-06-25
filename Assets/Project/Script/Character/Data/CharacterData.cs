@@ -8,6 +8,7 @@ namespace Project.Script.Character.Data {
         [OdinSerialize, LabelText("ステータスのデータ"), Title("ステータス")]
         public StatusElement Status;
         
-        
+        [OdinSerialize, LabelText("<UNK>")]
+        public TagsElement Tags;
     }
 }

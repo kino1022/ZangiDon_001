@@ -44,14 +44,14 @@ namespace Teiwas.Script.Rune {
         public bool GetIsActive() => m_isActive;
 
         protected void ObserveActiveInstance() {
-            
+            //MainEffect.IsActiveを監視するオブサーバ
             Observable
                 .EveryValueChanged(m_main, x => x.m_isActive == false)
                 .Subscribe( x => {
                     this.Dispose();
                 })
                 .Dispose();
-
+            //SubEffect.IsActiveを監視するオブザーバー
             Observable
                 .EveryValueChanged(m_sub,x => x.isActive == false).
                 Subscribe(x => {

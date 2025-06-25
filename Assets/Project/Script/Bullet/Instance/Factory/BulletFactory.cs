@@ -9,7 +9,7 @@ namespace Project.Script.Bullet.Instance.Factory {
     public class BulletFactory : IBulletFactory {
         
         protected readonly IObjectResolver m_resolver;
-
+        
         public BulletFactory(IObjectResolver resolver) {
             m_resolver = resolver;
         }

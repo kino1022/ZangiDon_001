@@ -28,7 +28,7 @@ namespace Teiwas.Script.Asset.Status.Health {
         private void Awake() {
             m_max = GetComponent<IMaxHealth>();
 
-            if (m_max != null) {
+            if (m_max != null){
                 Debug.LogError("IMaxHealthを継承したコンポーネントがアタッチされていません");
                 return;
             }
