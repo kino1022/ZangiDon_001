@@ -6,7 +6,6 @@ namespace Teiwas.Project.Script.Scope {
 
         protected override void Configure(IContainerBuilder builder) {
             
-            
         }
         
     }

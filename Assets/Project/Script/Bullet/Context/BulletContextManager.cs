@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Project.Script.Utility;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Teiwas.Script.Bullet.Context.Intetface;
+using UnityEngine;
 using VContainer;
 
 namespace Teiwas.Script.Bullet.Context {
@@ -16,18 +18,28 @@ namespace Teiwas.Script.Bullet.Context {
         protected IBulletContext m_context;
 
         [OdinSerialize, LabelText("適用先オブジェクト")]
-        protected IBulletContextApplicable m_apply;
-        
-        
+        protected List<IBulletContextApplicable> m_apply;
 
         [Inject]
         public void Construct(IBulletContextHolder contextHolder) {
             m_context = contextHolder.Context;
         }
 
+        private void Start() {
+            m_apply = ComponentsUtility.GetComponentsFromWhole<IBulletContextApplicable>(this.gameObject);
 
-        public void ApplyContext() {
+            if (m_apply.Count == 0) {
+                Debug.LogError("IBulletContextApplicableを継承したオブジェクトを取得できませんでした");
+                return;
+            }
             
+            ApplyContext();
+        }
+        
+        public void ApplyContext() {
+            foreach (var apply in m_apply) {
+                apply.Apply(m_context);
+            }
         }
     }
 }

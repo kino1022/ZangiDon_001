@@ -14,11 +14,8 @@ namespace Teiwas.Project.Script.Scope {
         [SerializeField, LabelText("使用するインストーラ")]
         protected InstallerList m_list;
         
-        
         protected override void Configure(IContainerBuilder builder) {
-            
             InstallFromInstaller(builder);
-            
         }
 
         protected void InstallFromInstaller(IContainerBuilder builder) {

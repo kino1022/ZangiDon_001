@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -21,6 +22,17 @@ namespace Project.Script.Utility {
                 }
             }
             return component;
+        }
+
+        public static List<T> GetComponentsFromWhole<T>(GameObject obj) {
+            var parent = obj.transform.root.gameObject;
+            var components = parent.GetComponentsInChildren<T>().ToList();
+
+            if (components.Count == 0) {
+                Debug.LogError($"{parent.name}から{typeof(T)}を継承しているオブジェクトが見つかりませんでした");
+            }
+            
+            return components;
         }
         
     }

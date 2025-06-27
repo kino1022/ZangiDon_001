@@ -25,7 +25,7 @@ namespace Project.Script.Character.Shoter {
         
         [Button("射撃")]
         public void OnShot(BulletData data, Vector3 pos, Quaternion rot) {
-            
+            m_factory.Create(data, pos, rot);
         } 
     }
 }

@@ -12,11 +12,9 @@ namespace Project.Script.Bullet.Target {
 
         protected GameObject m_target;
         
-        protected IObjectResolver m_resolver;
         
         [Inject]
         public void Construct(IObjectResolver resolver) {
-            m_resolver = resolver;
 
             m_target = resolver.Resolve<ILockTargetHolder>().GetTarget();
         }

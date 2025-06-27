@@ -15,7 +15,8 @@ namespace Project.Script.Bullet.Instance.Factory {
             m_resolver = resolver;
         }
 
-        public GameObject Create(BulletData data, BulletContext context, Vector3 pos, Quaternion rot) {
+        public GameObject Create(BulletData data,Vector3 pos, Quaternion rot) {
+            
             var instance = m_resolver.Instantiate(data.Prefab, pos, rot);
             
             return instance;
