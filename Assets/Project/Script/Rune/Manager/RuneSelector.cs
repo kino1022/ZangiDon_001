@@ -48,5 +48,16 @@ namespace Teiwas.Script.Rune.Manager {
             
             Add(m_supplier.Supply());
         }
+        
+#if UNITY_EDITOR
+        protected void Debug_AllSupply() {
+            Debug.Log("DebugCommand Was Executed");
+            var count = m_amount - List.Count;
+
+            for (int i = 0; i < count; i++) {
+                m_supplier.Supply();
+            }
+        }
+#endif
     }
 }

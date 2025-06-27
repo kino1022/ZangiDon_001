@@ -12,10 +12,6 @@ namespace Project.Script.UIControl.PlayerHUD.Rune.RuneSlot.Main {
                 return;
             }
 
-            if (m_model.List == null) {
-                return;
-            }
-            
             for (int i = 0; i < m_model.List.Count; ++i) {
                 if (m_model.List[i] != null) {
                     m_view.Set(i,m_model.List[i]);

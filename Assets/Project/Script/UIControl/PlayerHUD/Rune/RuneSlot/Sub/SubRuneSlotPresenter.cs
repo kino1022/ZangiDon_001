@@ -10,11 +10,6 @@ namespace Project.Script.UIControl.PlayerHUD.Rune.RuneSlot.Sub {
                 Debug.LogError($"{m_model.GetType()}が存在しませんでした");
                 return;
             }
-
-            if (m_model.List == null) {
-                Debug.LogError($"{m_model.GetType()}からListを取得できなかったため処理を中断します");
-                return;
-            }
             
             for (int i = 0; i < m_model.List.Count; ++i) {
                 if (m_model.List[i] != null) {
