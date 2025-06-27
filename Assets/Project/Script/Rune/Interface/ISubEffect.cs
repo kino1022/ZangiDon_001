@@ -1,3 +1,4 @@
+using Teiwas.Script.Bullet.Context.Intetface;
 using Teiwas.Script.Rune.Definition;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ namespace Teiwas.Script.Rune.Interface {
         public ActivateTiming GetTiming();
         
         public void Activate(GameObject caster);
+        
+        public IBulletContext Context { get; }
         
     }
 }

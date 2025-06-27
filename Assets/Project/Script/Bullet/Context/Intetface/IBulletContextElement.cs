@@ -5,6 +5,7 @@ namespace Teiwas.Script.Bullet.Context.Intetface {
     /// 弾丸の動的変化する性能の要素を管理するクラス
     /// </summary>
     public interface IBulletContextElement {
+        
         /// <summary>
         /// 弾丸のコンポーネントに対して要素を適用する
         /// </summary>
@@ -15,5 +16,6 @@ namespace Teiwas.Script.Bullet.Context.Intetface {
         /// </summary>
         /// <param name="element"></param>
         public void AddElement (IBulletContextElement element);
+        
     }
 }

@@ -20,7 +20,7 @@ namespace Teiwas.Script.Rune.Manager {
     public abstract class ARuneManager : SerializedMonoBehaviour, IRuneListManager {
 
         [SerializeField, OdinSerialize, LabelText("管理しているルーン")] [CanBeNull]
-        protected ObservableDictionary<int, IRune?> m_runes;
+        protected ObservableDictionary<int, IRune> m_runes;
 
         [SerializeField, LabelText("管理できるルーンの数"), ProgressBar(0, 24)]
         protected  int m_amount = 0;

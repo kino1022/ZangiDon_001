@@ -1,5 +1,6 @@
 using ObservableCollections;
 using Project.Script.UIControl.PlayerHUD.Rune.Interface;
+using Project.Script.Utility;
 using R3;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -22,23 +23,14 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
 
         private void Start() {
             
+            m_player = ComponentsUtility.GetComponentFromWhole<ITargetHolder<GameObject>>(this.gameObject);
+
             if (m_player == null) {
-                Debug.Log("インスペクター上でITargetHolder<GameObject>がアタッチされていないため自動取得します");
-                m_player = GetComponent<ITargetHolder<GameObject>>();
-
-                if (m_player == null) {
-                    Debug.Log("ITargetHolderが取得できなかったため、ペアレント全体から取得します");
-                    m_player = GetComponentInParent<ITargetHolder<GameObject>>();
-
-                    if (m_player == null) {
-                        Debug.LogError("ITargetHolderがペアレント上にもなかったため処理を中断します");
-                        return;
-                    }
-                    
-                }
+                Debug.LogError("プレイヤーのオブジェクト取得コンポーネントを取得できませんでした。処理を中断します");
+                return;
             }
             
-            m_model = m_player.GetTarget().GetComponent<M>();
+            m_model = ComponentsUtility.GetComponentFromWhole<M>(m_player.GetTarget());
 
             if (m_model == null) {
                 Debug.LogError($"取得したオブジェクトに{typeof(M)}を継承したオブジェクトが存在しませんでした。処理を中断します");

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Bullet.Context.Intetface;
 using Teiwas.Script.Rune.Definition;
 using Teiwas.Script.Rune.Effect;
 using Teiwas.Script.Rune.Interface;
@@ -17,17 +18,8 @@ namespace Teiwas.Script.Rune {
         [OdinSerialize,LabelText("使用回数"),ProgressBar(0,20)]
         public int amount;
 
-        [OdinSerialize, LabelText("効果値補正"), ProgressBar(-100, 100)]
-        public float correction;
-
-        [OdinSerialize, LabelText("弾速補正"), ProgressBar(-10, 10)]
-        public float bulletSpeed;
-
-        [OdinSerialize, LabelText("縦方向誘導率補正"), ProgressBar(-10, 10)]
-        public float verticalHoming;
-        
-        [OdinSerialize, LabelText("横方向誘導率補正"), ProgressBar(-10, 10)]
-        public float horizontalHoming;
+        [OdinSerialize, LabelText("")] 
+        public IBulletContext Context { get; }
         
         [OdinSerialize,LabelText("効果発動タイミング")]
         public ActivateTiming timing;
