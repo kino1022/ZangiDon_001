@@ -122,7 +122,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4043443049616228420}
-  - component: {fileID: 4483230330045869920}
   - component: {fileID: 4593144221678308320}
   m_Layer: 5
   m_Name: SubRune
@@ -153,34 +152,6 @@ RectTransform:
   m_AnchoredPosition: {x: 152.5, y: 44}
   m_SizeDelta: {x: 266.02307, y: 15.023087}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4483230330045869920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4936762525636794608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a6a582ec324c118fe4b274961909bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 4593144221678308320}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: m_model
-      Entry: 6
-      Data: 
-    - Name: m_view
-      Entry: 10
-      Data: 0
 --- !u!114 &4593144221678308320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,22 +176,52 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: m_runes
+    - Name: m_items
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[Project.Script.UIControl.PlayerHUD.Rune.RuneUI.Interface.IRuneUI,
-        Assembly-CSharp]], mscorlib
+      Data: 0|ObservableCollections.ObservableDictionary`2[[System.Int32, mscorlib],[Project.Script.UIControl.PlayerHUD.Rune.RuneUI.Interface.IRuneUI,
+        Assembly-CSharp]], ObservableCollections
     - Name: 
       Entry: 12
       Data: 3
     - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Project.Script.UIControl.PlayerHUD.Rune.RuneUI.Interface.IRuneUI,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 3
+      Data: 0
+    - Name: 
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Project.Script.UIControl.PlayerHUD.Rune.RuneUI.Interface.IRuneUI,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 3
+      Data: 1
     - Name: 
       Entry: 10
       Data: 1
     - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Project.Script.UIControl.PlayerHUD.Rune.RuneUI.Interface.IRuneUI,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 3
+      Data: 2
+    - Name: 
       Entry: 10
       Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -236,7 +237,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7614674025430232396}
-  - component: {fileID: 3642746585112041095}
   - component: {fileID: 1718038392294443958}
   m_Layer: 5
   m_Name: MainRune
@@ -265,34 +265,6 @@ RectTransform:
   m_AnchoredPosition: {x: -160, y: 0.000014781952}
   m_SizeDelta: {x: 23.993011, y: 23.993}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3642746585112041095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7053933897579104712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c1766d3ec4944d09c11412785f5f68c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 1718038392294443958}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: m_model
-      Entry: 6
-      Data: 
-    - Name: m_view
-      Entry: 10
-      Data: 0
 --- !u!114 &1718038392294443958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,16 +287,26 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: m_runes
+    - Name: m_items
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[Project.Script.UIControl.PlayerHUD.Rune.RuneUI.Interface.IRuneUI,
-        Assembly-CSharp]], mscorlib
+      Data: 0|ObservableCollections.ObservableDictionary`2[[System.Int32, mscorlib],[Project.Script.UIControl.PlayerHUD.Rune.RuneUI.Interface.IRuneUI,
+        Assembly-CSharp]], ObservableCollections
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.Int32, mscorlib],[Project.Script.UIControl.PlayerHUD.Rune.RuneUI.Interface.IRuneUI,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 3
+      Data: 0
+    - Name: 
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 

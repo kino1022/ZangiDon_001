@@ -48,10 +48,7 @@ namespace Project.Script.Character.Shoter {
 
         protected void OnListChanged() {
             m_context = new BulletContext();
-            
-            foreach (var rune in m_slot.List.Values) {
-                m_context.Add(rune.Sub.Context);
-            }
+
         }
     }
 }

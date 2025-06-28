@@ -1,91 +1,116 @@
+using System;
+using System.Linq;
 using ObservableCollections;
 using Project.Script.UIControl.PlayerHUD.Rune.Interface;
 using Project.Script.Utility;
 using R3;
-using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using Teiwas.Script.Rune.Interface;
 using Teiwas.Script.Rune.Manager.Interface;
-using UnityCommonModule.Target.Interface;
 using UnityEngine;
+using VContainer;
+using VContainer.Unity;
 
 namespace Project.Script.UIControl.PlayerHUD.Rune {
-    public abstract class ARuneListPresenter<M,V> : SerializedMonoBehaviour, IRuneListPresenter 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="M">Modelに該当するクラス</typeparam>
+    /// <typeparam name="V">Viewに該当するクラス</typeparam>
+    public abstract class ARuneListPresenter<M,V> : IRuneListPresenter , IDisposable , IInitializable
         where M : IRuneListManager  where V : IRuneListView {
-        
-        [OdinSerialize, LabelText("Model Class")]
+
         protected M m_model;
         
-        [OdinSerialize, LabelText("View Class")]
         protected V m_view;
 
-        protected ITargetHolder<GameObject> m_player;
+        protected CompositeDisposable m_disposable = new CompositeDisposable();
 
-        private void Start() {
+        [Inject]
+        protected ARuneListPresenter(M model, V view) {
+            Debug.Log($"{this.GetType().Name}のコンストラクタが読み込まれました");
             
-            m_player = ComponentsUtility.GetComponentFromWhole<ITargetHolder<GameObject>>(this.gameObject);
-
-            if (m_player == null) {
-                Debug.LogError("プレイヤーのオブジェクト取得コンポーネントを取得できませんでした。処理を中断します");
-                return;
-            }
-            
-            m_model = ComponentsUtility.GetComponentFromWhole<M>(m_player.GetTarget());
-
-            if (m_model == null) {
-                Debug.LogError($"取得したオブジェクトに{typeof(M)}を継承したオブジェクトが存在しませんでした。処理を中断します");
-                return;
-            }
-
-            InitializeView();
+            m_model = model;
+            m_view = view;
             
             RegisterObserver();
+            InitializeView();
         }
-        
-        protected abstract void InitializeView();
+
+        public void Initialize() {
+            
+        }
+
+        public void Dispose() {
+            m_disposable.Dispose();
+        }
+
+        protected virtual void InitializeView() {
+            
+            Debug.Log("表示の初期化を開始します");
+
+            for (int i = 0; i < m_model.Amount; i++) {
+
+                if (m_model.List.ContainsKey(i) == false) {
+                    Debug.Log("要素が存在しなかったため、UIから除外します");
+                    m_view.Remove(i);
+                }
+                else {
+                    if (m_model.List.Any(pair => pair.Key == i && m_model.List.TryGetValue(i, out IRune rune))) {
+                        Debug.Log("要素が取得できたため、UIに対して追加します");
+                        m_model.List.TryGetValue(i, out IRune? rune);
+                        m_view.Set(i,rune);
+                    }
+                    else {
+                        Debug.Log("キーのみが取得できたため、UIから除外します");
+                        m_view.Remove(i);
+                    }
+                }
+            }
+        }
 
         protected void RegisterObserver() {
+
+            Debug.Log($"{this.GetType()}のリスト購読処理を開始します");
             
-            Debug.Log($"{m_model.GetType()}のリスト変化購読処理を開始します");
-            
-            //要素が追加されることに対する購読処理
-            m_model.List
+            m_model
+                .List
                 .ObserveDictionaryAdd()
                 .Subscribe(x => {
-                    Debug.Log($"要素が追加されたのを検知しました");
+                    Debug.Log($"{m_model.GetType().Name}におけるリスト内容の追加を検知しました");
                     OnAdd(x);
-                }).AddTo(this);
+                })
+                .AddTo(m_disposable);
             
-            //要素が除外されることに対する購読処理
-            m_model.List
+            m_model
+                .List
                 .ObserveDictionaryRemove()
                 .Subscribe(x => {
-                    Debug.Log("要素が除外された事を検知しました");
+                    Debug.Log($"{m_model.GetType().Name}におけるリスト内容の除外を検知しました");
                     OnRemove(x);
-                }).AddTo(this);
+                })
+                .AddTo(m_disposable);
             
-            
-            //要素がクリアされることに対する購読処理
-            m_model.List
+            m_model
+                .List
                 .ObserveDictionaryReplace()
                 .Subscribe(x => {
-                    Debug.Log("リストがクリアされた事を検知しました");
+                    Debug.Log($"{m_model.GetType().Name}におけるリスト順の変化を検知しました");
                     OnReplace(x);
-                }).AddTo(this);
+                })
+                .AddTo(m_disposable);
         }
         
-        #nullable enable
-        protected virtual void OnAdd(DictionaryAddEvent<int,IRune?> x) {
+        
+        protected virtual void OnAdd(DictionaryAddEvent<int,IRune> x) {
            InitializeView();
         }
 
-        protected virtual void OnRemove(DictionaryRemoveEvent<int,IRune?> x) {
+        protected virtual void OnRemove(DictionaryRemoveEvent<int,IRune> x) {
             InitializeView();
         }
 
-        protected virtual void OnReplace(DictionaryReplaceEvent<int, IRune?> x) {
+        protected virtual void OnReplace(DictionaryReplaceEvent<int,IRune> x) {
             InitializeView();
         }
-        #nullable disable
     }
 }

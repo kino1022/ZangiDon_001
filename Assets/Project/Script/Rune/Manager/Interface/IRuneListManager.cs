@@ -9,9 +9,10 @@ namespace Teiwas.Script.Rune.Manager.Interface {
         /// ルーンのリストが満タンかどうか
         /// </summary>
         public bool IsFull { get; }
+
+        public int Amount { get; }
         
         public IReadOnlyObservableDictionary<int,IRune> List { get; }
-        
 
         public void Add(IRune rune);
         
