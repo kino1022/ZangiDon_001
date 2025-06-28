@@ -21,27 +21,27 @@ namespace Mock {
             }
         }
         public void Select_2(InputAction.CallbackContext context) {
-            if (context.performed) {
+            if (context.started) {
                 m_selector.RuneSelected(1);
             }
         }
         public void Select_3(InputAction.CallbackContext context) {
-            if (context.performed) {
+            if (context.started) {
                 m_selector.RuneSelected(2);
             }
         }
         public void Select_4(InputAction.CallbackContext context) {
-            if (context.performed) {
+            if (context.started) {
                 m_selector.RuneSelected(3);
             }
         }
         public void Select_5(InputAction.CallbackContext context) {
-            if (context.performed) {
+            if (context.started) {
                 m_selector.RuneSelected(4);
             }
         }
         public void Select_6(InputAction.CallbackContext context) {
-            if (context.performed) {
+            if (context.started) {
                 m_selector.RuneSelected(5);
             }
         }

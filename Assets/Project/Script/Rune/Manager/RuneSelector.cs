@@ -49,15 +49,13 @@ namespace Teiwas.Script.Rune.Manager {
             Add(m_supplier.Supply());
         }
         
-#if UNITY_EDITOR
-        protected void Debug_AllSupply() {
-            Debug.Log("DebugCommand Was Executed");
-            var count = m_amount - List.Count;
-
-            for (int i = 0; i < count; i++) {
-                m_supplier.Supply();
+        [Button("デバック：全補充")]
+        public void DEBUG_ALLSUPPLY() {
+            for (int i = 0; i < m_amount; ++i) {
+                if (List.ContainsKey(i) == false) {
+                    GetSupply();
+                }
             }
         }
-#endif
     }
 }

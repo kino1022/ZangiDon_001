@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5925119835534113955}
+  - component: {fileID: 157382379758832565}
   - component: {fileID: 4389375383108226671}
   - component: {fileID: 7668038988937758833}
+  - component: {fileID: -7191488687429759445}
   m_Layer: 0
   m_Name: BulletBase
   m_TagString: Untagged
@@ -33,6 +35,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157382379758832565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5272360924019481743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603b2e8afdb046bdaf52bd39751c404e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentReference:
+    TypeName: 
+  autoRun: 1
+  autoInjectGameObjects:
+  - {fileID: 5272360924019481743}
 --- !u!54 &4389375383108226671
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -86,4 +105,50 @@ MonoBehaviour:
       Data: 
     - Name: m_apply
       Entry: 6
+      Data: 
+--- !u!114 &-7191488687429759445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5272360924019481743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689f05afedb949bcbbffec5bd73ce6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_destroyConditions
+      Entry: 7
+      Data: 0|UnityEngine.Rendering.ObservableList`1[[Project.Script.Bullet.Destroy.Interface.IDestroyCondition,
+        Assembly-CSharp]], Unity.RenderPipelines.Core.Runtime
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|Project.Script.Bullet.Destroy.Conditions.RangeDestroyCondition, Assembly-CSharp
+    - Name: m_isDestroy
+      Entry: 5
+      Data: false
+    - Name: m_range
+      Entry: 4
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
