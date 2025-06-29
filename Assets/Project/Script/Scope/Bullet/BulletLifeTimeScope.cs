@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Project.Script.Bullet.Range;
 using Project.Script.Bullet.Range.Interface;
 using UnityEngine;
@@ -6,16 +7,19 @@ using VContainer.Unity;
 
 namespace Teiwas.Project.Script.Scope {
     public class BulletLifeTimeScope : LifetimeScope {
+        
+        protected List<IInstaller> m_installer = new List<IInstaller>();
 
         protected override void Configure(IContainerBuilder builder) {
-            
-            //自己をオブジェクトとして登録
-            builder.RegisterInstance(this.gameObject).As<GameObject>();
-            
-            //弾丸の距離管理オブジェクトを登録してインスタンス
-            builder.RegisterEntryPoint<BulletRangeCounter>().As<IRangeCounter>();
+
+            foreach (var installer in m_installer) {
+                installer.Install(builder);
+            }
             
         }
-        
+
+        public void SetInstaller(IInstaller installer) {
+            m_installer.Add(installer);
+        }
     }
 }
