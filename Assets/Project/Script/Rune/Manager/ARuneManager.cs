@@ -18,27 +18,29 @@ namespace Teiwas.Script.Rune.Manager {
     /// </summary>
     [Serializable]
     public abstract class ARuneManager : SerializedMonoBehaviour, IRuneListManager {
-
-        [SerializeField, OdinSerialize, LabelText("管理しているルーン")] [CanBeNull]
-        protected ObservableDictionary<int, IRune?> m_runes;
+        
+        [OdinSerialize, LabelText("管理しているルーン")]
+        protected ObservableDictionary<int, IRune> m_runes = new ObservableDictionary<int, IRune>();
 
         [SerializeField, LabelText("管理できるルーンの数"), ProgressBar(0, 24)]
         protected  int m_amount = 0;
         
-
         [OdinSerialize, LabelText("ルーン送信モジュール")]
         protected ISender<IRune> m_sender;
 
         protected bool m_isFull = false;
-
-        public IReadOnlyObservableDictionary<int, IRune?> List => m_runes;
+        
+        public IReadOnlyObservableDictionary<int, IRune> List => m_runes;
 
         public bool IsFull => m_isFull;
-
+        
+        public int Amount => m_amount;
+        
+#nullable enable
         private void Awake() {
-            m_runes = new ObservableDictionary<int, IRune?>();
             Initialize();
         }
+#nullable disable
 
         [Button("ルーン追加")]
         public void Add(IRune rune) { 
@@ -72,28 +74,29 @@ namespace Teiwas.Script.Rune.Manager {
             m_runes.Remove(index);
         }
 
-        protected void Initialize() { OnInitialize(); }
+        protected void Initialize() {
+            OnInitialize();
+        }
 
         protected virtual void OnInitialize() {
-            
             RegisterObserveRuneList();
         }
 
         protected void RegisterObserveRuneList() {
             
-            m_runes
+            List
                 .ObserveDictionaryAdd()
                 .Subscribe(x => {
                     OnAddRune(x);
                 }).AddTo(this);
 
-            m_runes
+            List
                 .ObserveDictionaryRemove()
                 .Subscribe(x => {
                     OnRemoveRune(x);
                 }).AddTo(this);
             
-            m_runes
+            List
                 .ObserveDictionaryReplace()
                 .Subscribe(x => {
                     OnReplaceRune(x);
@@ -107,9 +110,10 @@ namespace Teiwas.Script.Rune.Manager {
                     OnRuneDisActive(rune);
                 });
         }
-        
-        #nullable enable
+
+#nullable enable
         protected virtual void OnAddRune(DictionaryAddEvent<int,IRune?> x) {
+            Debug.Log("ルーンの追加を検知したため処理を開始します");
 
             //追加ルーンでルーンが満タンになった際の処理
             if (m_runes.Count == m_amount) {
@@ -139,7 +143,7 @@ namespace Teiwas.Script.Rune.Manager {
             
         }
         
-        #nullable disable
+#nullable disable
 
         protected void OnRuneDisActive(IRune rune) { }
 

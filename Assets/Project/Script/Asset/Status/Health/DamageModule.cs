@@ -1,11 +1,7 @@
 using System;
-using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using Teiwas.Script.Asset.Status.Health.Interface;
 using UnityCommonModule.Correction;
 using UnityCommonModule.Correction.Interface;
-using UnityCommonModule.Status;
-using UnityCommonModule.Status.Module.Calculator;
 using UnityEngine;
 using UnityEngine.Events;
 

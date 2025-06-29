@@ -1,6 +1,7 @@
 using System;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Bullet.Context.Intetface;
 using Teiwas.Script.Rune.Definition;
 using Teiwas.Script.Rune.Interface;
 using Teiwas.Script.Rune.Manage.Modules;
@@ -10,6 +11,8 @@ namespace Teiwas.Script.Rune {
     [Serializable]
     public class SubEffectInstance : ISubEffect, IDisposable
     {
+        protected IBulletContext m_context;
+        
         protected RuneCastCountModule m_countModule;
 
         protected ActivateTiming m_timing;
@@ -17,12 +20,15 @@ namespace Teiwas.Script.Rune {
         protected Action<GameObject> ActivateAction;
 
         public bool isActive = true;
+        
+        public IBulletContext Context => m_context;
 
         public SubEffectInstance(RuneData data)
         {
             ActivateAction = data.Sub.Activate;
             m_countModule = new RuneCastCountModule(data.Sub.GetAmount(), this);
             m_timing = data.Sub.GetTiming();
+            m_context = data.Sub.Context;
         }
 
         public void Dispose()

@@ -1,3 +1,4 @@
+using Project.Script.Utility;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Teiwas.Script.Asset.Status.Health.Interface;
@@ -25,10 +26,11 @@ namespace Teiwas.Script.Asset.Status.Health {
 
         public UnityEvent<GameObject> DeathUEvent { get; set; }
 
-        private void Awake() {
-            m_max = GetComponent<IMaxHealth>();
+        private void Start() {
+            
+            m_max = ComponentsUtility.GetComponentFromWhole<IMaxHealth>(this.gameObject);
 
-            if (m_max != null) {
+            if (m_max == null){
                 Debug.LogError("IMaxHealthを継承したコンポーネントがアタッチされていません");
                 return;
             }

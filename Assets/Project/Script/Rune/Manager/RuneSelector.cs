@@ -48,5 +48,14 @@ namespace Teiwas.Script.Rune.Manager {
             
             Add(m_supplier.Supply());
         }
+        
+        [Button("デバック：全補充")]
+        public void DEBUG_ALLSUPPLY() {
+            for (int i = 0; i < m_amount; ++i) {
+                if (List.ContainsKey(i) == false) {
+                    GetSupply();
+                }
+            }
+        }
     }
 }
