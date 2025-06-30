@@ -17,7 +17,12 @@ namespace Project.Script.Bullet.Destroy {
         
         protected CompositeDisposable m_disposables = new CompositeDisposable();
         
-        [Inject] protected IObjectResolver m_resolver;
+        protected IObjectResolver m_resolver;
+
+        [Inject]
+        public void Construct(IObjectResolver resolver) {
+            m_resolver = resolver;
+        }
         
         private void Awake () {
 

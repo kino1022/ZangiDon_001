@@ -10,8 +10,9 @@ namespace Teiwas.Project.Script.Scope {
 
         protected override void Configure(IContainerBuilder builder) {
 
-            builder.Register<BulletRangeCounter>(Lifetime.Scoped).As<IRangeCounter>();
+            builder.RegisterInstance(this.gameObject).As<GameObject>();
 
+            builder.Register<BulletRangeCounter>(Lifetime.Scoped).As<IRangeCounter>();
         }
         
     }
