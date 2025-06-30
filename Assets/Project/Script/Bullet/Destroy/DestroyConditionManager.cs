@@ -1,36 +1,38 @@
-using System;
-using Project.Script.Bullet.Destroy.Interface;
+using System.Collections.Generic;
+using Project.Script.Bullet.Destroy.Conditions;
 using R3;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
-using UnityEngine.Rendering;
 using VContainer;
 
 namespace Project.Script.Bullet.Destroy {
+    /// <summary>
+    /// オブジェクトの消滅条件がTrueになるとオブジェクトを消滅させるコンポーネント
+    /// </summary>
     public class DestroyConditionManager : SerializedMonoBehaviour {
 
         [OdinSerialize, LabelText("オブジェクトが破壊される条件")]
-        protected ObservableList<IDestroyCondition> m_destroyConditions = new ObservableList<IDestroyCondition>();
+        protected List<ADestroyCondition> m_destroyConditions = new List<ADestroyCondition>();
         
         protected CompositeDisposable m_disposables = new CompositeDisposable();
+        
+        [Inject] protected IObjectResolver m_resolver;
+        
+        private void Awake () {
 
-        [Inject]
-        public void Construct(IObjectResolver resolver) {
-
-            if (m_destroyConditions.Count == 0) {
+            if (m_destroyConditions.Count == 0 || m_destroyConditions == null) {
                 Debug.LogError($"{this.gameObject.name}には消滅条件が定義されていません");
                 return;
             }
             
             foreach (var condition in m_destroyConditions) {
-                condition.Start(resolver);
+                condition.Start(m_resolver);
             }
-        } 
-
-        private void Awake() {
+            
             RegisterCondition();
-        }
+        } 
+        
 
         private void OnDestroy() {
             m_disposables.Dispose();

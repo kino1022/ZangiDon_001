@@ -7,19 +7,12 @@ using VContainer.Unity;
 
 namespace Teiwas.Project.Script.Scope {
     public class BulletLifeTimeScope : LifetimeScope {
-        
-        protected List<IInstaller> m_installer = new List<IInstaller>();
 
         protected override void Configure(IContainerBuilder builder) {
 
-            foreach (var installer in m_installer) {
-                installer.Install(builder);
-            }
-            
-        }
+            builder.Register<BulletRangeCounter>(Lifetime.Scoped).As<IRangeCounter>();
 
-        public void SetInstaller(IInstaller installer) {
-            m_installer.Add(installer);
         }
+        
     }
 }
