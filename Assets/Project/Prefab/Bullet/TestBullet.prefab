@@ -92,5 +92,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5272360924019481743, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7219815012175612439}
   m_SourcePrefab: {fileID: 100100000, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+--- !u!1 &4021493652782390436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5272360924019481743, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+  m_PrefabInstance: {fileID: 9143441356037931051}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7219815012175612439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4021493652782390436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5de8ceb7dc4f0a9c6813e04d5ef053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_firstSpeed
+      Entry: 6
+      Data: 
+    - Name: m_acceleration
+      Entry: 7
+      Data: 0|Teiwas.Script.Bullet.Movement.Acceleration.ConstantAcceleration, Assembly-CSharp
+    - Name: m_acce
+      Entry: 4
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+  m_speed: 0

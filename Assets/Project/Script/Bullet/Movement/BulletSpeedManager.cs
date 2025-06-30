@@ -8,7 +8,7 @@ using Teiwas.Script.Bullet.Context.Asset;
 using Teiwas.Script.Bullet.Context.Intetface;
 using UnityEngine;
 
-namespace Project.Script.Bullet.Movement {
+namespace Teiwas.Script.Bullet.Movement {
     public class BulletSpeedManager : SerializedMonoBehaviour, IBulletSpeedHolder {
 
         [OdinSerialize]
