@@ -11,6 +11,7 @@ namespace Teiwas.Script.Rune {
     [Serializable]
     public class SubEffectInstance : ISubEffect, IDisposable
     {
+        [OdinSerialize]
         protected IBulletContext m_context;
         
         protected RuneCastCountModule m_countModule;

@@ -18,7 +18,7 @@ namespace Project.Script.Character.Shoter {
         protected ISubRuneSlot m_slot;
 
         [OdinSerialize, LabelText("管理しているコンテキスト")]
-        protected BulletContext m_context;
+        protected BulletContext m_context = new BulletContext();
 
         public IBulletContext Context => m_context;
         
@@ -49,6 +49,9 @@ namespace Project.Script.Character.Shoter {
         protected void OnListChanged() {
             m_context = new BulletContext();
 
+            foreach (var rune in m_slot.List.Values) {
+                m_context.Add(rune.Sub.Context);
+            }
         }
     }
 }

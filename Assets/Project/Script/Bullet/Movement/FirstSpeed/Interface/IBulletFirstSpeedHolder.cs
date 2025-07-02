@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityCommonModule.Correction.Interface;
 
-namespace Project.Script.Bullet.Movement.Speed.Interface {
+namespace Teiwas.Script.Bullet.Movement.FirstSpeed.Interface {
     /// <summary>
     /// 生成物の初速を管理するクラスに対して約束するインターフェイス
     /// </summary>

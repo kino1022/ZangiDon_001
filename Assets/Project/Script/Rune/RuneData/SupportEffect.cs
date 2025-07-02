@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Bullet.Context;
 using Teiwas.Script.Bullet.Context.Intetface;
 using Teiwas.Script.Rune.Definition;
 using Teiwas.Script.Rune.Effect;
@@ -18,14 +19,15 @@ namespace Teiwas.Script.Rune {
         [OdinSerialize,LabelText("使用回数"),ProgressBar(0,20)]
         public int amount;
 
-        [OdinSerialize, LabelText("")] 
-        public IBulletContext Context { get; }
+        [OdinSerialize, LabelText("生成時の補正")] protected IBulletContext m_context = new BulletContext();
         
         [OdinSerialize,LabelText("効果発動タイミング")]
         public ActivateTiming timing;
         
         [OdinSerialize,SerializeField,LabelText("発動する効果")]
         public List<EffectInstance> effects;
+        
+        public IBulletContext Context => m_context;
 
         //---------------------API methods-------------------------------
 

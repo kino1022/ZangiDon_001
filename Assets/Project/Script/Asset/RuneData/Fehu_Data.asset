@@ -43,23 +43,108 @@ MonoBehaviour:
     - Name: amount
       Entry: 3
       Data: 11
-    - Name: correction
+    - Name: m_context
+      Entry: 7
+      Data: 2|Teiwas.Script.Bullet.Context.BulletContext, Assembly-CSharp
+    - Name: m_elements
+      Entry: 7
+      Data: 3|ObservableCollections.ObservableList`1[[Teiwas.Script.Bullet.Context.Intetface.IBulletContextElement,
+        Assembly-CSharp]], ObservableCollections
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 4|Teiwas.Script.Bullet.Context.Asset.FirstSpeedCorrector, Assembly-CSharp
+    - Name: corrections
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[UnityCommonModule.Correction.Interface.ICorrection,
+        UnityCommonModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 6|UnityCommonModule.Correction.Instance.Asset.NormalCorrection, UnityCommonModule
+    - Name: m_type
+      Entry: 7
+      Data: 7|UnityCommonModule.Correction.CorrectionType.FixedType, UnityCommonModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_value
       Entry: 4
-      Data: 0
-    - Name: bulletSpeed
-      Entry: 4
-      Data: 0
-    - Name: verticalHoming
-      Entry: 4
-      Data: 0
-    - Name: horizontalHoming
-      Entry: 4
-      Data: 0
+      Data: 8.97
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: timing
       Entry: 3
       Data: 0
     - Name: effects
-      Entry: 6
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.EffectInstance,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 9|Teiwas.Script.Rune.Effect.EffectInstance, Assembly-CSharp
+    - Name: m_selector
+      Entry: 7
+      Data: 10|Teiwas.Script.Asset.TargetSelector.SelfSelector, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_effects
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffectHolder,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 12|Teiwas.Script.Asset.EffectHolder.HealHealth, Assembly-CSharp
+    - Name: m_value
+      Entry: 3
+      Data: 180
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8

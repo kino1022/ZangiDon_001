@@ -26,6 +26,7 @@ namespace Teiwas.Script.Bullet.Context {
         }
 
         private void Start() {
+            
             m_apply = ComponentsUtility.GetComponentsFromWhole<IBulletContextApplicable>(this.gameObject);
 
             if (m_apply.Count == 0) {
@@ -34,9 +35,16 @@ namespace Teiwas.Script.Bullet.Context {
             }
             
             ApplyContext();
+            
         }
         
         public void ApplyContext() {
+            
+            if (m_context == null) {
+                Debug.LogError($"コンテキストが保持されていません、ルーンにコンテキストが定義されていないか、コンテキストの受け渡しが行われていません");
+                return;
+            }
+            
             foreach (var apply in m_apply) {
                 apply.Apply(m_context);
             }

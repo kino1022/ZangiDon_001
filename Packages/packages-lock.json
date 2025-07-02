@@ -39,7 +39,7 @@
         "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
         "com.cysharp.r3": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity"
       },
-      "hash": "6276bba1f047bf28be84de7f91196cebfc0eeca5"
+      "hash": "bbebe14b739c1464e7b9b56bbb4674f3120ece66"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",

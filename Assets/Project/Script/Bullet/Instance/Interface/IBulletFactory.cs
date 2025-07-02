@@ -4,6 +4,6 @@ using UnityEngine;
 
 namespace Teiwas.Script.Bullet.Instance.Interface {
     public interface IBulletFactory {
-        public GameObject Create(BulletData data,Vector3 pos, Quaternion rot);
+        public void Create(BulletData data,Vector3 pos, Quaternion rot);
     }
 }
