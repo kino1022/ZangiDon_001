@@ -62,211 +62,19 @@ MonoBehaviour:
         UnityCommonModule]], mscorlib
     - Name: 
       Entry: 12
-      Data: 64
+      Data: 1
     - Name: 
       Entry: 7
       Data: 6|UnityCommonModule.Correction.Instance.Asset.NormalCorrection, UnityCommonModule
     - Name: m_type
-      Entry: 7
-      Data: 7|UnityCommonModule.Correction.CorrectionType.RatioType, UnityCommonModule
-    - Name: 
-      Entry: 8
+      Entry: 6
       Data: 
     - Name: m_value
       Entry: 4
-      Data: 10
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
-    - Name: 
-      Entry: 9
-      Data: 6
     - Name: 
       Entry: 13
       Data: 
@@ -290,14 +98,14 @@ MonoBehaviour:
       Data: 0
     - Name: effects
       Entry: 7
-      Data: 8|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.EffectInstance,
+      Data: 7|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.EffectInstance,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 9|Teiwas.Script.Rune.Effect.EffectInstance, Assembly-CSharp
+      Data: 8|Teiwas.Script.Rune.Effect.EffectInstance, Assembly-CSharp
     - Name: m_selector
       Entry: 6
       Data: 

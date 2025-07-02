@@ -1,5 +1,8 @@
+using System;
+using System.Collections.Generic;
 using Teiwas.Script.Bullet.Context.Intetface;
 using Teiwas.Script.Rune.Definition;
+using Teiwas.Script.Rune.Effect.Interface;
 using UnityEngine;
 
 namespace Teiwas.Script.Rune.Interface {
@@ -7,12 +10,16 @@ namespace Teiwas.Script.Rune.Interface {
     /// 効果を発動できるクラスに対して約束するインターフェース
     /// </summary>
     public interface ISubEffect : IRuneEffect {
-
-        public ActivateTiming GetTiming();
-        
-        public void Activate(GameObject caster);
         
         public IBulletContext Context { get; }
+        
+        public List<IEffect> CastEffects { get; }
+    
+        public Action<GameObject> OnPreCast { get; }
+        
+        public Action<GameObject> OnCast { get; }
+        
+        public Action<GameObject> OnPostCast { get; }
         
     }
 }

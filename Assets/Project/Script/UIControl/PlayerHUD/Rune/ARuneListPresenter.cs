@@ -57,7 +57,7 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
                 else {
                     if (m_model.List.Any(pair => pair.Key == i && m_model.List.TryGetValue(i, out IRune rune))) {
                         Debug.Log("要素が取得できたため、UIに対して追加します");
-                        m_model.List.TryGetValue(i, out IRune? rune);
+                        m_model.List.TryGetValue(i, out IRune rune);
                         m_view.Set(i,rune);
                     }
                     else {

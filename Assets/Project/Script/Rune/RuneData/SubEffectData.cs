@@ -14,19 +14,24 @@ namespace Teiwas.Script.Rune {
     /// 二文字目以降に選択した場合の性能を管理するクラス
     /// </summary>
     [Serializable]
-    public class SubEffect : ISubEffect {
+    public class SubEffectData : ISubEffect {
         
         [OdinSerialize,LabelText("使用回数"),ProgressBar(0,20)]
         public int amount;
 
-        [OdinSerialize, LabelText("生成時の補正")] protected IBulletContext m_context = new BulletContext();
+        [OdinSerialize, LabelText("生成時の補正")] 
+        protected IBulletContext m_context = new BulletContext();
         
         [OdinSerialize,LabelText("効果発動タイミング")]
         public ActivateTiming timing;
         
         [OdinSerialize,SerializeField,LabelText("発動する効果")]
         public List<EffectInstance> effects;
-        
+
+        [SerializeField] protected bool m_isActive = true;
+
+        public bool IsActive => m_isActive;
+
         public IBulletContext Context => m_context;
 
         //---------------------API methods-------------------------------

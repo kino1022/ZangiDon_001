@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using ObservableCollections;
 using Sirenix.OdinInspector;
@@ -55,6 +56,10 @@ namespace Teiwas.Script.Bullet.Context {
                 target?.AddElement(e);
                 
             }
+        }
+
+        public void SetElements(List<IBulletContextElement> elements) {
+            m_elements = new ObservableList<IBulletContextElement>(elements);
         }
     }
 }

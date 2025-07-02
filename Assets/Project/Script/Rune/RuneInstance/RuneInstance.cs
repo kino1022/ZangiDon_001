@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using R3;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Rune.Factory;
 using Teiwas.Script.Rune.Interface;
 using UnityEngine;
 using Observable = R3.Observable;
@@ -15,10 +16,10 @@ namespace Teiwas.Script.Rune {
         protected Sprite m_runeSprite;
         
         [OdinSerialize, LabelText("メイン効果")]
-        protected MainEffectInstance m_main;
+        protected IMainEffect m_main;
         
         [OdinSerialize, LabelText("サブ効果")]
-        protected SubEffectInstance m_sub;
+        protected ISubEffect m_sub;
         
         protected List<ReactiveProperty<bool>> activeObservers = new List<ReactiveProperty<bool>>();
         
@@ -30,11 +31,14 @@ namespace Teiwas.Script.Rune {
 
         protected bool m_isActive;
 
-        public RuneInstance(RuneData data) {
-            m_runeSprite = data.runeSprite;
-            m_main = new MainEffectInstance(data);
-            m_sub = new SubEffectInstance(data);
-            ObserveActiveInstance();
+        public RuneInstance(
+            Sprite sprite,
+            
+            IMainEffect main,
+            ISubEffect sub
+            ) {
+            m_main = main;
+            m_sub = sub;
         }
 
         public void Dispose() {
@@ -46,14 +50,14 @@ namespace Teiwas.Script.Rune {
         protected void ObserveActiveInstance() {
             //MainEffect.IsActiveを監視するオブサーバ
             Observable
-                .EveryValueChanged(m_main, x => x.m_isActive == false)
+                .EveryValueChanged(m_main, x => x.IsActive == false)
                 .Subscribe( x => {
                     this.Dispose();
                 })
                 .Dispose();
-            //SubEffect.IsActiveを監視するオブザーバー
+            //SubEffectData.IsActiveを監視するオブザーバー
             Observable
-                .EveryValueChanged(m_sub,x => x.isActive == false).
+                .EveryValueChanged(m_sub,x => x.IsActive == false).
                 Subscribe(x => {
                     this.Dispose();
                 })

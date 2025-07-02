@@ -14,8 +14,7 @@ namespace Teiwas.Script.Rune.Manage.Modules {
     public class RuneCastCountModule : IRuneDisposeHandler {
 
         [OdinSerialize, LabelText("残りの使用回数")] private int _count;
-
-        protected IDisposable m_disposable;
+        
 
         protected int m_count
         {
@@ -30,7 +29,7 @@ namespace Teiwas.Script.Rune.Manage.Modules {
 
         public Action RuneDisposeEvent { get; set; }
 
-        public RuneCastCountModule(int amount, IDisposable disposable)
+        public RuneCastCountModule(int amount)
         {
 
             if (amount <= 0)
@@ -39,12 +38,7 @@ namespace Teiwas.Script.Rune.Manage.Modules {
             }
             m_count = amount;
 
-            if (disposable == null)
-            {
-                UnityEngine.Debug.Log("Disposeする対象が見つかりません");
-                return;
-            }
-            m_disposable = disposable;
+    
         }
 
         public int GetAmount() {
@@ -64,7 +58,6 @@ namespace Teiwas.Script.Rune.Manage.Modules {
 
             if (_count <= 0) {
                 RuneDisposeEvent?.Invoke();
-                m_disposable.Dispose();
                 return;
             }
 

@@ -17,10 +17,13 @@ namespace Teiwas.Script.Rune {
         public  bool m_isActive = true;
         
 
-        public MainEffectInstance(RuneData data)
+        public MainEffectInstance(
+            Action<GameObject> castAction,
+            RuneCastCountModule count
+            )
         {
-            CastAction = data.Main.OnCast;
-            m_countModule = new RuneCastCountModule(data.Sub.GetAmount(), this);
+            CastAction = castAction;
+            m_countModule = count;
         }
 
         public void Dispose()
