@@ -49,6 +49,7 @@ MonoBehaviour:
     TypeName: 
   autoRun: 1
   autoInjectGameObjects: []
+  m_list: {fileID: 0}
 --- !u!114 &6083577184982819301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +65,9 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 2013385683747434769, guid: 8590d134dfbfc4c1ea0a0c9c38b94a03, type: 3}
+    - {fileID: 4972424288096209415, guid: 4477f8cc0b9954e82ae3dbd97aea17d4, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -76,7 +79,13 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 10
       Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
     - Name: 
       Entry: 13
       Data: 

@@ -1,9 +1,11 @@
+using System;
 using Project.Script.Bullet.Destroy.Interface;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using VContainer;
 
 namespace Project.Script.Bullet.Destroy.Conditions {
+    [Serializable]
     public abstract class ADestroyCondition : IDestroyCondition {
         
         [SerializeField, LabelText("条件が満たされているか")]

@@ -13,15 +13,19 @@ namespace Project.Script.Bullet.Instance.Factory {
         
         protected readonly IObjectResolver m_resolver;
         
+        [Inject]
         public BulletFactory(IObjectResolver resolver) {
             m_resolver = resolver;
         }
 
-        public GameObject Create(BulletData data,Vector3 pos, Quaternion rot) {
-            
+        public void Create(BulletData data,Vector3 pos, Quaternion rot) {
+
+            if (data == null) {
+                Debug.LogError("BulletDataがセットされていない状態でCreateが呼び出されました");
+                return;
+            }
+
             var instance = m_resolver.Instantiate(data.Prefab, pos, rot);
-            
-            return instance;
         }
     }
 }

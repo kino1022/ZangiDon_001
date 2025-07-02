@@ -19,6 +19,8 @@ namespace Project.Script.Bullet.Destroy.Conditions {
         [Inject]
         public override void Start(IObjectResolver resolver) {
             m_counter = resolver.Resolve<IRangeCounter>();
+            
+            RegisterCounter();
         }
 
         protected void RegisterCounter() {
