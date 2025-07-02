@@ -11,11 +11,9 @@ namespace Teiwas.Script.Rune.Interface {
         
         public List<IEffect> CastEffect { get; }
         
-        public void OnPreActivate (GameObject caster); 
-
-        public void OnActivate(GameObject caster);
+        public void OnPreCast (GameObject caster); 
         
-        public void OnPostActivate (GameObject caster);
+        public void OnPostCast (GameObject caster);
         
     }
 }

@@ -17,8 +17,6 @@ namespace Teiwas.Script.Rune.Interface {
     
         public Action<GameObject> OnPreCast { get; }
         
-        public Action<GameObject> OnCast { get; }
-        
         public Action<GameObject> OnPostCast { get; }
         
     }
