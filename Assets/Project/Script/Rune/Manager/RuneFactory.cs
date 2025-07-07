@@ -31,17 +31,14 @@ namespace Teiwas.Script.Rune.Manager {
         }
         
         
-        public RuneInstance Supply() {
-            int index = UnityEngine.Random.Range(0, m_instances.Count);
-            
-            var rune = m_instances[index];
-            
-            return rune;
+        public IRune Supply() {
+            var index = UnityEngine.Random.Range(0, m_datas.Count);
+            return InstanceRuneInstance(m_datas[index]);
         }
 
         [Button("インスタンス化")]
-        protected virtual void InstanceRuneInstance(RuneData data) {
-            new RuneInstanceFactory(data);
+        protected virtual IRune InstanceRuneInstance(RuneData data) {
+            return new RuneInstanceFactory(data).Create();
         }
     }
 }

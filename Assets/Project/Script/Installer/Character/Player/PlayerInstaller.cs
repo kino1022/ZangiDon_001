@@ -16,6 +16,10 @@ namespace Project.Script.Installer.Character.Player {
                 .RegisterInstance(ComponentsUtility.GetComponentFromWhole<ILockTargetHolder>(this.gameObject))
                 .As<ILockTargetHolder>();
             
+            builder
+                .RegisterComponent(ComponentsUtility.GetComponentFromWhole<ITargetContextHolder>(this.gameObject))
+                .As<ITargetContextHolder>();
+            
             new RuneReferenceInstaller(this.gameObject).Install(builder);
             
             new ShooterReferenceInstaller(this.gameObject).Install(builder);

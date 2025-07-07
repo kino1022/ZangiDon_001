@@ -30,91 +30,65 @@ MonoBehaviour:
       Data: 0
     - Name: Main
       Entry: 7
-      Data: 0|Teiwas.Script.Asset.Castable.DummyCastable, Assembly-CSharp
+      Data: 0|Teiwas.Script.Asset.Castable.DummyMainEffect, Assembly-CSharp
     - Name: amount
       Entry: 3
-      Data: 6
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
     - Name: Sub
       Entry: 7
-      Data: 1|Teiwas.Script.Rune.SubEffect, Assembly-CSharp
+      Data: 1|Teiwas.Script.Rune.SubEffectData, Assembly-CSharp
     - Name: amount
       Entry: 3
-      Data: 6
+      Data: 1
     - Name: m_context
       Entry: 7
-      Data: 2|Teiwas.Script.Bullet.Context.BulletContext, Assembly-CSharp
-    - Name: m_elements
-      Entry: 7
-      Data: 3|ObservableCollections.ObservableList`1[[Teiwas.Script.Bullet.Context.Intetface.IBulletContextElement,
-        Assembly-CSharp]], ObservableCollections
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 4|Teiwas.Script.Bullet.Context.Asset.AccelerationCorrector, Assembly-CSharp
-    - Name: m_corrections
-      Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[UnityCommonModule.Correction.Interface.ICorrection,
-        UnityCommonModule]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 6|UnityCommonModule.Correction.Instance.Asset.NormalCorrection, UnityCommonModule
-    - Name: m_type
-      Entry: 6
-      Data: 
-    - Name: m_value
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timing
-      Entry: 3
-      Data: 0
-    - Name: effects
-      Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.EffectInstance,
+      Data: 2|System.Collections.Generic.List`1[[Teiwas.Script.Bullet.Context.Intetface.IBulletContextElement,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 0
     - Name: 
-      Entry: 7
-      Data: 8|Teiwas.Script.Rune.Effect.EffectInstance, Assembly-CSharp
-    - Name: m_selector
-      Entry: 6
-      Data: 
-    - Name: m_effects
-      Entry: 6
+      Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
+    - Name: OnHitEffect
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_preCastEffects
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_postCastEffects
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
     - Name: 
       Entry: 13
       Data: 

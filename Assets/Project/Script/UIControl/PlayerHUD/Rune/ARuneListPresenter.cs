@@ -58,6 +58,9 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
                     if (m_model.List.Any(pair => pair.Key == i && m_model.List.TryGetValue(i, out IRune rune))) {
                         Debug.Log("要素が取得できたため、UIに対して追加します");
                         m_model.List.TryGetValue(i, out IRune rune);
+                        if (rune?.RuneSprite == null) {
+                            Debug.LogError($"{this.GetType().Name}の処理内で{rune.GetType().Name}にスプライトが確認できませんでした");
+                        }
                         m_view.Set(i,rune);
                     }
                     else {

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Teiwas.Script.Rune.Interface {
@@ -6,11 +7,7 @@ namespace Teiwas.Script.Rune.Interface {
     /// </summary>
     public interface IMainEffect : IRuneEffect {
         
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="caster"></param>
-        public void OnCast(GameObject caster);
+        public Action<GameObject> OnCast { get; }
         
     }
 }

@@ -13,8 +13,8 @@ namespace Teiwas.Script.Rune.Factory {
 
         public IMainEffect Create() {
             return new MainEffectInstance(
-                m_data.Main.OnCast,
-                new RuneCastCountModule(m_data.Main.Amount)
+                new RuneCastCountModule(m_data.Main.Amount),
+                m_data.Main.OnCast
                 );
         }
     }

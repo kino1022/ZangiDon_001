@@ -33,10 +33,10 @@ namespace Teiwas.Script.Rune {
 
         public RuneInstance(
             Sprite sprite,
-            
             IMainEffect main,
             ISubEffect sub
             ) {
+            m_runeSprite = sprite;
             m_main = main;
             m_sub = sub;
         }
