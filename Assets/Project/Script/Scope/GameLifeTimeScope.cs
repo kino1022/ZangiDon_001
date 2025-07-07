@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
-using Project.Script.Installer;
-using Project.Script.Installer.Interface;
+using Teiwas.Script.Installer;
+using Teiwas.Script.Installer.Interface;
 using Sirenix.OdinInspector;
-using Sirenix.Serialization;
 using UnityEngine;
 using MessagePipe;
 using VContainer;
@@ -17,9 +16,10 @@ namespace Teiwas.Project.Script.Scope {
 
         protected override void Configure(IContainerBuilder builder) {
 
-
+            builder.RegisterMessagePipe();
 
             InstallFromInstaller(builder);
+
         }
 
         protected void InstallFromInstaller(IContainerBuilder builder) {

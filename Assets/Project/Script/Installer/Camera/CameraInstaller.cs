@@ -4,9 +4,9 @@ using Teiwas.Script.Camera;
 using VContainer;
 using VContainer.Unity;
 
-namespace Project.Script.Installer.Camera {
+namespace Teiwas.Script.Installer.Camera {
     public class CameraInstaller : SerializedMonoBehaviour, IInstaller {
-        
+
         public void Install(IContainerBuilder builder) {
 
             builder
