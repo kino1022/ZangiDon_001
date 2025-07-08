@@ -9,30 +9,30 @@ namespace Teiwas.Script.Camera.Angle {
         protected GameObject m_target;
 
         protected GameObject m_player;
-        
+
 
         public NormalAngleCalculater(
             GameObject camera, GameObject target, GameObject player) {
             m_camera = camera;
-            if (camera == null) {
+            if(camera == null) {
                 return;
             }
             m_target = target;
             m_player = player;
-            if (m_player == null) {
+            if(m_player == null) {
                 return;
-            } 
+            }
         }
 
         public Quaternion CalculateAngle() {
-            
-            var direction = 
-                m_target == null ?
-                    m_player.transform.forward : m_camera.transform.position - m_target.transform.position;
-            
-            var result = Quaternion.Euler(direction);
-            
+
+            var result = Quaternion.LookRotation(CalculateDirection());
+
             return result;
+        }
+
+        protected Vector3 CalculateDirection() {
+            return m_target == null ? m_player.transform.forward.normalized : (m_camera.transform.position - m_target.transform.position).normalized;
         }
     }
 }

@@ -12,25 +12,25 @@ using VContainer;
 
 namespace Teiwas.Script.Camera.Position {
     [Serializable]
-    public class NormalPositionController : ICameraPositionHolder , IDisposable {
+    public class NormalPositionController : ICameraPositionHolder, IDisposable {
 
-        [OdinSerialize, LabelText("オフセット")] 
+        [OdinSerialize, LabelText("オフセット")]
         protected ICameraOffSetHolder m_offset;
-        
+
         [SerializeField, LabelText("カメラポジション")]
         protected Vector3 m_position = Vector3.zero;
-        
+
         protected ILockTargetHolder m_targetHolder;
-        
+
         [OdinSerialize, ReadOnly]
         protected GameObject m_target;
 
-        [OdinSerialize, ReadOnly] 
+        [OdinSerialize, ReadOnly]
         protected GameObject m_player;
-        
+
         public ICameraOffSetHolder OffSet => m_offset;
         public Vector3 Position => m_position;
-        
+
         protected CompositeDisposable m_changeTargetDisposable = new CompositeDisposable();
         protected CompositeDisposable m_targetTransformDisposable = new CompositeDisposable();
         protected CompositeDisposable m_playerTransformDisposable = new CompositeDisposable();
@@ -40,23 +40,28 @@ namespace Teiwas.Script.Camera.Position {
             m_targetTransformDisposable.Dispose();
             m_playerTransformDisposable.Dispose();
         }
-        
+
         public void ControlStart(IObjectResolver resolver, GameObject camera) {
-            
+
             m_targetHolder = resolver.Resolve<ILockTargetHolder>();
             m_player = ComponentsUtility.GetComponentFromWhole<PlayerCharacterHolder>(camera).GetTarget();
 
-            if (m_player == null) {
+            if(m_player == null) {
                 Debug.LogError($"{this.GetType().Name}でplayerを取得できませんでした");
                 return;
             }
-            
+
             m_playerTransformDisposable = new CompositeDisposable();
             //プレイヤーの座標変化の購読処理
-            ObserveTransform(m_player,m_playerTransformDisposable);
-            
+            ObserveTransform(m_player, m_playerTransformDisposable);
+
             m_targetTransformDisposable = new CompositeDisposable();
-            
+            m_changeTargetDisposable = new CompositeDisposable();
+
+            ObserveChangeTarget();
+
+            ObserveTransform(m_target, m_targetTransformDisposable);
+
             ObserveOffset();
         }
 
@@ -76,19 +81,19 @@ namespace Teiwas.Script.Camera.Position {
             //初期化
             m_targetTransformDisposable = new CompositeDisposable();
             m_target = x;
-            if (m_target != null) {
+            if(m_target != null) {
                 //新規のターゲット座標変化の購読処理
-                ObserveTransform(x,m_targetTransformDisposable);
+                ObserveTransform(x, m_targetTransformDisposable);
             }
         }
-        
+
         /// <summary>
         /// 渡されたゲームオブジェクトの座標変化を監視するメソッド
         /// </summary>
         /// <param name="x">監視するゲームオブジェクト</param>
         /// <param name="disposable">利用するCompositeDisposable</param>
-        protected void ObserveTransform(GameObject x,CompositeDisposable disposable) {
-            
+        protected void ObserveTransform(GameObject x, CompositeDisposable disposable) {
+
             Observable
                 .EveryValueChanged(x, go => go.transform.position)
                 .Subscribe(go => {
@@ -99,7 +104,7 @@ namespace Teiwas.Script.Camera.Position {
         }
 
         protected void ObserveOffset() {
-            
+
             Observable
                 .EveryValueChanged(m_offset, x => x.Distance)
                 .Subscribe(x => {
@@ -107,7 +112,7 @@ namespace Teiwas.Script.Camera.Position {
                     UpdatePosition();
                 })
                 .AddTo(m_player.GetCancellationTokenOnDestroy());
-            
+
             Observable
                 .EveryValueChanged(m_offset, x => x.Height)
                 .Subscribe(x => {
