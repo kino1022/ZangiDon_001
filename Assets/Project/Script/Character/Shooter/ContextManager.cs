@@ -20,15 +20,18 @@ namespace Project.Script.Character.Shoter {
         [OdinSerialize, LabelText("管理しているコンテキスト")]
         protected BulletContext m_context = new BulletContext();
 
+        protected IObjectResolver m_resolver;
+
         public IBulletContext Context => m_context;
         
         [Inject]
-        public void Construct(ISubRuneSlot slot) {
-            m_slot = slot;
+        public void Construct(IObjectResolver resolver) {
+            m_resolver = resolver;
 
-            if (m_slot == null) {
-                Debug.LogError("ISubRuneSlotが正常に取得できませんでした");
-                return;
+            m_slot = m_resolver.Resolve<ISubRuneSlot>();
+
+            if(m_slot == null) {
+                Debug.Log($"{GetType().Name}でISubRuneSlotを継承したオブジェクトを取得できませんでした");
             }
             
             RegisterObserver();
@@ -36,7 +39,7 @@ namespace Project.Script.Character.Shoter {
 
         protected void RegisterObserver() {
             
-            m_slot.List
+            m_slot?.List
                 .ObserveChanged()
                 .Subscribe(x => {
                     Debug.Log("ISubRuneListの変化を検知したのでContextの更新を行います");
