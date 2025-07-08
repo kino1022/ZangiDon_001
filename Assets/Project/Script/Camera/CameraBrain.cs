@@ -7,41 +7,52 @@ using UnityEngine;
 using VContainer;
 
 namespace Teiwas.Script.Camera {
-    public class CameraBrain : SerializedMonoBehaviour {
+    /// <summary>
+    /// 与えられた要素から得られる情報に則ってカメラの制御を行うコンポーネント
+    /// </summary>
+    public class CameraBrain : SerializedMonoBehaviour
+    {
 
-        [OdinSerialize, Title("カメラポジション")] 
+        [OdinSerialize, Title("カメラポジション")]
         protected ICameraPositionHolder m_pos;
-        
-        [OdinSerialize, Title("カメラアングル")] 
+
+        [OdinSerialize, Title("カメラアングル")]
         protected ICameraAngleHolder m_angle;
 
-        [OdinSerialize, Title("アングル変化の滑らかさ")] 
+        [OdinSerialize, Title("アングル変化の滑らかさ")]
         protected ISmoothHolder m_angleSmooth;
 
-        [OdinSerialize, Title("カメラ移動の滑らかさ")] 
+        [OdinSerialize, Title("カメラ移動の滑らかさ")]
         protected ISmoothHolder m_moveSmooth;
-        
+
         protected IObjectResolver m_resolver;
 
         [Inject]
-        public void Construct(IObjectResolver resolver) {
-            
+        public void Construct(IObjectResolver resolver)
+        {
+
             Debug.Log($"{this.GetType().Name}のInjectionを開始します");
-            
+
             m_resolver = resolver;
         }
 
-        protected void Awake() {
+        protected void Awake()
+        {
             m_pos?.ControlStart(m_resolver, this.gameObject);
             m_angle?.ControlStart(m_resolver, this.gameObject);
             m_moveSmooth?.ControlStart(m_resolver, this.gameObject);
             m_angleSmooth?.ControlStart(m_resolver, this.gameObject);
+
+            transform.position = m_pos.Position;
+
+            transform.rotation = m_angle.Angle;
         }
 
-        private void Update() {
-            
+        private void Update()
+        {
+
             var angleSmooth = m_angleSmooth == null ? 1.0f : m_angleSmooth.Smooth;
-            
+
             var moveSmooth = m_moveSmooth == null ? 1.0f : m_moveSmooth.Smooth;
 
             this.transform.rotation = Quaternion.Slerp(
@@ -56,5 +67,7 @@ namespace Teiwas.Script.Camera {
                 moveSmooth * Time.deltaTime
                 );
         }
+
+
     }
 }

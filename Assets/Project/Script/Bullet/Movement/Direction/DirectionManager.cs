@@ -20,24 +20,25 @@ namespace Teiwas.Script.Bullet.Movement.Direction {
             get => m_direction;
             private set => m_direction = value.normalized;
         }
-        
+
         [OdinSerialize, LabelText("移動パターン")]
         protected IDirectionPattern m_pattern;
-     
+
         [Inject]
         protected IObjectResolver m_resolver;
-        
+
         private void Start() {
             m_pattern.StartControl(m_resolver,this.gameObject);
             RegisterControl();
         }
-        
+
         protected void RegisterControl() {
             Observable
                 .EveryValueChanged(m_pattern, x => x.Direction)
                 .Subscribe(x => {
                     Direction = m_pattern.Direction;
-                }).AddTo(this);
+                })
+                .AddTo(this);
         }
     }
 }

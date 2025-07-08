@@ -14,32 +14,36 @@ namespace Project.Script.Bullet.Destroy {
 
         [OdinSerialize, LabelText("オブジェクトが破壊される条件")]
         protected List<ADestroyCondition> m_destroyConditions = new List<ADestroyCondition>();
-        
+
         protected CompositeDisposable m_disposables = new CompositeDisposable();
-        
+
         protected IObjectResolver m_resolver;
 
         [Inject]
         public void Construct(IObjectResolver resolver) {
             m_resolver = resolver;
         }
-        
+
         private void Awake () {
 
             if (m_destroyConditions.Count == 0 || m_destroyConditions == null) {
                 Debug.LogError($"{this.gameObject.name}には消滅条件が定義されていません");
                 return;
             }
-            
+
             foreach (var condition in m_destroyConditions) {
-                condition.Start(m_resolver);
+                condition.Start(m_resolver, gameObject);
             }
-            
+
             RegisterCondition();
-        } 
-        
+        }
+
 
         private void OnDestroy() {
+            foreach(var item in m_destroyConditions) {
+                item.Dispose();
+            }
+
             m_disposables.Dispose();
         }
 
@@ -55,7 +59,8 @@ namespace Project.Script.Bullet.Destroy {
         }
 
         protected void OnConditionTriggerd() {
-            GameObject.Destroy(this.gameObject);
+            Debug.Log($"条件が満たされた為、{gameObject.name}を破壊します");
+            GameObject.Destroy(gameObject);
         }
     }
 }

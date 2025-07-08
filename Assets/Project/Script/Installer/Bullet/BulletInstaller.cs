@@ -11,7 +11,7 @@ namespace Teiwas.Script.Installer.Bullet {
 
         public void Install(IContainerBuilder builder) {
 
-            builder.RegisterInstance(this.gameObject).As<GameObject>();
+            builder.RegisterInstance(gameObject).As<GameObject>();
 
             builder.RegisterEntryPoint<BulletRangeCounter>().As<IRangeCounter>();
 

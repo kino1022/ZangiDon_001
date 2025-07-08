@@ -14,11 +14,11 @@ namespace Teiwas.Script.Bullet.Movement.Acceleration {
     [Serializable, LabelText("等加速度")]
     public class ConstantAcceleration : IBulletAccelerationHolder {
 
-        [SerializeField, LabelText("加速度"), ProgressBar(-100.0f,100.0f)]
+        [SerializeField, LabelText("加速度")]
         protected float m_acce = 0.0f;
 
         public float Acceleration => m_acce;
-        
+
 
         public void ApplyCorrect (List<ICorrection> corrections) {
             var executor = new CorrectionManager();
@@ -26,11 +26,11 @@ namespace Teiwas.Script.Bullet.Movement.Acceleration {
             if (corrections.Count == 0) {
                 return;
             }
-            
+
             foreach (var correction in corrections) {
                 executor.Add(correction);
             }
-            
+
             m_acce = executor.Execute(m_acce);
         }
     }

@@ -18,8 +18,8 @@ namespace Teiwas.Script.Bullet.Context {
         [OdinSerialize, LabelText("適用する要素")] protected ObservableList<IBulletContextElement> m_elements = new();
 
         public IReadOnlyObservableList<IBulletContextElement> Elements => m_elements;
-        
-        
+
+
         protected void IntegrationElements() {
             foreach (var e in m_elements) {
                 //eと同型のElementの抽出処理
@@ -43,18 +43,18 @@ namespace Teiwas.Script.Bullet.Context {
                 Debug.Log($"統合対象のContextにはElementが存在しませんでした");
                 return;
             }
-            
+
             foreach (var e in context.Elements) {
-                
+
                 if (m_elements?.Any(x => x.GetType() == e.GetType()) == false) {
                     m_elements.Add(e);
                     continue;
                 }
-                
+
                 var target = m_elements?.FirstOrDefault(x => x.GetType() == e.GetType());
-                
+
                 target?.AddElement(e);
-                
+
             }
         }
 

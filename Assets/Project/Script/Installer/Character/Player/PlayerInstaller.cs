@@ -10,16 +10,16 @@ namespace Teiwas.Script.Installer.Character.Player {
             base.Install(builder);
 
             builder
-                .RegisterInstance(ComponentsUtility.GetComponentFromWhole<ILockTargetHolder>(this.gameObject))
+                .RegisterInstance(ComponentsUtility.GetComponentFromWhole<ILockTargetHolder>(gameObject))
                 .As<ILockTargetHolder>();
 
             builder
-                .RegisterComponent(ComponentsUtility.GetComponentFromWhole<ITargetContextHolder>(this.gameObject))
+                .RegisterComponent(ComponentsUtility.GetComponentFromWhole<ITargetContextHolder>(gameObject))
                 .As<ITargetContextHolder>();
 
-            new RuneReferenceInstaller(this.gameObject).Install(builder);
+            new RuneReferenceInstaller(gameObject).Install(builder);
 
-            new ShooterReferenceInstaller(this.gameObject).Install(builder);
+            new ShooterReferenceInstaller(gameObject).Install(builder);
         }
     }
 }

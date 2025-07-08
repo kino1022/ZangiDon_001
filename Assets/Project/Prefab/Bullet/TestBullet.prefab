@@ -149,6 +149,10 @@ PrefabInstance:
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4389375383108226671, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5272360924019481743, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
       propertyPath: m_Name
       value: TestBullet
@@ -197,6 +201,106 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: serializationData.SerializedFormat
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: serializationData.SerializedBytes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: serializationData.SerializationNodes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[0]'
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[1]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[2]'
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[6]'
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[8]'
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[10]'
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[12]'
+      value: 111
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[14]'
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[16]'
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[18]'
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[20]'
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[22]'
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[24]'
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[25]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[26]'
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[30]'
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[32]'
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[34]'
+      value: 97
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[36]'
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[38]'
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[40]'
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[42]'
+      value: 121
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -250,7 +354,7 @@ MonoBehaviour:
       Data: 0|Teiwas.Script.Bullet.Movement.FirstSpeed.NormalFirstSpeed, Assembly-CSharp
     - Name: m_speed
       Entry: 4
-      Data: 324.596771
+      Data: 50
     - Name: 
       Entry: 8
       Data: 
@@ -259,7 +363,7 @@ MonoBehaviour:
       Data: 1|Teiwas.Script.Bullet.Movement.Acceleration.ConstantAcceleration, Assembly-CSharp
     - Name: m_acce
       Entry: 4
-      Data: 100
+      Data: 50
     - Name: 
       Entry: 8
       Data: 
@@ -287,14 +391,13 @@ MonoBehaviour:
     SerializationNodes:
     - Name: m_pattern
       Entry: 7
-      Data: 0|Teiwas.Script.Bullet.Movement.Direction.Pattern.DebugDirectionPattern,
-        Assembly-CSharp
+      Data: 0|Teiwas.Script.Bullet.Movement.Direction.TargetDirectionManager, Assembly-CSharp
     - Name: m_direction
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 4
       Data: 0

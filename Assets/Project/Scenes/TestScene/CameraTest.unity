@@ -436,7 +436,7 @@ PrefabInstance:
       objectReference: {fileID: 1179057129313242233, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
     - target: {fileID: 2981327569693452992, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2981327569693452992, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
       propertyPath: m_LocalPosition.y
@@ -481,7 +481,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1009029896063045913, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1697757571}
   m_SourcePrefab: {fileID: 100100000, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
 --- !u!1 &761282350 stripped
 GameObject:
@@ -850,7 +853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8541149690439051312, guid: 6213c0e447282437ca96143ee702c8d1, type: 3}
       propertyPath: autoInjectGameObjects.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8541149690439051312, guid: 6213c0e447282437ca96143ee702c8d1, type: 3}
       propertyPath: 'autoInjectGameObjects.Array.data[0]'
@@ -872,6 +875,10 @@ PrefabInstance:
       propertyPath: 'autoInjectGameObjects.Array.data[4]'
       value: 
       objectReference: {fileID: 237633637603874157, guid: f75c13e53e1c24092aedeea2f7d1b376, type: 3}
+    - target: {fileID: 8541149690439051312, guid: 6213c0e447282437ca96143ee702c8d1, type: 3}
+      propertyPath: 'autoInjectGameObjects.Array.data[5]'
+      value: 
+      objectReference: {fileID: 3154598052442178856, guid: 6e8ec1f5d8c82466589f2b668c43ee3c, type: 3}
     - target: {fileID: 8541149690439051312, guid: 6213c0e447282437ca96143ee702c8d1, type: 3}
       propertyPath: 'managedReferences[8015150111859671105]'
       value: Assembly-CSharp Teiwas.Script.UIControl.PlayerHUD.HealthBar.PlayerHealthBarInstaller
@@ -917,6 +924,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1009029896063045913, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
   m_PrefabInstance: {fileID: 734466219}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1697757571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697757568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8267b18be21244999690124f130114e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  m_radius: 30
+  m_origin: {x: 0, y: 0, z: 0}
+  m_speed: 0.1
+  m_angle: 0
 --- !u!1 &1795086801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,22 +1445,7 @@ MonoBehaviour:
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 4|Teiwas.Script.Camera.Angle.Limiter.NormalAngleLimiter, Assembly-CSharp
-    - Name: m_up
-      Entry: 4
-      Data: 90
-    - Name: m_down
-      Entry: 4
-      Data: 90
-    - Name: m_side
-      Entry: 4
-      Data: 90
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1443,7 +1460,7 @@ MonoBehaviour:
       Data: 
     - Name: m_angleSmooth
       Entry: 7
-      Data: 5|Teiwas.Script.Camera.Smooth.RelativeMoveSmooth, Assembly-CSharp
+      Data: 4|Teiwas.Script.Camera.Smooth.RelativeMoveSmooth, Assembly-CSharp
     - Name: m_maxRange
       Entry: 4
       Data: 300
@@ -1452,10 +1469,10 @@ MonoBehaviour:
       Data: 0
     - Name: m_smoothCurve
       Entry: 7
-      Data: 6|UnityEngine.AnimationCurve, UnityEngine.CoreModule
+      Data: 5|UnityEngine.AnimationCurve, UnityEngine.CoreModule
     - Name: 
       Entry: 7
-      Data: 7|UnityEngine.Keyframe[], UnityEngine.CoreModule
+      Data: 6|UnityEngine.Keyframe[], UnityEngine.CoreModule
     - Name: 
       Entry: 12
       Data: 2
@@ -1467,19 +1484,19 @@ MonoBehaviour:
       Data: 1
     - Name: m_Time
       Entry: 4
-      Data: 0
+      Data: 0.0155030917
     - Name: m_Value
       Entry: 4
-      Data: 0.5047302
+      Data: 0.702614069
     - Name: m_InTangent
       Entry: 4
-      Data: 0
+      Data: 0.302068949
     - Name: m_OutTangent
       Entry: 4
-      Data: 0
+      Data: 0.302068949
     - Name: m_TangentMode
       Entry: 3
-      Data: 0
+      Data: 34
     - Name: m_WeightedMode
       Entry: 3
       Data: 0
@@ -1488,7 +1505,7 @@ MonoBehaviour:
       Data: 0
     - Name: m_OutWeight
       Entry: 4
-      Data: 0
+      Data: 0.333333343
     - Name: 
       Entry: 8
       Data: 
@@ -1506,19 +1523,19 @@ MonoBehaviour:
       Data: 1
     - Name: m_InTangent
       Entry: 4
-      Data: 2
+      Data: 0.302068949
     - Name: m_OutTangent
       Entry: 4
-      Data: 2
+      Data: 0.302068949
     - Name: m_TangentMode
       Entry: 3
-      Data: 0
+      Data: 34
     - Name: m_WeightedMode
       Entry: 3
       Data: 0
     - Name: m_InWeight
       Entry: 4
-      Data: 0
+      Data: 0.333333343
     - Name: m_OutWeight
       Entry: 4
       Data: 0
@@ -1551,7 +1568,7 @@ MonoBehaviour:
       Data: 
     - Name: m_moveSmooth
       Entry: 7
-      Data: 8|Teiwas.Script.Camera.Smooth.RelativeMoveSmooth, Assembly-CSharp
+      Data: 7|Teiwas.Script.Camera.Smooth.RelativeMoveSmooth, Assembly-CSharp
     - Name: m_maxRange
       Entry: 4
       Data: 300
@@ -1560,13 +1577,13 @@ MonoBehaviour:
       Data: 0
     - Name: m_smoothCurve
       Entry: 7
-      Data: 9|UnityEngine.AnimationCurve, UnityEngine.CoreModule
+      Data: 8|UnityEngine.AnimationCurve, UnityEngine.CoreModule
     - Name: 
       Entry: 7
-      Data: 10|UnityEngine.Keyframe[], UnityEngine.CoreModule
+      Data: 9|UnityEngine.Keyframe[], UnityEngine.CoreModule
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 7
       Data: UnityEngine.Keyframe, UnityEngine.CoreModule
@@ -1575,58 +1592,25 @@ MonoBehaviour:
       Data: 1
     - Name: m_Time
       Entry: 4
-      Data: 0.00255966187
+      Data: -2.719462E-06
     - Name: m_Value
       Entry: 4
-      Data: 0.497650146
+      Data: 0.697998047
     - Name: m_InTangent
       Entry: 4
-      Data: 0
+      Data: 0.302001119
     - Name: m_OutTangent
       Entry: 4
-      Data: 0
+      Data: 0.302001119
     - Name: m_TangentMode
       Entry: 3
-      Data: 0
+      Data: 34
     - Name: m_WeightedMode
       Entry: 3
       Data: 0
     - Name: m_InWeight
       Entry: 4
       Data: 0
-    - Name: m_OutWeight
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Keyframe, UnityEngine.CoreModule
-    - Name: ver
-      Entry: 3
-      Data: 1
-    - Name: m_Time
-      Entry: 4
-      Data: 0.5466546
-    - Name: m_Value
-      Entry: 4
-      Data: 0.51576066
-    - Name: m_InTangent
-      Entry: 4
-      Data: 0.170362592
-    - Name: m_OutTangent
-      Entry: 4
-      Data: 0.170362592
-    - Name: m_TangentMode
-      Entry: 3
-      Data: 0
-    - Name: m_WeightedMode
-      Entry: 3
-      Data: 0
-    - Name: m_InWeight
-      Entry: 4
-      Data: 0.333333343
     - Name: m_OutWeight
       Entry: 4
       Data: 0.333333343
@@ -1647,19 +1631,19 @@ MonoBehaviour:
       Data: 1
     - Name: m_InTangent
       Entry: 4
-      Data: 2
+      Data: 0.302001119
     - Name: m_OutTangent
       Entry: 4
-      Data: 2
+      Data: 0.302001119
     - Name: m_TangentMode
       Entry: 3
-      Data: 0
+      Data: 34
     - Name: m_WeightedMode
       Entry: 3
       Data: 0
     - Name: m_InWeight
       Entry: 4
-      Data: 0
+      Data: 0.333333343
     - Name: m_OutWeight
       Entry: 4
       Data: 0

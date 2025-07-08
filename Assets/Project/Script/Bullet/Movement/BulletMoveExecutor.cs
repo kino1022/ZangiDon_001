@@ -7,13 +7,13 @@ using UnityEngine;
 
 namespace Teiwas.Script.Bullet.Movement {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public class BulletMoveExecutor : SerializedMonoBehaviour {
-        
+
         [OdinSerialize]
         protected IBulletSpeedHolder m_speed;
-        
+
         [OdinSerialize]
         protected IMoveDirectionHolder m_direction;
 
@@ -23,24 +23,24 @@ namespace Teiwas.Script.Bullet.Movement {
         protected Rigidbody m_rb;
 
         private void Awake() {
-            
+
             m_speed = ComponentsUtility.GetComponentFromWhole<IBulletSpeedHolder>(this.gameObject);
 
-            if (m_speed == null) {
+            if(m_speed == null) {
                 this.enabled = false;
                 return;
             }
-            
+
             m_direction = ComponentsUtility.GetComponentFromWhole<IMoveDirectionHolder>(this.gameObject);
 
-            if (m_direction == null) {
+            if(m_direction == null) {
                 this.enabled = false;
                 return;
             }
-            
+
             m_rb = ComponentsUtility.GetComponentFromWhole<Rigidbody>(this.gameObject);
 
-            if (m_rb == null) {
+            if(m_rb == null) {
                 this.enabled = false;
                 return;
             }
@@ -52,7 +52,7 @@ namespace Teiwas.Script.Bullet.Movement {
         }
 
         protected void UpdateMovement() {
-            m_movement =　m_speed.Speed * Time.deltaTime * m_direction.Direction;
+            m_movement = m_speed.Speed * m_direction.Direction;
         }
 
         protected void UpdateVelocity() {

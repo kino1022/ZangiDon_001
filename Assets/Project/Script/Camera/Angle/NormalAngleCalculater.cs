@@ -32,7 +32,7 @@ namespace Teiwas.Script.Camera.Angle {
         }
 
         protected Vector3 CalculateDirection() {
-            return m_target == null ? m_player.transform.forward.normalized : (m_camera.transform.position - m_target.transform.position).normalized;
+            return m_target == null ? m_player.transform.forward.normalized : (m_target.transform.position - m_camera.transform.position).normalized;
         }
     }
 }
