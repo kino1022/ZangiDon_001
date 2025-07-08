@@ -10,7 +10,7 @@ namespace Teiwas.Script.Installer.Camera {
         public void Install(IContainerBuilder builder) {
 
             builder
-                .RegisterComponent(ComponentsUtility.GetComponentFromWhole<CameraBrain>(this.gameObject));
+                .RegisterComponent(ComponentsUtility.GetComponentFromWhole<CameraBrain>(gameObject));
         }
     }
 }
