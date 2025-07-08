@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Teiwas.Script.Rune.Definition;
+using Teiwas.Script.Rune.Effect.Interface;
 using Teiwas.Script.Rune.Interface;
 using Teiwas.Script.Rune.Manager.Interface;
 using UnityEngine;
@@ -10,23 +11,18 @@ namespace Teiwas.Script.Rune.Manager {
 
         public void OnPreCast(GameObject caster) {
             foreach (var rune in m_runes) {
-                if (rune.Value.Sub.GetTiming() == ActivateTiming.OnPreCast) {
-                    rune.Value.Sub.Activate(caster);
-                }
+                rune.Value?.Sub.OnPreCast?.Invoke(caster);
             }
         }
 
-        public List<ISubEffect> GetEffectOnShot() {
-            var result = new List<ISubEffect>();
-            
-            foreach (var rune in m_runes) {
-                if (rune.Value.Sub.GetTiming() == ActivateTiming.OnHit) {
-                    result.Add(rune.Value.Sub);
-                }
-            }
+        public List<IEffect> GetEffectOnShot() {
+            var result = new List<IEffect>();
 
-            if (result.Count == 0) {
-                Debug.Log("ヒットした際に発動する効果がありませんでした");
+            foreach (var pair in m_runes) {
+                var list = pair.Value.Sub.CastEffects;
+                foreach (var e in list) {
+                    result.Add(e);
+                }
             }
             
             return result;
@@ -34,9 +30,7 @@ namespace Teiwas.Script.Rune.Manager {
 
         public void OnPostCast(GameObject caster) {
             foreach (var rune in m_runes) {
-                if (rune.Value.Sub.GetTiming() == ActivateTiming.OnPostCast) {
-                    rune.Value.Sub.Activate(caster);
-                }
+                rune.Value?.Sub.OnPostCast?.Invoke(caster);
             }
         }
     }

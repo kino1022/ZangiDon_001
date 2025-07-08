@@ -39,7 +39,7 @@ namespace Project.Script.UIControl.PlayerHUD.Rune.RuneUI {
         }
 
         protected void RegisterObserveAmount() {
-            Observable.EveryValueChanged(m_effect, effect => effect.GetAmount()).Subscribe(x => {
+            Observable.EveryValueChanged(m_effect, effect => effect.Amount).Subscribe(x => {
                 Debug.Log("ルーンの使用回数の変化を検知しました");
                 OnRuneAmountChange(x);
             }).AddTo(m_disposable);

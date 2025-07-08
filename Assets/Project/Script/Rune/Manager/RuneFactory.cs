@@ -3,6 +3,7 @@ using ObservableCollections;
 using Teiwas.Script.Rune.Interface;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using Teiwas.Script.Rune.Factory;
 using Teiwas.Script.Rune.Manager.Interface;
 using UnityEngine;
 using Random = System.Random;
@@ -30,17 +31,14 @@ namespace Teiwas.Script.Rune.Manager {
         }
         
         
-        public RuneInstance Supply() {
-            int index = UnityEngine.Random.Range(0, m_instances.Count);
-            
-            var rune = m_instances[index];
-            
-            return rune;
+        public IRune Supply() {
+            var index = UnityEngine.Random.Range(0, m_datas.Count);
+            return InstanceRuneInstance(m_datas[index]);
         }
 
         [Button("インスタンス化")]
-        protected virtual void InstanceRuneInstance(RuneData data) {
-            m_instances.Add(new RuneInstance(data));
+        protected virtual IRune InstanceRuneInstance(RuneData data) {
+            return new RuneInstanceFactory(data).Create();
         }
     }
 }

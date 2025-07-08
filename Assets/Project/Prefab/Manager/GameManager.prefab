@@ -48,8 +48,12 @@ MonoBehaviour:
   parentReference:
     TypeName: 
   autoRun: 1
-  autoInjectGameObjects: []
-  m_list: {fileID: 0}
+  autoInjectGameObjects:
+  - {fileID: 8383476109982168290, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
+  - {fileID: 3158713204533966026, guid: b6c7c3b12d30243ba83d17081ab4eb8c, type: 3}
+  - {fileID: 3397037532186718393, guid: a7e1eee751e0446dcaef5ab5012751bc, type: 3}
+  - {fileID: 7981518913451226407, guid: 55a775e6de6c74740b4b1b9f8d3a06b4, type: 3}
+  m_list: {fileID: 6083577184982819301}
 --- !u!114 &6083577184982819301
 MonoBehaviour:
   m_ObjectHideFlags: 0

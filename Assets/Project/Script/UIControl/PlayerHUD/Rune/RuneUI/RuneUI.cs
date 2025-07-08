@@ -1,6 +1,7 @@
 using Project.Script.UIControl.PlayerHUD.Rune.Definition;
 using Project.Script.UIControl.PlayerHUD.Rune.RuneUI.Interface;
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using Teiwas.Script.Rune.Interface;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,10 +12,10 @@ namespace Project.Script.UIControl.PlayerHUD.Rune.RuneUI {
         [SerializeField, LabelText("ルーンのスプライト")]
         protected Image m_sprite;
 
-        [SerializeField, LabelText("ルーンの使用回数表示")]
+        [OdinSerialize, LabelText("ルーンの使用回数表示")]
         protected IRuneAmountUI m_amountUI;
         
-        [SerializeField, LabelText("表示するルーン")]
+        [OdinSerialize, LabelText("表示するルーン")]
         protected IRune m_rune;
         
         [SerializeField, LabelText("ルーンが配置されている場所")]
@@ -27,7 +28,16 @@ namespace Project.Script.UIControl.PlayerHUD.Rune.RuneUI {
         }
         
         public void Set(IRune rune) {
+            Debug.Log($"{this.GetType().Name}に対して{rune.GetType().Name}がセットされました");
+            InitializeUI();
+            m_rune = null;
             m_rune = rune;
+            
+            #if UNITY_EDITOR
+            if (m_rune.RuneSprite == null) {
+                Debug.LogError($"{this.GetType().Name}内で{rune.GetType().Name}がセットされた際にスプライトが定義されていませんでした。");
+            }
+            #endif
             
             ViewUpdate();
         }
@@ -45,6 +55,10 @@ namespace Project.Script.UIControl.PlayerHUD.Rune.RuneUI {
             SpriteUpdate();
             AmountUpdate();
         }
+
+        protected void InitializeUI() {
+            m_sprite.sprite = null;
+        }
         
         /// <summary>
         /// スプライト要素の更新を行う
@@ -54,8 +68,9 @@ namespace Project.Script.UIControl.PlayerHUD.Rune.RuneUI {
             
             //ルーンが何もない時の処理
             if (m_rune == null) {
+                m_rune = null;
+                m_sprite.sprite = null;
                 m_sprite.enabled = false;
-                return;
             }
             else {
                 

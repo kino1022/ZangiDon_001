@@ -4,7 +4,7 @@ using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
-namespace Project.Script.Installer.Character.Player {
+namespace Teiwas.Script.Installer.Character.Player {
     /// <summary>
     /// ルーンシステム関連の依存性を注入するIInstaller
     /// </summary>
@@ -17,20 +17,20 @@ namespace Project.Script.Installer.Character.Player {
         }
 
         public void Install(IContainerBuilder builder) {
-            
+
             builder
                 .RegisterInstance(ComponentsUtility.GetComponentFromWhole<IRuneSelector>(m_character))
                 .As<IRuneSelector>();
-            
+
             builder
                 .RegisterInstance(ComponentsUtility.GetComponentFromWhole<IMainRuneSlot>(m_character))
                 .As<IMainRuneSlot>();
-            
+
             builder
                 .RegisterInstance(ComponentsUtility.GetComponentFromWhole<ISubRuneSlot>(m_character))
                 .As<ISubRuneSlot>();
         }
-        
-        
+
+
     }
 }
