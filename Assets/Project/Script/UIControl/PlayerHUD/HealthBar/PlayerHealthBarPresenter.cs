@@ -5,7 +5,9 @@ using UnityEngine;
 using Teiwas.Script.UIControl.PlayerHUD.HealthBar.Interface;
 
 namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class PlayerHealthBarPresenter : IPlayerHealthBarPresenter{
 
         protected IMaxHealth m_max;
