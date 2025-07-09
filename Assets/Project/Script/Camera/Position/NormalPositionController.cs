@@ -97,7 +97,7 @@ namespace Teiwas.Script.Camera.Position {
             Observable
                 .EveryValueChanged(x, go => go.transform.position)
                 .Subscribe(go => {
-                    Debug.Log($"{x.name}の座標変化を検知しました");
+                    //Debug.Log($"{x.name}の座標変化を検知しました");
                     OnTransformChanged();
                 })
                 .AddTo(disposable);
@@ -108,7 +108,7 @@ namespace Teiwas.Script.Camera.Position {
             Observable
                 .EveryValueChanged(m_offset, x => x.Distance)
                 .Subscribe(x => {
-                    Debug.Log($"{m_offset.GetType().Name}のDistanceの変化を検知しました");
+                    //Debug.Log($"{m_offset.GetType().Name}のDistanceの変化を検知しました");
                     UpdatePosition();
                 })
                 .AddTo(m_player.GetCancellationTokenOnDestroy());
@@ -116,7 +116,7 @@ namespace Teiwas.Script.Camera.Position {
             Observable
                 .EveryValueChanged(m_offset, x => x.Height)
                 .Subscribe(x => {
-                    Debug.Log($"{m_offset.GetType().Name}のHeightの変化を検知しました");
+                    //Debug.Log($"{m_offset.GetType().Name}のHeightの変化を検知しました");
                     UpdatePosition();
                 })
                 .AddTo(m_player.GetCancellationTokenOnDestroy());

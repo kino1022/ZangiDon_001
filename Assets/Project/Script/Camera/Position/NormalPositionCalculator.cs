@@ -12,7 +12,7 @@ namespace Teiwas.Script.Camera.Position {
             m_player = player;
 
             if(m_player == null) {
-                Debug.LogError($"{GetType().Name}の初期化時に追従対象がセットされませんでした");
+                //Debug.LogError($"{GetType().Name}の初期化時に追従対象がセットされませんでした");
                 return;
             }
 
@@ -20,7 +20,7 @@ namespace Teiwas.Script.Camera.Position {
             m_offset = offset;
 
             if(m_offset == null) {
-                Debug.LogError($"{GetType().Name}の初期化時にオフセット管理クラスが渡されませんでした");
+                //Debug.LogError($"{GetType().Name}の初期化時にオフセット管理クラスが渡されませんでした");
             }
 
         }

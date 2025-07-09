@@ -200,18 +200,18 @@ PrefabInstance:
     - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
-    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
-      propertyPath: serializationData.SerializedFormat
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
-      propertyPath: serializationData.SerializedBytes.Array.size
+      propertyPath: serializationData.SerializedFormat
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: serializationData.SerializedBytes.Array.size
+      value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
       propertyPath: serializationData.SerializationNodes.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
       propertyPath: 'serializationData.SerializedBytes.Array.data[0]'
@@ -301,6 +301,50 @@ PrefabInstance:
       propertyPath: 'serializationData.SerializedBytes.Array.data[42]'
       value: 121
       objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[44]'
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[45]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[46]'
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[50]'
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[52]'
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[54]'
+      value: 104
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[56]'
+      value: 111
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[58]'
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[60]'
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[62]'
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668038988937758833, guid: db2be83d1b0664bae9c1cfa0c015f950, type: 3}
+      propertyPath: 'serializationData.SerializedBytes.Array.data[64]'
+      value: 114
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -341,32 +385,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
+    SerializedFormat: 0
+    SerializedBytes: 01010c0000006d005f0066006900720073007400530070006500650064002f00000000014a0000005400650069007700610073002e005300630072006900700074002e00420075006c006c00650074002e004d006f00760065006d0065006e0074002e0046006900720073007400530070006500650064002e004e006f0072006d0061006c0046006900720073007400530070006500650064002c00200041007300730065006d0062006c0079002d00430053006800610072007000000000001f01070000006d005f0073007000650065006400000048420501010e0000006d005f0061006300630065006c00650072006100740069006f006e002f0100000001500000005400650069007700610073002e005300630072006900700074002e00420075006c006c00650074002e004d006f00760065006d0065006e0074002e0041006300630065006c00650072006100740069006f006e002e0043006f006e007300740061006e00740041006300630065006c00650072006100740069006f006e002c00200041007300730065006d0062006c0079002d00430053006800610072007000010000001f01060000006d005f0061006300630065000000484205
     ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: m_firstSpeed
-      Entry: 7
-      Data: 0|Teiwas.Script.Bullet.Movement.FirstSpeed.NormalFirstSpeed, Assembly-CSharp
-    - Name: m_speed
-      Entry: 4
-      Data: 50
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: m_acceleration
-      Entry: 7
-      Data: 1|Teiwas.Script.Bullet.Movement.Acceleration.ConstantAcceleration, Assembly-CSharp
-    - Name: m_acce
-      Entry: 4
-      Data: 50
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
   m_speed: 0
 --- !u!114 &9136682992835325248
 MonoBehaviour:
@@ -381,35 +407,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
+    SerializedFormat: 0
+    SerializedBytes: 0101090000006d005f007000610074007400650072006e002f00000000014f0000005400650069007700610073002e005300630072006900700074002e00420075006c006c00650074002e004d006f00760065006d0065006e0074002e0044006900720065006300740069006f006e002e0054006100720067006500740044006900720065006300740069006f006e004d0061006e0061006700650072002c00200041007300730065006d0062006c0079002d004300530068006100720070000000000003010b0000006d005f0064006900720065006300740069006f006e002f01000000012b00000055006e0069007400790045006e00670069006e0065002e0056006500630074006f00720033002c00200055006e0069007400790045006e00670069006e0065002e0043006f00720065004d006f00640075006c0065002000000000200000000020000000000505
     ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: m_pattern
-      Entry: 7
-      Data: 0|Teiwas.Script.Bullet.Movement.Direction.TargetDirectionManager, Assembly-CSharp
-    - Name: m_direction
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
   m_direction: {x: 0, y: 0, z: 0}
 --- !u!114 &-7345856737845992807
 MonoBehaviour:
@@ -424,21 +429,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
+    SerializedFormat: 0
+    SerializedBytes: 2d01070000006d005f00730070006500650064002d010b0000006d005f0064006900720065006300740069006f006e002d01040000006d005f0072006200
     ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: m_speed
-      Entry: 6
-      Data: 
-    - Name: m_direction
-      Entry: 6
-      Data: 
-    - Name: m_rb
-      Entry: 6
-      Data: 
+    SerializationNodes: []
   m_movement: {x: 0, y: 0, z: 0}

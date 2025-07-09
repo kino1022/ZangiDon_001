@@ -14,6 +14,6 @@ namespace Teiwas.Script.EventBus {
             Entity = entity;
             Position = pos;
         }
-        
+
     }
 }

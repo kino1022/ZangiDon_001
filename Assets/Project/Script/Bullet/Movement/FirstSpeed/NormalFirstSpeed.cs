@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using Teiwas.Script.Bullet.Movement.FirstSpeed.Interface;
 using UnityCommonModule.Correction;
 using UnityCommonModule.Correction.Interface;
@@ -15,19 +16,31 @@ namespace Teiwas.Script.Bullet.Movement.FirstSpeed {
 
         public float FirstSpeed => m_speed;
 
+        [OdinSerialize, LabelText("補正管理クラス")]
+        protected ICorrector m_corrector = new CorrectionManager();
+
         public void ApplyCorrect(List<ICorrection> corrections) {
-            if(corrections == null || corrections.Count == 0) {
+
+            Debug.Log("受け取ったICorrectionをもとに速度の補正を行います");
+
+            m_corrector = new CorrectionManager();
+
+            if(corrections is null || corrections.Count is 0) {
+                Debug.Log("与えられた補正が存在しませんでした");
                 return;
             }
 
-            var corrector = new CorrectionManager();
             foreach(var item in corrections) {
-                if(item != null) {
-                    corrector.Add(item);
+                if(item is not null) {
+                    m_corrector.Add(item);
+                }
+                else {
+                    Debug.LogError("与えられた補正値クラスがnullでした");
                 }
             }
 
-            m_speed = corrector.Execute(m_speed);
+            m_speed = m_corrector.Execute(m_speed);
+            Debug.Log("速度の補正が終了しました");
         }
     }
 }

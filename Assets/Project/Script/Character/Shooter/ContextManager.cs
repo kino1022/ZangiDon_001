@@ -1,4 +1,5 @@
 using ObservableCollections;
+using Project.Script.Utility;
 using R3;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
@@ -8,52 +9,68 @@ using Teiwas.Script.Rune.Manager.Interface;
 using UnityEngine;
 using VContainer;
 
-namespace Project.Script.Character.Shoter {
+namespace Teiwas.Script.Character.Shoter {
     /// <summary>
     /// キャラクターのSubRuneから得られるRuneのIBulletContextを管理するクラス
     /// </summary>
-    public class ContextManager : SerializedMonoBehaviour , IBulletContextHolder {
-        
-        [OdinSerialize]
-        protected ISubRuneSlot m_slot;
+    [DefaultExecutionOrder(9999)]
+    public class ContextManager : SerializedMonoBehaviour, IBulletContextHolder {
+        [OdinSerialize, LabelText("生成物に渡すContext")]
+        protected IBulletContext m_context = new BulletContext();
 
-        [OdinSerialize, LabelText("管理しているコンテキスト")]
-        protected BulletContext m_context = new BulletContext();
+        public IBulletContext Context => m_context;
+
+        [OdinSerialize, LabelText("参照するサブルーン")]
+        protected ISubRuneSlot m_slot;
 
         protected IObjectResolver m_resolver;
 
-        public IBulletContext Context => m_context;
-        
         [Inject]
         public void Construct(IObjectResolver resolver) {
             m_resolver = resolver;
 
-            m_slot = m_resolver.Resolve<ISubRuneSlot>();
+            if(m_resolver == null) {
+                Debug.LogError("IObjectResolverを取得できませんでした");
+                return;
+            }
+        }
+
+        private void Start() {
+            m_slot = m_resolver?.Resolve<ISubRuneSlot>();
 
             if(m_slot == null) {
-                Debug.Log($"{GetType().Name}でISubRuneSlotを継承したオブジェクトを取得できませんでした");
+                Debug.LogError("IObjectResolverからISubRuneSlotを取得できませんでした。GetComponentを試行します");
+
+                var root = transform.parent.root;
+
+                m_slot = root.GetComponentInChildren<ISubRuneSlot>();
+
+                if(m_slot == null) {
+                    Debug.Log($"{gameObject.name}全体からISubRuneSlotから取得できませんでした");
+                    return;
+                }
             }
-            
-            RegisterObserver();
+
+            ObserveRuneList();
         }
 
-        protected void RegisterObserver() {
-            
-            m_slot?.List
+        protected void ObserveRuneList() {
+            m_slot.List
                 .ObserveChanged()
                 .Subscribe(x => {
-                    Debug.Log("ISubRuneListの変化を検知したのでContextの更新を行います");
-                    OnListChanged();
+                    Debug.Log($"{m_slot.GetType()}でルーンの変化を検知したため、Contextの更新を行います");
+                    UpdateContext();
                 })
                 .AddTo(this);
-            
         }
 
-        protected void OnListChanged() {
+        protected void UpdateContext() {
             m_context = new BulletContext();
 
-            foreach (var rune in m_slot.List.Values) {
-                m_context.Add(rune.Sub.Context);
+            foreach(var item in m_slot.List) {
+                var con = item.Value.Sub.Context;
+
+                m_context.Add(con);
             }
         }
     }
