@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84da3bf3f48b4d9a8aaa351e446d84ce, type: 3}
-  m_Name: DebugRuneData
+  m_Name: DebugRune001
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 21300000, guid: c78f4b965958a4c54865d93262754278, type: 3}
+    - {fileID: 21300000, guid: 4424fe26ea7af4621bb15df0866b063e, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
     - Name: runeName
-      Entry: 1
-      Data: DebugRuneData
+      Entry: 6
+      Data: 
     - Name: runeSprite
       Entry: 10
       Data: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
       Data: 0|Teiwas.Script.Asset.Castable.DummyMainEffect, Assembly-CSharp
     - Name: amount
       Entry: 3
-      Data: 1
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
@@ -42,48 +42,14 @@ MonoBehaviour:
       Data: 1|Teiwas.Script.Rune.SubEffectData, Assembly-CSharp
     - Name: amount
       Entry: 3
-      Data: 1
+      Data: 10
     - Name: m_context
       Entry: 7
       Data: 2|System.Collections.Generic.List`1[[Teiwas.Script.Bullet.Context.Intetface.IBulletContextElement,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 3|Teiwas.Script.Bullet.Context.Asset.FirstSpeedCorrector, Assembly-CSharp
-    - Name: corrections
-      Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[UnityCommonModule.Correction.Interface.ICorrection,
-        UnityCommonModule]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 5|UnityCommonModule.Correction.Instance.Asset.NormalCorrection, UnityCommonModule
-    - Name: m_type
-      Entry: 7
-      Data: 6|UnityCommonModule.Correction.CorrectionType.FixedType, UnityCommonModule
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: m_value
-      Entry: 4
-      Data: 500
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -92,7 +58,7 @@ MonoBehaviour:
       Data: 
     - Name: OnHitEffect
       Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
+      Data: 3|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
@@ -105,7 +71,7 @@ MonoBehaviour:
       Data: 
     - Name: m_preCastEffects
       Entry: 7
-      Data: 8|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
+      Data: 4|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
@@ -118,7 +84,7 @@ MonoBehaviour:
       Data: 
     - Name: m_postCastEffects
       Entry: 7
-      Data: 9|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
+      Data: 5|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
@@ -132,5 +98,5 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  runeName: DebugRuneData
-  runeSprite: {fileID: 21300000, guid: c78f4b965958a4c54865d93262754278, type: 3}
+  runeName: 
+  runeSprite: {fileID: 21300000, guid: 4424fe26ea7af4621bb15df0866b063e, type: 3}

@@ -1384,10 +1384,10 @@ MonoBehaviour:
       Data: 1|Teiwas.Script.Camera.Position.NormalOffsetController, Assembly-CSharp
     - Name: m_distance
       Entry: 4
-      Data: 4.983389
+      Data: 16.4900665
     - Name: m_height
       Entry: 4
-      Data: 2.99003339
+      Data: 1.986755
     - Name: 
       Entry: 8
       Data: 

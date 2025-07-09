@@ -19,10 +19,14 @@ namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
         [OdinSerialize, LabelText("割合に対応した体力ゲージの色")]
         protected List<ColorWithRatio> m_colors = new List<ColorWithRatio>();
 
-        
+
 
         public void OnStateChange(HeatlhState state) {
 
+        }
+
+        protected void UpdateText() {
+            
         }
 
     }

@@ -181,6 +181,9 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 11400000, guid: 8d49f637fe6094238819040c3c0bb6c5, type: 2}
+    - {fileID: 11400000, guid: beb05ba2fce3845c58558a99126d4cf4, type: 2}
+    - {fileID: 11400000, guid: b86719a85f6a241f0a15bc6b2733c729, type: 2}
+    - {fileID: 11400000, guid: 0300ff7ac590f4253b3594e7a2c0f89a, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -192,19 +195,28 @@ MonoBehaviour:
         Assembly-CSharp]], ObservableCollections
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 4
     - Name: 
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
     - Name: 
       Entry: 13
       Data: 
     - Name: 
       Entry: 8
       Data: 
-    - Name: m_instances
+    - Name: m_runtimeData
       Entry: 7
-      Data: 1|ObservableCollections.ObservableList`1[[Teiwas.Script.Rune.RuneInstance,
+      Data: 1|ObservableCollections.ObservableList`1[[Teiwas.Script.Rune.RuneData,
         Assembly-CSharp]], ObservableCollections
     - Name: 
       Entry: 12

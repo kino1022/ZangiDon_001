@@ -33,6 +33,8 @@ namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
         protected void RegisterObserve() {
             RegisterMaxHealth();
             RegisterHealth();
+
+            m_view.OnStateChange(OnStateChanged());
         }
 
         protected void RegisterMaxHealth() {
