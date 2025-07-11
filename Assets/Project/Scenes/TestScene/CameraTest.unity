@@ -627,6 +627,10 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 470876479557350409, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
+    - target: {fileID: 1683697133421215627, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1683697133421215627, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
     - target: {fileID: 2251588246132375966, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -727,7 +731,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1683697133421215627, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1295,6 +1300,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 2196978062381430289, guid: f75c13e53e1c24092aedeea2f7d1b376, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 2196978062381430289, guid: f75c13e53e1c24092aedeea2f7d1b376, type: 3}
+    - target: {fileID: 2749866483958676345, guid: f75c13e53e1c24092aedeea2f7d1b376, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 2749866483958676345, guid: f75c13e53e1c24092aedeea2f7d1b376, type: 3}
     - target: {fileID: 5869311457205811326, guid: f75c13e53e1c24092aedeea2f7d1b376, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -1339,7 +1352,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2196978062381430289, guid: f75c13e53e1c24092aedeea2f7d1b376, type: 3}
+    - {fileID: 2749866483958676345, guid: f75c13e53e1c24092aedeea2f7d1b376, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1673,6 +1688,9 @@ MonoBehaviour:
       Data: 0
     - Name: 
       Entry: 8
+      Data: 
+    - Name: m_resolver
+      Entry: 6
       Data: 
 --- !u!114 &1980354027 stripped
 MonoBehaviour:

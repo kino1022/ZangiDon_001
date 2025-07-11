@@ -13,6 +13,7 @@ namespace Teiwas.Script.GameManager {
     /// インスタンスされている敵味方のGameObjectを管理するクラス
     /// </summary>
     public class EntityManager : SerializedMonoBehaviour, IEntityManager {
+        
         [SerializeField, TitleGroup("存在しているEntity")]
         protected ObservableList<GameObject> m_entitys = new ObservableList<GameObject>();
 

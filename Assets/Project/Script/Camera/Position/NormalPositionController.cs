@@ -43,11 +43,20 @@ namespace Teiwas.Script.Camera.Position {
 
         public void ControlStart(IObjectResolver resolver, GameObject camera) {
 
-            m_targetHolder = resolver.Resolve<ILockTargetHolder>();
+            Debug.Log($"これからResolveします。渡されたresolverのハッシュコード: {resolver.GetHashCode()}", camera);
+
+
+            m_targetHolder = resolver?.Resolve<ILockTargetHolder>();
+
+            if(m_targetHolder is null) {
+                Debug.LogError($"{GetType()}にILockTargetHolderが注入されていません");
+                return;
+            }
+
             m_player = ComponentsUtility.GetComponentFromWhole<PlayerCharacterHolder>(camera).GetTarget();
 
             if(m_player == null) {
-                Debug.LogError($"{this.GetType().Name}でplayerを取得できませんでした");
+                Debug.LogError($"{GetType().Name}でplayerを取得できませんでした");
                 return;
             }
 
@@ -56,6 +65,7 @@ namespace Teiwas.Script.Camera.Position {
             ObserveTransform(m_player, m_playerTransformDisposable);
 
             m_targetTransformDisposable = new CompositeDisposable();
+
             m_changeTargetDisposable = new CompositeDisposable();
 
             ObserveChangeTarget();
@@ -66,10 +76,16 @@ namespace Teiwas.Script.Camera.Position {
         }
 
         protected void ObserveChangeTarget() {
+
+            if(m_targetHolder is null) {
+                Debug.LogError($"{GetType()}にILockTargetHolderが注入されていません");
+                return;
+            }
+
             Observable
-                .EveryValueChanged(m_targetHolder, x => x.GetTarget())
+                .EveryValueChanged(m_targetHolder, x => x?.GetTarget())
                 .Subscribe(x => {
-                    Debug.Log($"{this.GetType().Name}で{m_player.name}の{x.name}へのターゲット変化を検知しました");
+                    Debug.Log($"{GetType().Name}で{m_player.name}の{m_targetHolder.GetTarget()}へのターゲット変化を検知しました");
                     OnTargetChanged(x);
                 })
                 .AddTo(m_changeTargetDisposable);
@@ -95,7 +111,7 @@ namespace Teiwas.Script.Camera.Position {
         protected void ObserveTransform(GameObject x, CompositeDisposable disposable) {
 
             Observable
-                .EveryValueChanged(x, go => go.transform.position)
+                .EveryValueChanged(x, go => go?.transform.position)
                 .Subscribe(go => {
                     //Debug.Log($"{x.name}の座標変化を検知しました");
                     OnTransformChanged();

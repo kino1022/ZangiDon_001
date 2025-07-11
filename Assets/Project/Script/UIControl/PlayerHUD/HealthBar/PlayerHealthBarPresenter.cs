@@ -6,7 +6,7 @@ using Teiwas.Script.UIControl.PlayerHUD.HealthBar.Interface;
 
 namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public class PlayerHealthBarPresenter : IPlayerHealthBarPresenter{
 
@@ -20,8 +20,22 @@ namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
 
         [Inject]
         public PlayerHealthBarPresenter(IMaxHealth max, IHealth current, PlayerHealthView view) {
+            Debug.Log($"{GetType()}の初期化処理を開始します");
+
             m_max = max;
+
+            if(m_max == null) {
+                Debug.LogError($"{GetType()}がIMaxHealthを継承したクラスを取得できませんでした");
+                return;
+            }
+
             m_current = current;
+
+            if(m_current == null) {
+                Debug.LogError($"{GetType()}がIHealthを継承したクラスを取得できませんでした");
+                return;
+            }
+
             m_view = view;
 
             RegisterObserve();

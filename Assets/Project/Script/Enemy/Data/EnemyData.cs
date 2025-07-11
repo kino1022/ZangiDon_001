@@ -1,4 +1,7 @@
+using Project.Script.Character.Data;
 using Sirenix.OdinInspector;
+using Teiwas.Script.Spawner.Character;
+using Teiwas.Script.Spawner.Character.Data;
 using UnityEngine;
 
 namespace Teiwas.Script.Enemy.Data {
@@ -6,11 +9,7 @@ namespace Teiwas.Script.Enemy.Data {
     /// 生成される敵のデータを管理するクラス
     /// </summary>
     [CreateAssetMenu(menuName = "Project/Enemy/Data")]
-    public class EnemyData : SerializedScriptableObject {
+    public class EnemyData : CharacterSpawnerData {
 
-        /// <summary>
-        /// EnemyのPrefab
-        /// </summary>
-        public GameObject EnemyPrefab;
     }
 }

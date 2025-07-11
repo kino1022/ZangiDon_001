@@ -24,24 +24,24 @@ namespace Teiwas.Script.Bullet.Movement {
 
         private void Awake() {
 
-            m_speed = ComponentsUtility.GetComponentFromWhole<IBulletSpeedHolder>(this.gameObject);
+            m_speed = ComponentsUtility.GetComponentFromWhole<IBulletSpeedHolder>(gameObject);
 
             if(m_speed == null) {
-                this.enabled = false;
+                enabled = false;
                 return;
             }
 
-            m_direction = ComponentsUtility.GetComponentFromWhole<IMoveDirectionHolder>(this.gameObject);
+            m_direction = ComponentsUtility.GetComponentFromWhole<IMoveDirectionHolder>(gameObject);
 
             if(m_direction == null) {
-                this.enabled = false;
+                enabled = false;
                 return;
             }
 
-            m_rb = ComponentsUtility.GetComponentFromWhole<Rigidbody>(this.gameObject);
+            m_rb = ComponentsUtility.GetComponentFromWhole<Rigidbody>(gameObject);
 
             if(m_rb == null) {
-                this.enabled = false;
+                enabled = false;
                 return;
             }
         }

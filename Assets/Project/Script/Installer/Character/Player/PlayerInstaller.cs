@@ -20,6 +20,7 @@ namespace Teiwas.Script.Installer.Character.Player {
             new RuneReferenceInstaller(gameObject).Install(builder);
 
             new ShooterReferenceInstaller(gameObject).Install(builder);
+            
         }
     }
 }

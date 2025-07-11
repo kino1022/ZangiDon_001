@@ -18,6 +18,10 @@ namespace Teiwas.Script.Installer.Character {
                 .RegisterComponent(ComponentsUtility.GetComponentFromWhole<IHealth>(this.gameObject))
                 .As<IHealth>();
 
+            builder
+                .RegisterComponent(ComponentsUtility.GetComponentFromWhole<IMaxHealth>(gameObject))
+                .As<IMaxHealth>();
+
             //弾丸生成クラスのレジスト
             builder
                 .Register<IBulletFactory, BulletFactory>(Lifetime.Singleton)

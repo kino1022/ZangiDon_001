@@ -12,12 +12,17 @@ namespace Teiwas.Script.Camera.Angle {
 
 
         public NormalAngleCalculater(
-            GameObject camera, GameObject target, GameObject player) {
+            GameObject camera,
+            GameObject target,
+            GameObject player) {
+
             m_camera = camera;
             if(camera == null) {
                 return;
             }
+
             m_target = target;
+            
             m_player = player;
             if(m_player == null) {
                 return;

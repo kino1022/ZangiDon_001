@@ -28,9 +28,8 @@ namespace Teiwas.Script.Installer.UI {
                 .As<IPlayerHealthBarView>();
 
             builder
-               .RegisterEntryPoint<PlayerHealthBarPresenter>(Lifetime.Singleton)
-               .As<IPlayerHealthBarPresenter>();
+                .RegisterEntryPoint<PlayerHealthBarPresenter>()
+                .As<IPlayerHealthBarPresenter>();
         }
-
     }
 }

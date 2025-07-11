@@ -10,8 +10,7 @@ namespace Teiwas.Script.Camera {
     /// <summary>
     /// 与えられた要素から得られる情報に則ってカメラの制御を行うコンポーネント
     /// </summary>
-    public class CameraBrain : SerializedMonoBehaviour
-    {
+    public class CameraBrain : SerializedMonoBehaviour {
 
         [OdinSerialize, Title("カメラポジション")]
         protected ICameraPositionHolder m_pos;
@@ -28,40 +27,46 @@ namespace Teiwas.Script.Camera {
         protected IObjectResolver m_resolver;
 
         [Inject]
-        public void Construct(IObjectResolver resolver)
-        {
+        public void Construct(IObjectResolver resolver) {
 
-            Debug.Log($"{this.GetType().Name}のInjectionを開始します");
+            Debug.Log($"{GetType().Name}のInjectionを開始します");
 
             m_resolver = resolver;
+
+            if(m_resolver is null) {
+                Debug.Log($"{GetType()}にIObjectResolverが注入されていませんでした");
+            }
         }
 
-        protected void Awake()
-        {
-            m_pos?.ControlStart(m_resolver, this.gameObject);
-            m_angle?.ControlStart(m_resolver, this.gameObject);
-            m_moveSmooth?.ControlStart(m_resolver, this.gameObject);
-            m_angleSmooth?.ControlStart(m_resolver, this.gameObject);
+        protected void Start() {
+
+            if(m_resolver is null) {
+                Debug.Log($"{GetType()}にIObjectResolverが注入されていませんでした");
+            }
+
+            m_pos?.ControlStart(m_resolver, gameObject);
+            m_angle?.ControlStart(m_resolver, gameObject);
+            m_moveSmooth?.ControlStart(m_resolver, gameObject);
+            m_angleSmooth?.ControlStart(m_resolver, gameObject);
 
             transform.position = m_pos.Position;
 
             transform.rotation = m_angle.Angle;
         }
 
-        private void Update()
-        {
+        private void Update() {
 
             var angleSmooth = m_angleSmooth == null ? 1.0f : m_angleSmooth.Smooth;
 
             var moveSmooth = m_moveSmooth == null ? 1.0f : m_moveSmooth.Smooth;
 
-            this.transform.rotation = Quaternion.Slerp(
+            transform.rotation = Quaternion.Slerp(
                 transform.rotation,
                 m_angle.Angle,
                 angleSmooth * Time.deltaTime
                 );
 
-            this.transform.position = Vector3.Lerp(
+            transform.position = Vector3.Lerp(
                 transform.position,
                 m_pos.Position,
                 moveSmooth * Time.deltaTime

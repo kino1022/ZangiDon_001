@@ -39,11 +39,18 @@ namespace Teiwas.Script.Camera.Angle {
             m_player = ComponentsUtility.GetComponentFromWhole<PlayerCharacterHolder>(camera).GetTarget();
             m_context = resolver.Resolve<ITargetContextHolder>();
 
+            if(m_context is null) {
+                Debug.LogError("IObjectResolverからITargetContextHolderを取得できませんでした");
+                return;
+            }
+            //ターゲット変化の監視処理
             ObserveChangeTarget();
+            ///方向変化の購読処理
             ObservableDirection();
         }
 
         //アングルの更新に関わる要素を全て監視して、それを全てアングル更新メソッドに繋ぐ
+
 
         protected void UpdateAngle() {
             m_angle = CalculateAngle();
@@ -64,9 +71,23 @@ namespace Teiwas.Script.Camera.Angle {
         }
 
         protected void ObserveChangeTarget() {
+
+            if(m_context is null) {
+                Debug.Log($"{GetType().Name}がIContextHolderを取得できていませんでした");
+                return;
+            }
+
+            if(m_context.Context is null) {
+                Debug.LogError($"{m_context.GetType().Name}のContext初期化処理が間に合っていませんでした");
+                return;
+            }
+
             Observable
-                .EveryValueChanged(m_context.Context, x => x.Target)
+                .EveryValueChanged(m_context, x => x?.Context?.Target)
                 .Subscribe(x => {
+                    if(x == null) {
+                        return;
+                    }
                     UpdateAngle();
                 })
                 .AddTo(m_player);
@@ -74,7 +95,7 @@ namespace Teiwas.Script.Camera.Angle {
 
         protected void ObservableDirection() {
             Observable
-                .EveryValueChanged(m_context.Context, x => x.Direction)
+                .EveryValueChanged(m_context, x => x.Context.Direction)
                 .Subscribe(x => {
                     UpdateAngle();
                 })

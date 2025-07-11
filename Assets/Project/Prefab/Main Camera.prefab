@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3736573361623647479}
   - component: {fileID: 514716973187441473}
   - component: {fileID: 5869311457205811326}
+  - component: {fileID: 2196978062381430289}
+  - component: {fileID: 2749866483958676345}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -159,3 +161,347 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+--- !u!114 &2196978062381430289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237633637603874157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2052f6b32e5a4f1dae066724e9711134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_pos
+      Entry: 7
+      Data: 0|Teiwas.Script.Camera.Position.NormalPositionController, Assembly-CSharp
+    - Name: m_offset
+      Entry: 7
+      Data: 1|Teiwas.Script.Camera.Position.NormalOffsetController, Assembly-CSharp
+    - Name: m_distance
+      Entry: 4
+      Data: 16.4900665
+    - Name: m_height
+      Entry: 4
+      Data: 1.986755
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_target
+      Entry: 6
+      Data: 
+    - Name: m_player
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_angle
+      Entry: 7
+      Data: 2|Teiwas.Script.Camera.Angle.NormalAngleController, Assembly-CSharp
+    - Name: m_angle
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_player
+      Entry: 6
+      Data: 
+    - Name: m_limiters
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[Teiwas.Script.Camera.Angle.Interface.ICameraAngleLimiter,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_context
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_angleSmooth
+      Entry: 7
+      Data: 4|Teiwas.Script.Camera.Smooth.RelativeMoveSmooth, Assembly-CSharp
+    - Name: m_maxRange
+      Entry: 4
+      Data: 300
+    - Name: m_minRange
+      Entry: 4
+      Data: 0
+    - Name: m_smoothCurve
+      Entry: 7
+      Data: 5|UnityEngine.AnimationCurve, UnityEngine.CoreModule
+    - Name: 
+      Entry: 7
+      Data: 6|UnityEngine.Keyframe[], UnityEngine.CoreModule
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: UnityEngine.Keyframe, UnityEngine.CoreModule
+    - Name: ver
+      Entry: 3
+      Data: 1
+    - Name: m_Time
+      Entry: 4
+      Data: 0.0155030917
+    - Name: m_Value
+      Entry: 4
+      Data: 0.702614069
+    - Name: m_InTangent
+      Entry: 4
+      Data: 0.302068949
+    - Name: m_OutTangent
+      Entry: 4
+      Data: 0.302068949
+    - Name: m_TangentMode
+      Entry: 3
+      Data: 34
+    - Name: m_WeightedMode
+      Entry: 3
+      Data: 0
+    - Name: m_InWeight
+      Entry: 4
+      Data: 0
+    - Name: m_OutWeight
+      Entry: 4
+      Data: 0.333333343
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: UnityEngine.Keyframe, UnityEngine.CoreModule
+    - Name: ver
+      Entry: 3
+      Data: 1
+    - Name: m_Time
+      Entry: 4
+      Data: 1
+    - Name: m_Value
+      Entry: 4
+      Data: 1
+    - Name: m_InTangent
+      Entry: 4
+      Data: 0.302068949
+    - Name: m_OutTangent
+      Entry: 4
+      Data: 0.302068949
+    - Name: m_TangentMode
+      Entry: 3
+      Data: 34
+    - Name: m_WeightedMode
+      Entry: 3
+      Data: 0
+    - Name: m_InWeight
+      Entry: 4
+      Data: 0.333333343
+    - Name: m_OutWeight
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 8
+    - Name: 
+      Entry: 3
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_context
+      Entry: 6
+      Data: 
+    - Name: m_smooth
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_moveSmooth
+      Entry: 7
+      Data: 7|Teiwas.Script.Camera.Smooth.RelativeMoveSmooth, Assembly-CSharp
+    - Name: m_maxRange
+      Entry: 4
+      Data: 300
+    - Name: m_minRange
+      Entry: 4
+      Data: 0
+    - Name: m_smoothCurve
+      Entry: 7
+      Data: 8|UnityEngine.AnimationCurve, UnityEngine.CoreModule
+    - Name: 
+      Entry: 7
+      Data: 9|UnityEngine.Keyframe[], UnityEngine.CoreModule
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: UnityEngine.Keyframe, UnityEngine.CoreModule
+    - Name: ver
+      Entry: 3
+      Data: 1
+    - Name: m_Time
+      Entry: 4
+      Data: -2.719462E-06
+    - Name: m_Value
+      Entry: 4
+      Data: 0.697998047
+    - Name: m_InTangent
+      Entry: 4
+      Data: 0.302001119
+    - Name: m_OutTangent
+      Entry: 4
+      Data: 0.302001119
+    - Name: m_TangentMode
+      Entry: 3
+      Data: 34
+    - Name: m_WeightedMode
+      Entry: 3
+      Data: 0
+    - Name: m_InWeight
+      Entry: 4
+      Data: 0
+    - Name: m_OutWeight
+      Entry: 4
+      Data: 0.333333343
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: UnityEngine.Keyframe, UnityEngine.CoreModule
+    - Name: ver
+      Entry: 3
+      Data: 1
+    - Name: m_Time
+      Entry: 4
+      Data: 1
+    - Name: m_Value
+      Entry: 4
+      Data: 1
+    - Name: m_InTangent
+      Entry: 4
+      Data: 0.302001119
+    - Name: m_OutTangent
+      Entry: 4
+      Data: 0.302001119
+    - Name: m_TangentMode
+      Entry: 3
+      Data: 34
+    - Name: m_WeightedMode
+      Entry: 3
+      Data: 0
+    - Name: m_InWeight
+      Entry: 4
+      Data: 0.333333343
+    - Name: m_OutWeight
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 3
+      Data: 8
+    - Name: 
+      Entry: 3
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_context
+      Entry: 6
+      Data: 
+    - Name: m_smooth
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &2749866483958676345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237633637603874157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1125787549024ecba203419aaca45d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8383476109982168290, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_character
+      Entry: 10
+      Data: 0

@@ -420,6 +420,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 492960785797334920, guid: 8590d134dfbfc4c1ea0a0c9c38b94a03, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8245467030192599584}
+    - targetCorrespondingSourceObject: {fileID: 492960785797334920, guid: 8590d134dfbfc4c1ea0a0c9c38b94a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1683697133421215627}
   m_SourcePrefab: {fileID: 100100000, guid: 8590d134dfbfc4c1ea0a0c9c38b94a03, type: 3}
 --- !u!114 &4596995214827885132 stripped
 MonoBehaviour:
@@ -464,6 +467,30 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes:
     - Name: m_target
+      Entry: 6
+      Data: 
+--- !u!114 &1683697133421215627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7087495536615477725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb15c6ce4844465b83358d57c42ded4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_context
       Entry: 6
       Data: 
 --- !u!1 &8383476109982168290 stripped

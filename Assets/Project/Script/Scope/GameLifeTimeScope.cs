@@ -9,6 +9,9 @@ using VContainer;
 using VContainer.Unity;
 
 namespace Teiwas.Project.Script.Scope {
+    /// <summary>
+    /// ゲームシーン中の依存性を管理するクラス
+    /// </summary>
     public class GameLifeTimeScope : LifetimeScope {
 
         [SerializeField, LabelText("使用するインストーラ")]
