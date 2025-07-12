@@ -12,7 +12,7 @@ using VContainer.Unity;
 
 namespace Project.Script.UIControl.PlayerHUD.Rune {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     /// <typeparam name="M">Modelに該当するクラス</typeparam>
     /// <typeparam name="V">Viewに該当するクラス</typeparam>
@@ -20,7 +20,7 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
         where M : IRuneListManager  where V : IRuneListView {
 
         protected M m_model;
-        
+
         protected V m_view;
 
         protected CompositeDisposable m_disposable = new CompositeDisposable();
@@ -28,16 +28,16 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
         [Inject]
         protected ARuneListPresenter(M model, V view) {
             Debug.Log($"{this.GetType().Name}のコンストラクタが読み込まれました");
-            
+
             m_model = model;
             m_view = view;
-            
+
             RegisterObserver();
             InitializeView();
         }
 
         public void Initialize() {
-            
+
         }
 
         public void Dispose() {
@@ -45,7 +45,7 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
         }
 
         protected virtual void InitializeView() {
-            
+
             Debug.Log("表示の初期化を開始します");
 
             for (int i = 0; i < m_model.Amount; i++) {
@@ -73,8 +73,8 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
 
         protected void RegisterObserver() {
 
-            Debug.Log($"{this.GetType()}のリスト購読処理を開始します");
-            
+            Debug.Log($"{GetType()}のリスト購読処理を開始します");
+
             m_model
                 .List
                 .ObserveDictionaryAdd()
@@ -83,7 +83,7 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
                     OnAdd(x);
                 })
                 .AddTo(m_disposable);
-            
+
             m_model
                 .List
                 .ObserveDictionaryRemove()
@@ -92,7 +92,7 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
                     OnRemove(x);
                 })
                 .AddTo(m_disposable);
-            
+
             m_model
                 .List
                 .ObserveDictionaryReplace()
@@ -102,10 +102,10 @@ namespace Project.Script.UIControl.PlayerHUD.Rune {
                 })
                 .AddTo(m_disposable);
         }
-        
-        
+
+
         protected virtual void OnAdd(DictionaryAddEvent<int,IRune> x) {
-           InitializeView();
+            InitializeView();
         }
 
         protected virtual void OnRemove(DictionaryRemoveEvent<int,IRune> x) {

@@ -6,8 +6,7 @@ using UnityEngine;
 
 namespace Teiwas.Script.StatusEffect {
     [Serializable]
-    public abstract class AStatusEffect
-    {
+    public abstract class AStatusEffect {
 
         [OdinSerialize, LabelText("エフェクトの情報")]
         protected StatusEffectData m_data;
@@ -15,6 +14,6 @@ namespace Teiwas.Script.StatusEffect {
         public abstract void Activate(GameObject target);
 
         public abstract void Deactivate(GameObject target);
-        
+
     }
 }
