@@ -1080,6 +1080,17 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+--- !u!114 &754125605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8541149690439051312, guid: 6213c0e447282437ca96143ee702c8d1, type: 3}
+  m_PrefabInstance: {fileID: 1490832449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754125599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737aa26c2e914080b91bdf9a4c414d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1276986068 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 470876479557350409, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
@@ -1484,25 +1495,33 @@ PrefabInstance:
       objectReference: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
+      value: '"path":"m_lts","value":$eref:0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[1]'
       value: '"path":"m_pos","value":{"$id":0,"$type":"Teiwas.Script.Spawner.Position.RoundSpawnPosition,
         Assembly-CSharp","m_height":2.987552,"m_radius":20}'
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
-      propertyPath: 'serializationData.PrefabModifications.Array.data[1]'
+      propertyPath: 'serializationData.PrefabModifications.Array.data[2]'
       value: '"path":"m_pos.m_height","value":{"$id":0,"$type":"System.Single, mscorlib",2.987552}'
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
-      propertyPath: 'serializationData.PrefabModifications.Array.data[2]'
+      propertyPath: 'serializationData.PrefabModifications.Array.data[3]'
       value: '"path":"m_pos.m_radius","value":{"$id":0,"$type":"System.Single, mscorlib",20}'
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
+      propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 754125605}
     - target: {fileID: 6131445226883551033, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: m_Name
       value: EnemySpawner

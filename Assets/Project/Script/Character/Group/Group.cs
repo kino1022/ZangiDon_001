@@ -9,7 +9,6 @@ namespace Project.Script.Character.Group {
         public Color GroupColor;
 
         public string GroupName;
-
-
+        
     }
 }
