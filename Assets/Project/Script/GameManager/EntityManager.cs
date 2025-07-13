@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using MessagePipe;
 using ObservableCollections;
+using Project.Script.Character;
 using Sirenix.OdinInspector;
 using Teiwas.Script.EventBus;
 using Teiwas.Script.GameManager.Interface;
@@ -13,7 +14,7 @@ namespace Teiwas.Script.GameManager {
     /// インスタンスされている敵味方のGameObjectを管理するクラス
     /// </summary>
     public class EntityManager : SerializedMonoBehaviour, IEntityManager {
-        
+
         [SerializeField, TitleGroup("存在しているEntity")]
         protected ObservableList<GameObject> m_entitys = new ObservableList<GameObject>();
 
@@ -34,6 +35,10 @@ namespace Teiwas.Script.GameManager {
 
             m_spownSubscriberDisposable = m_spownSubscriber.Subscribe(OnEntitySpown);
             m_deathSubscriberDisposable = m_deathSubscriber.Subscribe(OnEntityDeath);
+        }
+
+        private void Start() {
+            InitializeEntityList();
         }
 
         protected void OnEntitySpown(EntitySpown message) {
@@ -57,6 +62,19 @@ namespace Teiwas.Script.GameManager {
             }
 
             m_entitys.Remove(message.Entity);
+        }
+
+        protected void InitializeEntityList() {
+            var obj = FindObjectsOfType<AEntity>().ToList();
+
+            if(obj.Count is 0 ) {
+                Debug.Log("シーン上にエンティティが存在しませんでした");
+                return;
+            }
+
+            foreach(var entity in obj) {
+                m_entitys.Add(entity.Object);
+            }
         }
     }
 }

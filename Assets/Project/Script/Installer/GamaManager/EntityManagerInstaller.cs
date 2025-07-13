@@ -1,4 +1,5 @@
 using Project.Script.Utility;
+using Teiwas.Script.Character.Group.Interface;
 using Teiwas.Script.GameManager.Interface;
 using UnityEngine;
 using VContainer;
@@ -17,6 +18,10 @@ namespace Teiwas.Script.Installer.GameManager {
             builder
                 .RegisterComponent(ComponentsUtility.GetComponentFromWhole<IEntityManager>(m_manager))
                 .As<IEntityManager>();
+
+            builder
+                .RegisterComponent(ComponentsUtility.GetComponentFromWhole<IGroupEntityManager>(m_manager))
+                .As<IGroupEntityManager>();
         }
     }
 }

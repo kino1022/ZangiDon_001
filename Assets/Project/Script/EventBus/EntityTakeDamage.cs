@@ -15,7 +15,5 @@ namespace Teiwas.Script.EventBus {
             Entity = entity;
             Damage = damage;
         }
-
-        
     }
 }

@@ -12,9 +12,8 @@ using UnityEngine;
 
 namespace Teiwas.Script.Character.Tag {
     public class CharacterTagManager : SerializedMonoBehaviour , ICharacterTagHolder {
-        
+
         protected ObservableList<ICharacterTag> m_tags;
-        
         public IReadOnlyObservableList<ICharacterTag> Tags => m_tags;
 
         private void Start() {
@@ -44,7 +43,7 @@ namespace Teiwas.Script.Character.Tag {
                 Debug.LogError($"除外対象に指定された{tag.GetType()}が存在しませんでした");
                 return;
             }
-            
+
             m_tags.Remove(target);
         }
     }

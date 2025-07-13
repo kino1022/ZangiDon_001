@@ -70,8 +70,54 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4002468034962757998, guid: 8590d134dfbfc4c1ea0a0c9c38b94a03, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3820968235390666823}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1212762975189983927, guid: 8590d134dfbfc4c1ea0a0c9c38b94a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4886204526995851295}
   m_SourcePrefab: {fileID: 100100000, guid: 8590d134dfbfc4c1ea0a0c9c38b94a03, type: 3}
+--- !u!1 &1009029896063045913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1212762975189983927, guid: 8590d134dfbfc4c1ea0a0c9c38b94a03, type: 3}
+  m_PrefabInstance: {fileID: 2221491604779676590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4886204526995851295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009029896063045913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dddde28088a44b1bf9412bb3192b5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 7ceeb0dfeb418468581a324ee8302a22, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_groups
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Teiwas.Script.Character.Group.Interface.IGroup,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
 --- !u!4 &2981327569693452992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4002468034962757998, guid: 8590d134dfbfc4c1ea0a0c9c38b94a03, type: 3}

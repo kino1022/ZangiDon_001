@@ -912,7 +912,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8383476109982168290, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2055983596}
+    - targetCorrespondingSourceObject: {fileID: 8383476109982168290, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2055983597}
   m_SourcePrefab: {fileID: 100100000, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
 --- !u!1001 &337757158
 PrefabInstance:
@@ -1080,23 +1086,50 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
---- !u!114 &754125605 stripped
+--- !u!114 &754125607
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8541149690439051312, guid: 6213c0e447282437ca96143ee702c8d1, type: 3}
-  m_PrefabInstance: {fileID: 1490832449}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754125599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 737aa26c2e914080b91bdf9a4c414d5e, type: 3}
+  m_Script: {fileID: 11500000, guid: e6ad3117628e44629336444a8e12b4da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_group
+      Entry: 7
+      Data: 0|ObservableCollections.ObservableDictionary`2[[Teiwas.Script.Character.Group.Interface.IGroup,
+        Assembly-CSharp],[System.Collections.Generic.List`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib]], ObservableCollections
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_entityManager
+      Entry: 6
+      Data: 
 --- !u!114 &1276986068 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 470876479557350409, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
   m_PrefabInstance: {fileID: 307777972}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2055983591}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 279a8c4bab7f401a824bba58aa00efed, type: 3}
@@ -1167,6 +1200,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4886204526995851295, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 4886204526995851295, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
     - target: {fileID: 5013371186208257975, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -1178,6 +1215,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1009029896063045913, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1480086677}
+    - targetCorrespondingSourceObject: {fileID: 1009029896063045913, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1480086682}
   m_SourcePrefab: {fileID: 100100000, guid: 71de23036dcf749f697f7b36fe35fb49, type: 3}
 --- !u!1 &1480086676 stripped
 GameObject:
@@ -1209,6 +1249,29 @@ MonoBehaviour:
   m_origin: {x: 0, y: 0, z: 0}
   m_speed: 0.1
   m_angle: 0
+--- !u!114 &1480086682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480086676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f5a869799e48cfacd6a3f313bafcfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  m_obj: {fileID: 0}
+  m_autoSetting: 1
 --- !u!1001 &1490832449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1377,6 +1440,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 535520892873489597, guid: 6213c0e447282437ca96143ee702c8d1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 754125604}
+    - targetCorrespondingSourceObject: {fileID: 535520892873489597, guid: 6213c0e447282437ca96143ee702c8d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 754125607}
   m_SourcePrefab: {fileID: 100100000, guid: 6213c0e447282437ca96143ee702c8d1, type: 3}
 --- !u!1 &1697158336
 GameObject:
@@ -1476,6 +1542,72 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7642610697601201031, guid: e88478e395430442cb7ce04e59ec24ab, type: 3}
   m_PrefabInstance: {fileID: 75522038}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2055983591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8383476109982168290, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
+  m_PrefabInstance: {fileID: 307777972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2055983596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055983591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dddde28088a44b1bf9412bb3192b5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 252350334cca54be2abf856bafab0334, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_groups
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Teiwas.Script.Character.Group.Interface.IGroup,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &2055983597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055983591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460cb03fd95648099e5a7a245caa5056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  m_obj: {fileID: 0}
+  m_autoSetting: 1
 --- !u!1 &2096507588 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5725901630627259071, guid: e88478e395430442cb7ce04e59ec24ab, type: 3}
@@ -1495,33 +1627,25 @@ PrefabInstance:
       objectReference: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
-      value: '"path":"m_lts","value":$eref:0'
-      objectReference: {fileID: 0}
-    - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
-      propertyPath: 'serializationData.PrefabModifications.Array.data[1]'
       value: '"path":"m_pos","value":{"$id":0,"$type":"Teiwas.Script.Spawner.Position.RoundSpawnPosition,
         Assembly-CSharp","m_height":2.987552,"m_radius":20}'
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
-      propertyPath: 'serializationData.PrefabModifications.Array.data[2]'
+      propertyPath: 'serializationData.PrefabModifications.Array.data[1]'
       value: '"path":"m_pos.m_height","value":{"$id":0,"$type":"System.Single, mscorlib",2.987552}'
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
-      propertyPath: 'serializationData.PrefabModifications.Array.data[3]'
+      propertyPath: 'serializationData.PrefabModifications.Array.data[2]'
       value: '"path":"m_pos.m_radius","value":{"$id":0,"$type":"System.Single, mscorlib",20}'
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
-      propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]'
-      value: 
-      objectReference: {fileID: 754125605}
     - target: {fileID: 6131445226883551033, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: m_Name
       value: EnemySpawner

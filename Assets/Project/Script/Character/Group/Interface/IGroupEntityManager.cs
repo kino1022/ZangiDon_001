@@ -10,5 +10,6 @@ namespace Teiwas.Script.Character.Group.Interface {
 
         public IReadOnlyObservableDictionary<IGroup, List<GameObject>> GroupEntity { get; }
 
+        public List<GameObject> GetGroupEntity(IGroup group);
     }
 }

@@ -18,12 +18,14 @@ namespace Project.Script.Character.Group {
 
         public IReadOnlyObservableDictionary<IGroup, List<GameObject>> GroupEntity => m_group;
 
+        [OdinSerialize]
         protected IEntityManager m_entityManager;
 
         protected IReadOnlyObservableList<GameObject> m_entities => m_entityManager.Entitys;
 
         protected IObjectResolver m_resolver;
 
+        [Inject]
         public void Construct(IObjectResolver resolver) {
             m_resolver = resolver;
 
@@ -81,7 +83,7 @@ namespace Project.Script.Character.Group {
         }
 
         protected void OnAddEntity(CollectionAddEvent<GameObject> x) {
-
+            AddEntity(x.Value);
         }
 
         protected void OnRemoveEntity(CollectionRemoveEvent<GameObject> x) {
@@ -126,12 +128,23 @@ namespace Project.Script.Character.Group {
                             Debug.Log($"{m_entityManager.GetType().Name}の{group.Key.GetType().Name}の要素が空になった為辞書から除外します");
                             m_group.Remove(group.Key);
                         }
+
                         break;
                     }
                 }
             }
 
+        }
 
+        public List<GameObject> GetGroupEntity(IGroup group) {
+            var value = m_group.FirstOrDefault(x => x.Key == group).Value;
+
+            if(value.Count is 0) {
+                Debug.Log($"指定されたグループ{group.GetType().Name}に属するエンティティは存在しませんでした");
+                return null;
+            }
+
+            return value;
         }
     }
 }
