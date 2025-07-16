@@ -3,11 +3,12 @@ using Sirenix.Serialization;
 using Teiwas.Script.Bullet.Context.Intetface;
 using Teiwas.Script.Bullet.Data;
 using Teiwas.Script.Bullet.Instance.Interface;
+using Teiwas.Script.Player.Shoter.Interface;
 using UnityEngine;
 using VContainer;
 
-namespace Project.Script.Character.Shoter {
-    public class CharacterMagicShoter : SerializedMonoBehaviour {
+namespace Teiwas.Script.Character.Shoter {
+    public class CharacterMagicShoter : SerializedMonoBehaviour , IPlayerBulletShoter {
 
         [OdinSerialize, LabelText("生成に利用するFactory")]
         protected IBulletFactory m_factory;

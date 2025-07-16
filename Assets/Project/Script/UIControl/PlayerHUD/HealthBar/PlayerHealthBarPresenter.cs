@@ -56,7 +56,7 @@ namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
         protected void RegisterMaxHealth() {
             Debug.Log($"{GetType()}の{m_max.GetType()}に対する値変化の購読処理を開始します");
             Observable
-                .EveryValueChanged(m_max, x => x.Get())
+                .EveryValueChanged(m_max, x => x.Get)
                 .Subscribe( x => {
                     Debug.Log($"{m_max.GetType()}の値の変化を検知しました");
                     m_view.OnStateChange(OnStateChanged());
@@ -67,7 +67,7 @@ namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
         protected void RegisterHealth() {
             Debug.Log($"{GetType()}の{m_current.GetType()}に対する値変化の購読処理を開始します");
             Observable
-                .EveryValueChanged(m_current, x => x.Get())
+                .EveryValueChanged(m_current, x => x.Get)
                 .Subscribe( x => {
                     Debug.Log($"{m_current.GetType()}の値の変化を検知しました");
                     m_view.OnStateChange(OnStateChanged());
@@ -76,11 +76,11 @@ namespace Teiwas.Script.UIControl.PlayerHUD.HealthBar {
         }
 
         protected virtual HeatlhState OnStateChanged() {
-            return new HeatlhState(CalculateRatio(), m_max.Get(), m_current.Get());
+            return new HeatlhState(CalculateRatio(), m_max.Get, m_current.Get);
         }
 
         protected float CalculateRatio() {
-            return (m_max.Get() - m_current.Get()) / m_max.Get();
+            return (m_max.Get - m_current.Get) / m_max.Get;
         }
 
     }

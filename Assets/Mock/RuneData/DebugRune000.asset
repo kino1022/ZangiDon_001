@@ -17,6 +17,8 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 21300000, guid: c78f4b965958a4c54865d93262754278, type: 3}
+    - {fileID: 11400000, guid: f78323ea6a8fc485cb486239ccc390dd, type: 2}
+    - {fileID: 8383476109982168290, guid: c8b23d62165c849319bef4f0339cb943, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -30,42 +32,60 @@ MonoBehaviour:
       Data: 0
     - Name: Main
       Entry: 7
-      Data: 0|Teiwas.Script.Asset.Castable.DummyMainEffect, Assembly-CSharp
-    - Name: amount
+      Data: 0|Teiwas.Script.Asset.MainEffect.InstanceAnyObject, Assembly-CSharp
+    - Name: m_amount
       Entry: 3
+      Data: 10
+    - Name: m_instanceData
+      Entry: 10
       Data: 1
+    - Name: m_instancePosition
+      Entry: 7
+      Data: 1|Teiwas.Script.Asset.MainEffect.Position.GameObjectPosition, Assembly-CSharp
+    - Name: m_obj
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_instanceRotation
+      Entry: 7
+      Data: 2|Teiwas.Script.Asset.MainEffect.Rotation.CasterFront, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: Sub
       Entry: 7
-      Data: 1|Teiwas.Script.Rune.SubEffectData, Assembly-CSharp
+      Data: 3|Teiwas.Script.Rune.SubEffectData, Assembly-CSharp
     - Name: amount
       Entry: 3
       Data: 1
     - Name: m_context
       Entry: 7
-      Data: 2|System.Collections.Generic.List`1[[Teiwas.Script.Bullet.Context.Intetface.IBulletContextElement,
+      Data: 4|System.Collections.Generic.List`1[[Teiwas.Script.Bullet.Context.Intetface.IBulletContextElement,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 3|Teiwas.Script.Bullet.Context.Asset.FirstSpeedCorrector, Assembly-CSharp
+      Data: 5|Teiwas.Script.Bullet.Context.Asset.FirstSpeedCorrector, Assembly-CSharp
     - Name: corrections
       Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[UnityCommonModule.Correction.Interface.ICorrection,
+      Data: 6|System.Collections.Generic.List`1[[UnityCommonModule.Correction.Interface.ICorrection,
         UnityCommonModule]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 5|UnityCommonModule.Correction.Instance.Asset.NormalCorrection, UnityCommonModule
+      Data: 7|UnityCommonModule.Correction.Instance.Asset.NormalCorrection, UnityCommonModule
     - Name: m_type
       Entry: 7
-      Data: 6|UnityCommonModule.Correction.CorrectionType.FixedType, UnityCommonModule
+      Data: 8|UnityCommonModule.Correction.CorrectionType.FixedType, UnityCommonModule
     - Name: 
       Entry: 8
       Data: 
@@ -92,7 +112,7 @@ MonoBehaviour:
       Data: 
     - Name: OnHitEffect
       Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
+      Data: 9|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
@@ -105,7 +125,7 @@ MonoBehaviour:
       Data: 
     - Name: m_preCastEffects
       Entry: 7
-      Data: 8|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
+      Data: 10|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
@@ -118,7 +138,7 @@ MonoBehaviour:
       Data: 
     - Name: m_postCastEffects
       Entry: 7
-      Data: 9|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
+      Data: 11|System.Collections.Generic.List`1[[Teiwas.Script.Rune.Effect.Interface.IEffect,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12

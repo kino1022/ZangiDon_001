@@ -148,6 +148,14 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 312746727677613717, guid: e88478e395430442cb7ce04e59ec24ab, type: 3}
+    - target: {fileID: 854501879665296083, guid: e88478e395430442cb7ce04e59ec24ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1668
+      objectReference: {fileID: 0}
+    - target: {fileID: 854501879665296083, guid: e88478e395430442cb7ce04e59ec24ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -812
+      objectReference: {fileID: 0}
     - target: {fileID: 1356612043287919674, guid: e88478e395430442cb7ce04e59ec24ab, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1632,15 +1640,15 @@ PrefabInstance:
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
       value: '"path":"m_pos","value":{"$id":0,"$type":"Teiwas.Script.Spawner.Position.RoundSpawnPosition,
-        Assembly-CSharp","m_height":2.987552,"m_radius":20}'
+        Assembly-CSharp","m_height":20,"m_radius":89.19861}'
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[1]'
-      value: '"path":"m_pos.m_height","value":{"$id":0,"$type":"System.Single, mscorlib",2.987552}'
+      value: '"path":"m_pos.m_height","value":{"$id":0,"$type":"System.Single, mscorlib",20}'
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: 'serializationData.PrefabModifications.Array.data[2]'
-      value: '"path":"m_pos.m_radius","value":{"$id":0,"$type":"System.Single, mscorlib",20}'
+      value: '"path":"m_pos.m_radius","value":{"$id":0,"$type":"System.Single, mscorlib",89.19861}'
       objectReference: {fileID: 0}
     - target: {fileID: 38669490823129053, guid: 442b99b741c3b4aa59f5d040519ef0f3, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size

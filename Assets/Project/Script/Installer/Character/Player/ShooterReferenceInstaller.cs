@@ -1,4 +1,4 @@
-using Project.Script.Character.Shoter;
+using Teiwas.Script.Character.Shoter;
 using Project.Script.Utility;
 using Teiwas.Script.Bullet.Context.Intetface;
 using UnityEngine;
