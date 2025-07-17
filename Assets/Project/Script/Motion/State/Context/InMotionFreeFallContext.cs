@@ -14,11 +14,15 @@ namespace Teiwas.Script.Motion.State.Context {
     [Serializable]
     public class InMotionFreeFallContext : IInMotionFreeFallContext {
 
+        [SerializeField, LabelText("無条件落下")]
+        protected bool m_anytimeFall = false;
+
         [OdinSerialize, LabelText("データ")]
         protected List<IInMotionFreeFallContextElement> m_elements = new();
 
         [SerializeField, LabelText("現在フレーム")]
         protected int m_currentFrame = 0;
+
 
         public bool Fallable => CalculateFallable();
 
@@ -32,6 +36,10 @@ namespace Teiwas.Script.Motion.State.Context {
         }
 
         protected bool CalculateFallable() {
+
+            if(m_anytimeFall) {
+                return true;
+            }
 
             //リストが空なら落下可能として処理
             if(m_elements is null || m_elements.Count is 0) {

@@ -1,10 +1,14 @@
 using System;
+using MessagePipe;
+using Mono.Cecil.Cil;
+using Project.Script.Utility;
 using R3;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Teiwas.Script.Motion.State.Context;
 using Teiwas.Script.Motion.State.Context.Interface;
 using UnityEngine;
+using VContainer.Unity;
 
 namespace Teiwas.Script.Motion.State {
     public class MotionStateController : SerializedStateMachineBehaviour {
@@ -22,14 +26,30 @@ namespace Teiwas.Script.Motion.State {
         [OdinSerialize, Title("モーションキャンセル制御コンテキスト")]
         protected ICancelMotionContext m_cancelable = new CancelMotionContext();
 
+        protected IPublisher<>
+
+        public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+
+            base.OnStateEnter(animator, stateInfo, layerIndex);
+
+            var container = ComponentsUtility.GetComponentFromWhole<LifetimeScope>(animator.gameObject);
+
+            if(container is null) {
+                Debug.LogError($"{animator.gameObject.name}にはLifetimeScopeを継承したクラスがアタッチされていませんでした");
+                throw new SymbolsNotFoundException(nameof(LifetimeScope));
+            }
+
+
+        }
+
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
             base.OnStateUpdate(animator, stateInfo, layerIndex);
-            
+
             var currentClipInfo = animator.GetCurrentAnimatorClipInfo(layerIndex);
             var currentStateInfo = animator.GetCurrentAnimatorStateInfo(layerIndex);
 
             //ブレンド中でモーションが複数存在するかどうかの検知
-            if(currentClipInfo.Length > 0) {
+            if(currentClipInfo.Length > 1) {
                 Debug.Log($"{animator.name}がブレンド中のため複数のモーションが存在します");
             }
 
