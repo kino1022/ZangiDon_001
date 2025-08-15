@@ -26,7 +26,6 @@ namespace Teiwas.Script.Motion.State {
         [OdinSerialize, Title("モーションキャンセル制御コンテキスト")]
         protected ICancelMotionContext m_cancelable = new CancelMotionContext();
 
-        protected IPublisher<>
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 
