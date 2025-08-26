@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Teiwas.Script.Spell.Instance.Sub.Insterface {
     public interface ISubSpellInstance : ISpellInstance {
 
-        List<IBulletContext> Contexts { get; }
+        List<IBulletContextElement> Contexts { get; }
 
         Action<GameObject> OnSelect { get; }
 

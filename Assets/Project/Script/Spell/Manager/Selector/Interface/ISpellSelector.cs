@@ -1,17 +1,19 @@
+using Teiwas.Script.Spell.Instance.Interface;
 using Teiwas.Script.Spell.Manager.Interface;
-using Teiwas.Script.Spell.Slot.Interface;
+using Teiwas.Script.Spell.Slot.Selector.Interface;
 
 namespace Teiwas.Script.Spell.Manager.Selector.Interface {
     /// <summary>
-    /// プレイヤーが選択できるルーンを管理するクラスに対して約束するインターフェース
+    /// プレイヤーの選択できるスペルを管理するクラスに対して約束するインターフェース
     /// </summary>
-    /// <typeparam name="S"></typeparam>
-    public interface ISpellSelector<S> : ISpellManager<S> where S : ISpellSlot, new() {
+    public interface ISpellSelector : ISpellManager<ISelectorSpellSlot, ISpellInstance> {
+        
         /// <summary>
-        /// 指定した番号のスペルを選択する
+        /// スペルの選択
         /// </summary>
-        /// <param name="index">スペルの場所(0からスタート)</param>
-        /// <returns>選択して一連の動作が成功したか</returns>
+        /// <param name="index">何番目のスペルを選択するか</param>
+        /// <returns>選択が成功したかどうか</returns>
         bool Select(int index);
+        
     }
 }

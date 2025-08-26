@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Teiwas.Script.Spell.Data.Sub.Interface {
     public interface ISubSpellData : ISpellData {
 
-        List<IBulletContext> Contexts { get; }
+        List<IBulletContextElement> Contexts { get; }
 
         void OnSelect (GameObject caster);
 
