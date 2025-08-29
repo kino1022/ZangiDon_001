@@ -3,6 +3,10 @@ using Sirenix.Serialization;
 using Teiwas.Script.Spell.Data.Main.Interface;
 using Teiwas.Script.Spell.Data.Sub.Interface;
 using Teiwas.Script.Spell.Factory.Interface;
+using Teiwas.Script.Spell.Factory.Main.Interface;
+using Teiwas.Script.Spell.Factory.Pattern.Main.Interface;
+using Teiwas.Script.Spell.Factory.Pattern.Sub.Interface;
+using Teiwas.Script.Spell.Factory.Sub.Interface;
 using Teiwas.Script.Spell.Instance.Interface;
 using Teiwas.Script.Spell.Instance.Main.Interface;
 using Teiwas.Script.Spell.Instance.Sub.Insterface;
@@ -15,19 +19,34 @@ namespace Teiwas.Script.Spell.Installer {
     public class SpellFactoryInstaller : SerializedScriptableObject , IInstaller {
 
         [OdinSerialize]
-        protected ISpellFactory<IMainSpellData, IMainSpellInstance> m_main;
+        protected IMainSpellFactory m_main;
+        
         [OdinSerialize]
-        protected ISpellFactory<ISubSpellData, ISubSpellInstance> m_sub;
+        protected ISubSpellFactory m_sub;
+        
+        [OdinSerialize]
+        protected IMainSpellLotteryPattern m_mainLotteryPattern;
+        
+        [OdinSerialize]
+        protected ISubSpellLotteryPattern m_subLotteryPattern;
         
         public void Install(IContainerBuilder builder) {
             
             builder
                 .RegisterInstance(m_main)
-                .As<ISpellFactory<IMainSpellData, IMainSpellInstance>>();
+                .As<IMainSpellFactory>();
             
             builder
                 .RegisterInstance(m_sub)
-                .As<ISpellFactory<ISubSpellData, ISubSpellInstance>>();
+                .As<ISubSpellFactory>();
+            
+            builder
+                .RegisterInstance(m_mainLotteryPattern)
+                .As<IMainSpellLotteryPattern>();
+            
+            builder
+                .RegisterInstance(m_subLotteryPattern)
+                .As<ISubSpellLotteryPattern>();
             
         }
     }

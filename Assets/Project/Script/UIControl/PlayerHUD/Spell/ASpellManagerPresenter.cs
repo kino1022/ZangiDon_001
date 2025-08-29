@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ObservableCollections;
 using R3;
 using Teiwas.Script.Spell.Instance.Interface;
 using Teiwas.Script.Spell.Manager.Interface;
@@ -58,6 +59,8 @@ namespace Project.Script.UIControl.PlayerHUD.Spell {
             InitializeDisposable();
             
             InitializeSlotPresenter();
+            
+            RegisterObserve();
         }
 
         public virtual void Dispose() {
@@ -68,8 +71,15 @@ namespace Project.Script.UIControl.PlayerHUD.Spell {
         /// 
         /// </summary>
         protected virtual void RegisterObserve() {
-            m_disposable?.Dispose();
+
+            if (m_disposable is null) {
+                m_disposable = new CompositeDisposable();
+            }
             
+            m_model.Spells
+                .ObserveChanged()
+                .Subscribe(x => OnChangeSpells())
+                .AddTo(m_disposable);
         }
 
         protected virtual void InitializeDisposable() {
@@ -119,6 +129,10 @@ namespace Project.Script.UIControl.PlayerHUD.Spell {
                 var ele = new KeyValuePair<int, SlotPresenter>(i,m_presenterFactory.Create(m_model.Spells[i],m_view.Spells[i]));
                 m_spells.Add(ele.Key, ele.Value);
             }
+        }
+
+        protected virtual void OnChangeSpells() {
+            
         }
     }
 }

@@ -35,35 +35,12 @@ namespace Teiwas.Script.Spell.Data.Sub {
         
         public List<IBulletContextElement> Contexts => m_contexts;
 
-        protected void ActivateEffects(List<ISpellEffect> effects, GameObject caster) {
-            
-            if (caster is null) {
-                throw new ArgumentNullException();
-            }
-            
-            if (effects is null) {
-                throw new ArgumentNullException();
-            }
+        public List<ISpellEffect> PreCast => m_preEffects;
 
-            if (effects.Count is 0) {
-                return;
-            }
-
-            foreach (var effect in effects) {
-                if (effect is null) {
-                    continue;
-                }
-
-                effect.OnActivate(caster);
-            }
-            
-        }
-
-        public void OnPreCast(GameObject caster) => ActivateEffects(m_preEffects, caster);
+        public List<ISpellEffect> PostCast => m_postEffects;
         
-        public void OnPostCast(GameObject caster) => ActivateEffects(m_postEffects, caster);
-        
-        public void OnSelect(GameObject caster) => ActivateEffects(m_selectEffects, caster);
+        public List<ISpellEffect> Select => m_selectEffects;
+
         
     }
 }

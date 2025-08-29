@@ -5,7 +5,9 @@ using VContainer.Unity;
 
 namespace Teiwas.Script.Spell.Factory.Interface {
     public interface ISpellFactory<D,I> : IStartable , IDisposable
-        where D : ISpellData  where I : ISpellInstance {
+        where D : ISpellData  
+        where I : ISpellInstance 
+    {
 
         I Create();
 

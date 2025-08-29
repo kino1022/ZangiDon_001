@@ -14,6 +14,7 @@ using VContainer;
 namespace Teiwas.Script.Spell.Manager {
     public abstract class ASpellManager<Slot, Instance> : SerializedMonoBehaviour, ISpellManager<Slot, Instance> where Slot : ISpellSlot<Instance> where Instance : ISpellInstance {
         
+        [OdinSerialize]
         protected ObservableDictionary<int, Slot> m_spells = new ObservableDictionary<int, Slot>();
 
         public IReadOnlyObservableDictionary<int, Slot> Spells => m_spells;

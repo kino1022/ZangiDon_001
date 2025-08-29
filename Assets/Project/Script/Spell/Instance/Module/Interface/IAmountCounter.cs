@@ -1,7 +1,8 @@
+using System;
 using R3;
 
 namespace Teiwas.Script.Spell.Instance.Module.Interface {
-    public interface IAmountCounter {
+    public interface IAmountCounter : IDisposable {
 
         ReadOnlyReactiveProperty<int> Max { get; }
 
@@ -10,5 +11,7 @@ namespace Teiwas.Script.Spell.Instance.Module.Interface {
         void Increase(int amount);
 
         void Decrease(int amount);
+        
+        
     }
 }

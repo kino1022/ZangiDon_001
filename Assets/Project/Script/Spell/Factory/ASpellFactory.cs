@@ -4,43 +4,43 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Teiwas.Script.Spell.Data.Interface;
 using Teiwas.Script.Spell.Factory.Interface;
+using Teiwas.Script.Spell.Factory.Pattern.Interface;
 using Teiwas.Script.Spell.Instance.Interface;
+using Teiwas.Script.Spell.Instance.Module;
+using Teiwas.Script.Spell.Instance.Module.Interface;
+using VContainer;
+using Random = UnityEngine.Random;
 
 namespace Teiwas.Script.Spell.Factory {
-    public abstract class ASpellFactory<D,I> : ISpellFactory<D,I> where D : ISpellData where I : ISpellInstance {
+    [Serializable]
+    public abstract class ASpellFactory<Data,Instance,Pattern> : ISpellFactory<Data,Instance> 
+        where Data : ISpellData 
+        where Instance : ISpellInstance 
+        where Pattern : ISpellLotteryPattern<Data> 
+    {
+        [OdinSerialize, LabelText("パターン供給クラス")]
+        protected Pattern m_pattern;
 
-        [Title("設定")] [OdinSerialize, LabelText("使用するデータ")]
-        protected List<D> m_datas = new();
+        protected IObjectResolver m_resolver;
 
-        [Title("ランタイム")] [OdinSerialize, LabelText("<UNK>"), ReadOnly]
-        protected List<D> m_runtimeDatas = new();
+        protected ASpellFactory(IObjectResolver resolver) {
+            m_resolver = resolver ?? throw new ArgumentNullException(nameof(resolver));
+        }
 
         public virtual void Start() {
-
-            m_runtimeDatas.Clear();
-
-            m_runtimeDatas = CreateRunTimeData();
-
+            m_pattern = m_resolver.Resolve<Pattern>() 
+                        ?? throw new NullReferenceException();
         }
 
         public virtual void Dispose() {
-
+            
         }
 
-        public abstract I Create();
-
-        /// <summary>
-        /// プレイ中に使用するランタイムデータの生成処理
-        /// </summary>
-        /// <returns></returns>
-        /// <exception cref="IndexOutOfRangeException"></exception>
-        protected List<D> CreateRunTimeData() {
-
-            if(m_datas.Count is 0) {
-                throw new IndexOutOfRangeException($"{GetType().Name}に設定された{nameof(D)}のリストが空でした");
-            }
-
-            return new List<D>(m_datas);
+        public abstract Instance Create();
+        
+        protected virtual IAmountCounter CreateCounter(ISpellData data) {
+            return new AmountCounter(data.MaxAmount);
         }
+
     }
 }

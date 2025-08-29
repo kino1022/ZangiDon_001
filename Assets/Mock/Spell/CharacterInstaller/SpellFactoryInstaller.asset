@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec7b55c6254a4516a230c16604b2b42c, type: 3}
+  m_Name: SpellFactoryInstaller
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: m_main
+      Entry: 7
+      Data: 0|Teiwas.Script.Spell.Factory.Main.MainSpellFactory, Assembly-CSharp
+    - Name: m_pattern
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_sub
+      Entry: 7
+      Data: 1|Teiwas.Script.Spell.Factory.Sub.SubSpellFactory, Assembly-CSharp
+    - Name: m_pattern
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_mainLotteryPattern
+      Entry: 7
+      Data: 2|Teiwas.Script.Spell.Factory.Pattern.Main.MainSpellLotteryPattern, Assembly-CSharp
+    - Name: m_datas
+      Entry: 7
+      Data: 3|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Teiwas.Script.Spell.Data.Main.Interface.IMainSpellData,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 4|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_runtimeData
+      Entry: 7
+      Data: 5|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Teiwas.Script.Spell.Data.Main.Interface.IMainSpellData,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 4
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_subLotteryPattern
+      Entry: 7
+      Data: 6|Teiwas.Script.Spell.Factory.Pattern.Sub.SubSpellLotteryPattern, Assembly-CSharp
+    - Name: m_datas
+      Entry: 7
+      Data: 7|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Teiwas.Script.Spell.Data.Sub.Interface.ISubSpellData,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 8|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_runtimeData
+      Entry: 7
+      Data: 9|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Teiwas.Script.Spell.Data.Sub.Interface.ISubSpellData,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 8
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

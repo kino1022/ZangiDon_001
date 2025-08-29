@@ -6,10 +6,12 @@ using Teiwas.Script.UIControl.PlayerHUD.Spell.Slot;
 using Teiwas.Script.UIControl.PlayerHUD.Spell.Slot.Factory.Interface;
 using Teiwas.Script.UIControl.PlayerHUD.Spell.Slot.Selector;
 using Teiwas.Script.UIControl.PlayerHUD.Spell.Sub.Interface;
+using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
 namespace Teiwas.Script.UIControl.PlayerHUD.Spell.Installer {
+    [CreateAssetMenu(menuName = "Project/PlayerHUD/Spell/Config/SlotPresenterFactory")]
     public class SlotPresenterFactoryInstaller : SerializedScriptableObject , IInstaller {
         
         [OdinSerialize]
