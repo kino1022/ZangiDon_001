@@ -3,7 +3,7 @@ using Sirenix.Serialization;
 using Teiwas.Script.Spell.Data.Interface;
 using UnityEngine;
 
-namespace Project.Script.Spell.Data {
+namespace Teiwas.Script.Spell.Data {
     public abstract class ASpellData : SerializedScriptableObject , ISpellData {
         
         [TitleGroup("設定")]

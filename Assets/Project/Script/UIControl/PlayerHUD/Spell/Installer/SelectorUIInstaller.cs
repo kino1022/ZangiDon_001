@@ -12,7 +12,14 @@ namespace Teiwas.Script.UIControl.PlayerHUD.Spell.Installer {
         [OdinSerialize] protected ISpellSelectorView m_view;
 
         public void Install(IContainerBuilder builder) {
-            
+
+            builder
+                .RegisterInstance(m_persenter)
+                .As<ISpellSelectorPresenter>();
+
+            builder
+                .RegisterInstance(m_view)
+                .As<ISpellSelectorView>();
         }
     }
 }

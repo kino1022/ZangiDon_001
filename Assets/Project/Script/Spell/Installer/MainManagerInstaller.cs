@@ -5,6 +5,9 @@ using VContainer;
 using VContainer.Unity;
 
 namespace Teiwas.Script.Spell.Installer {
+    /// <summary>
+    /// MainSpellManager周りのシステムのインストールをするためのインストーラー
+    /// </summary>
     public class MainManagerInstaller : SerializedMonoBehaviour, IInstaller {
 
         public void Install(IContainerBuilder builder) {

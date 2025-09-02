@@ -24,7 +24,6 @@ namespace Teiwas.Script.UIControl.PlayerHUD.Spell.Installer {
         protected ISubSpellSlotPresenterFactory<ISubSpellSlotPresenter> m_subslotPresenter;
 
         public void Install(IContainerBuilder builder) {
-            
         }
     }
 }
