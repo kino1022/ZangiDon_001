@@ -1,3 +1,4 @@
+using System;
 using R3;
 using Teiwas.Script.Spell.Instance.Interface;
 using Teiwas.Script.Spell.Slot.Interface;
@@ -20,6 +21,10 @@ namespace Project.Script.UIControl.PlayerHUD.Spell.Slot {
 
         protected ASpellSlotPresenter(Slot model, ISpellSlotUIView view) {
             
+            m_model = model ?? throw new ArgumentNullException();
+            
+            m_view = view ?? throw new ArgumentNullException();
+            
         }
 
         public void Start() {
@@ -29,6 +34,18 @@ namespace Project.Script.UIControl.PlayerHUD.Spell.Slot {
         public void Dispose() {
             
         }
-        
+
+        protected virtual void RegisterObserve() {
+            
+            m_disposable = new CompositeDisposable();
+            
+            m_model.Spell.Amount.Current
+                .Subscribe(OnAmountChanged)
+                .AddTo(m_disposable);
+        }
+
+        protected virtual void OnAmountChanged(int next) {
+            
+        }
     }
 }

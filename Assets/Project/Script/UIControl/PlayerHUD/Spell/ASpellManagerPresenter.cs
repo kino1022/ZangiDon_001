@@ -16,19 +16,19 @@ namespace Project.Script.UIControl.PlayerHUD.Spell {
     /// SpellManagerのMVPパターンにおけるPresenterの役割を持つクラスの基底クラス
     /// </summary>
     /// <typeparam name="View"></typeparam>
-    /// <typeparam name="Manager"></typeparam>
+    /// <typeparam name="Model"></typeparam>
     /// <typeparam name="Slot"></typeparam>
     /// <typeparam name="Instance"></typeparam>
     /// <typeparam name="SlotPresenter"></typeparam>
-    public abstract class ASpellManagerPresenter<View,Manager,Slot,Instance,SlotPresenter> : ISpellManagerPresenter
+    public abstract class ASpellManagerPresenter<View,Model,Slot,Instance,SlotPresenter> : ISpellManagerPresenter
         where View : ISpellManagerView<Slot,Instance>
-        where Manager : ISpellManager<Slot,Instance> 
+        where Model : ISpellManager<Slot,Instance> 
         where Slot : ISpellSlot<Instance> 
         where Instance : ISpellInstance 
         where SlotPresenter : ISpellSlotPresenter<Slot, Instance>
     {
 
-        protected Manager m_model;
+        protected Model m_model;
         
         protected View m_view;
         
@@ -38,7 +38,7 @@ namespace Project.Script.UIControl.PlayerHUD.Spell {
         
         protected Dictionary<int, SlotPresenter> m_spells;
         
-        protected ISpellSlotPresenterFactory<SlotPresenter,Slot,Instance,ISpellSlotUIView> m_presenterFactory;
+        protected ISpellSlotPresenterFactory<SlotPresenter, Slot, Instance,ISpellSlotUIView> m_presenterFactory;
 
         [Inject]
         protected ASpellManagerPresenter(IObjectResolver resolver) {
@@ -47,7 +47,7 @@ namespace Project.Script.UIControl.PlayerHUD.Spell {
 
         public virtual void Start() {
             
-            m_model = m_resolver.Resolve<Manager>() 
+            m_model = m_resolver.Resolve<Model>() 
                       ?? throw new ArgumentNullException();
             
             m_view = m_resolver.Resolve<View>() 
@@ -89,6 +89,9 @@ namespace Project.Script.UIControl.PlayerHUD.Spell {
             m_disposable = new CompositeDisposable();
         }
 
+        /// Slotに対するRegisterとSpellに対するRegisterで分ける必要がある
+        /// ともなってCompositeDisposableも分ける必要がある
+        
 
         /// <summary>
         /// SlotPresenterの生成と初期化を行うクラスに対して約束するインターフェース

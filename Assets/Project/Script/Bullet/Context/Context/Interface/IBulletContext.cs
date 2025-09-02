@@ -8,12 +8,6 @@ namespace Teiwas.Script.Bullet.Context.Intetface {
     public interface IBulletContext {
 
         public List<IBulletContextElement> Elements { get;}
-
-        /// <summary>
-        /// Contextの統合を行う
-        /// </summary>
-        /// <param name="context"></param>
-        public void Add(IBulletContext context);
-
+        
     }
 }

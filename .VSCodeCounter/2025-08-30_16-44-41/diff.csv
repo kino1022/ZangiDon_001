@@ -1,0 +1,249 @@
+"filename", "language", "XML", "Markdown", "C#", "UnityShader", "JSON", "comment", "blank", "total"
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Kevin Iglesias/Human Animations/Scripts/SpineProxy.cs", "C#", 0, 0, 45, 0, 0, 13, 8, 66
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Mock/MockCharacterController.cs", "C#", 0, 0, 23, 0, 0, 3, 10, 36
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Mock/MockController.cs", "C#", 0, 0, 45, 0, 0, 0, 5, 50
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Mock/MortionState.cs", "C#", 0, 0, 10, 0, 0, 0, 6, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/Microsoft.Bcl.AsyncInterfaces.6.0.0/Microsoft.Bcl.AsyncInterfaces.nuspec", "XML", 30, 0, 0, 0, 0, 0, 1, 31
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/Microsoft.Bcl.AsyncInterfaces.6.0.0/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml", "XML", 8, 0, 0, 0, 0, 0, 1, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/Microsoft.Bcl.TimeProvider.nuspec", "XML", 31, 0, 0, 0, 0, 0, 1, 32
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/PACKAGE.md", "Markdown", 0, 40, 0, 0, 0, 0, 17, 57
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/buildTransitive/net461/Microsoft.Bcl.TimeProvider.targets", "XML", 6, 0, 0, 0, 0, 0, 1, 7
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/buildTransitive/netcoreapp2.0/Microsoft.Bcl.TimeProvider.targets", "XML", 6, 0, 0, 0, 0, 0, 1, 7
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/lib/netstandard2.0/Microsoft.Bcl.TimeProvider.xml", "XML", 415, 0, 0, 0, 0, 0, 1, 416
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/ObservableCollections.3.3.3/ObservableCollections.nuspec", "XML", 27, 0, 0, 0, 0, 0, 0, 27
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/ObservableCollections.3.3.3/lib/netstandard2.1/ObservableCollections.xml", "XML", 389, 0, 0, 0, 0, 0, 3, 392
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/ObservableCollections.R3.3.3.3/ObservableCollections.R3.nuspec", "XML", 34, 0, 0, 0, 0, 0, 0, 34
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/ObservableCollections.R3.3.3.3/lib/netstandard2.1/ObservableCollections.R3.xml", "XML", 350, 0, 0, 0, 0, 0, 3, 353
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/R3.1.3.0/R3.nuspec", "XML", 36, 0, 0, 0, 0, 0, 0, 36
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/R3.1.3.0/lib/netstandard2.1/R3.xml", "XML", 444, 0, 0, 0, 0, 0, 3, 447
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.ComponentModel.Annotations.5.0.0/System.ComponentModel.Annotations.nuspec", "XML", 68, 0, 0, 0, 0, 0, 2, 70
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.ComponentModel.Annotations.5.0.0/lib/netstandard2.1/System.ComponentModel.Annotations.xml", "XML", 1201, 0, 0, 0, 0, 0, 9, 1210
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.Runtime.CompilerServices.Unsafe.6.0.0/System.Runtime.CompilerServices.Unsafe.nuspec", "XML", 28, 0, 0, 0, 0, 0, 1, 29
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.Runtime.CompilerServices.Unsafe.6.0.0/buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets", "XML", 6, 0, 0, 0, 0, 0, 1, 7
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml", "XML", 289, 0, 0, 0, 0, 0, 2, 291
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.Threading.Channels.8.0.0/PACKAGE.md", "Markdown", 0, 41, 0, 0, 0, 7, 25, 73
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.Threading.Channels.8.0.0/System.Threading.Channels.nuspec", "XML", 33, 0, 0, 0, 0, 0, 1, 34
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.Threading.Channels.8.0.0/buildTransitive/net461/System.Threading.Channels.targets", "XML", 6, 0, 0, 0, 0, 0, 1, 7
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.Threading.Channels.8.0.0/buildTransitive/netcoreapp2.0/System.Threading.Channels.targets", "XML", 6, 0, 0, 0, 0, 0, 1, 7
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Packages/System.Threading.Channels.8.0.0/lib/netstandard2.1/System.Threading.Channels.xml", "XML", 243, 0, 0, 0, 0, 0, 0, 243
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml", "XML", 6178, 0, 0, 0, 0, 2, 262, 6442
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml", "XML", 11200, 0, 0, 0, 0, 0, 113, 11313
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinValidator.Editor.xml", "XML", 39, 0, 0, 0, 0, 0, 1, 40
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml", "XML", 202, 0, 0, 0, 0, 0, 1, 203
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml", "XML", 9858, 0, 0, 0, 0, 0, 7, 9865
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml", "XML", 9771, 0, 0, 0, 0, 2, 18, 9791
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml", "XML", 3710, 0, 0, 0, 0, 0, 4, 3714
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Assemblies/link.xml", "XML", 6, 0, 0, 0, 0, 0, 0, 6
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/ExtractSpriteShader.shader", "UnityShader", 0, 0, 0, 44, 0, 1, 6, 51
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/GUIUtilShader.shader", "UnityShader", 0, 0, 0, 80, 0, 3, 15, 98
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/LazyEditorIconShader.shader", "UnityShader", 0, 0, 0, 41, 0, 7, 9, 57
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/SdfIconShader.shader", "UnityShader", 0, 0, 0, 81, 0, 0, 14, 95
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs", "C#", 0, 0, 744, 0, 0, 29, 110, 883
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef", "JSON", 0, 0, 0, 0, 11, 0, 0, 11
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Odin Validator/Assets/Editor/Hidden/ValidatorSpinningShader.shader", "UnityShader", 0, 0, 0, 222, 0, 8, 52, 282
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Plugins/Sirenix/Odin Validator/EnsureCorrectOdinVersion.cs", "C#", 0, 0, 160, 0, 0, 6, 31, 197
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/Castable/DummyCastable.cs", "C#", 0, 0, -9, 0, 0, 0, -2, -11
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/EffectHolder/GiveDamage.cs", "C#", 0, 0, 0, 0, 0, 0, -1, -1
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/MainEffect/DummyCastable.cs", "C#", 0, 0, 9, 0, 0, 0, 2, 11
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/MainEffect/InstanceAnyObject.cs", "C#", 0, 0, 41, 0, 0, 3, 13, 57
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/MainEffect/Interface/IInstancePositionHolder.cs", "C#", 0, 0, 6, 0, 0, 0, 3, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/MainEffect/Interface/IInstanceRotationHolder.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/MainEffect/Position/GameObjectPosition.cs", "C#", 0, 0, 16, 0, 0, 0, 4, 20
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/MainEffect/Rotation/CasterFront.cs", "C#", 0, 0, 13, 0, 0, 0, 5, 18
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/Status/Health/Health.cs", "C#", 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/StatusEffect/HealCorrect.cs", "C#", 0, 0, 1, 0, 0, 0, 1, 2
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Asset/StatusEffect/Poison.cs", "C#", 0, 0, 38, 0, 0, 0, 13, 51
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/BulletContext.cs", "C#", 0, 0, -30, 0, 0, -7, -9, -46
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/BulletContextManager.cs", "C#", 0, 0, -44, 0, 0, -3, -15, -62
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Context/BulletContext.cs", "C#", 0, 0, 19, 0, 0, 0, 5, 24
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Context/Integrator/BulletContextIntegrator.cs", "C#", 0, 0, 24, 0, 0, 0, 8, 32
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Context/Integrator/Interface/IBulletContextIntegrator.cs", "C#", 0, 0, 7, 0, 0, 3, 3, 13
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Context/Interface/IBulletContext.cs", "C#", 0, 0, 7, 0, 0, 3, 4, 14
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Element/Interface/IBulletContextElement.cs", "C#", 0, 0, 6, 0, 0, 7, 3, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Helper/BulletContextHelper.cs", "C#", 0, 0, -31, 0, 0, -1, -9, -41
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Intetface/IBulletContext.cs", "C#", 0, 0, -8, 0, 0, -7, -5, -20
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Intetface/IBulletContextElement.cs", "C#", 0, 0, -6, 0, 0, -7, -3, -16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Manager/BulletContextManager.cs", "C#", 0, 0, 6, 0, 0, 0, 4, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Bullet/Context/Manager/Interface/IBulletContextManager.cs", "C#", 0, 0, 7, 0, 0, 0, 2, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Camera/Angle/NormalAngleCalculater.cs", "C#", 0, 0, 2, 0, 0, 0, 3, 5
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Camera/Angle/NormalAngleController.cs", "C#", 0, 0, 15, 0, 0, 2, 4, 21
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Camera/Angle/TestAngleController.cs", "C#", 0, 0, 93, 0, 0, 0, 33, 126
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Camera/CameraBrain.cs", "C#", 0, 0, 2, 0, 0, 0, 3, 5
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Camera/Position/NormalPositionController.cs", "C#", 0, 0, 9, 0, 0, 0, 7, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/AEntity.cs", "C#", 0, 0, 19, 0, 0, 3, 8, 30
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Data/CharacterData.cs", "C#", 0, 0, -11, 0, 0, 0, -3, -14
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Data/Element/StatusElement.cs", "C#", 0, 0, -11, 0, 0, 0, -4, -15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Data/Element/TagsElement.cs", "C#", 0, 0, -12, 0, 0, 0, -3, -15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Data/Interface/ICharacterDataHolder.cs", "C#", 0, 0, -5, 0, 0, 0, 0, -5
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Group/CharacterGroup.cs", "C#", 0, 0, 14, 0, 0, 3, 5, 22
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Group/Group.cs", "C#", 0, 0, 10, 0, 0, 0, 5, 15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Group/GroupEntityManager.cs", "C#", 0, 0, 115, 0, 0, 0, 36, 151
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Group/Interface/IGroup.cs", "C#", 0, 0, 4, 0, 0, 0, 2, 6
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Group/Interface/IGroupEntityManager.cs", "C#", 0, 0, 9, 0, 0, 3, 4, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Group/Interface/IGroupHolder.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/LockManage/Interface/ILockTargetHolder.cs", "C#", 0, 0, -6, 0, 0, 0, -2, -8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/LockManage/Interface/ITargetContext.cs", "C#", 0, 0, -9, 0, 0, -9, -5, -23
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/LockManage/Interface/ITargetContextHolder.cs", "C#", 0, 0, -5, 0, 0, 0, 0, -5
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/LockManage/LockTargetManger.cs", "C#", 0, 0, -11, 0, 0, 0, -5, -16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/LockManage/TargetContext.cs", "C#", 0, 0, -101, 0, 0, -1, -23, -125
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/LockManage/TargetContextManager.cs", "C#", 0, 0, -23, 0, 0, 0, -10, -33
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Shooter/CharacterMagicShoter.cs", "C#", 0, 0, -26, 0, 0, 0, -7, -33
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Shooter/ContextManager.cs", "C#", 0, 0, -58, 0, 0, -3, -17, -78
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/StatusEffect/Interface/IStatusEffectList.cs", "C#", 0, 0, 4, 0, 0, 0, 2, 6
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Tag/ACharacterTag.cs", "C#", 0, 0, -8, 0, 0, 0, -2, -10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Character/Tag/CharacterTag.cs", "C#", 0, 0, 8, 0, 0, 0, 3, 11
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Controller/RuneSelectInput.cs", "C#", 0, 0, -17, 0, 0, 0, -7, -24
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Damage.cs", "C#", 0, 0, 57, 0, 0, 8, 17, 82
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Factory/DamageInstanceFactory.cs", "C#", 0, 0, 27, 0, 0, 3, 10, 40
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Factory/Interface/IDamageFactory.cs", "C#", 0, 0, 7, 0, 0, 8, 3, 18
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Interface/IDamage.cs", "C#", 0, 0, 4, 0, 0, 3, 1, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Interface/IDamageWithTag.cs", "C#", 0, 0, 9, 0, 0, 16, 6, 31
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Processor/DamageProcessor.cs", "C#", 0, 0, 49, 0, 0, 0, 18, 67
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Processor/Interface/IDamageProcessElement.cs", "C#", 0, 0, 6, 0, 0, 8, 2, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Processor/Interface/IDamageProcessor.cs", "C#", 0, 0, 8, 0, 0, 8, 1, 17
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Processor/Pointer/Interface/IDamageEndPoint.cs", "C#", 0, 0, 5, 0, 0, 3, 2, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Processor/Pointer/Interface/IDamageEntryPoint.cs", "C#", 0, 0, 5, 0, 0, 3, 2, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Damage/Tag/Interface/IDamageTag.cs", "C#", 0, 0, 4, 0, 0, 3, 1, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Enemy/Enemy.cs", "C#", 0, 0, 5, 0, 0, 3, 3, 11
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/EventBus/Character/ChangeAnimation.cs", "C#", 0, 0, 11, 0, 0, 0, 6, 17
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/GameManager/EntityManager.cs", "C#", 0, 0, 14, 0, 0, 0, 4, 18
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Installer/Character/Player/PlayerInstaller.cs", "C#", 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Installer/GamaManager/EntityManagerInstaller.cs", "C#", 0, 0, 4, 0, 0, 0, 1, 5
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Motion/State/Context/CancelMotionContext.cs", "C#", 0, 0, 37, 0, 0, 0, 15, 52
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Motion/State/Context/Element/CancelMotionContextElement.cs", "C#", 0, 0, 27, 0, 0, 0, 14, 41
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Motion/State/Context/Element/InMotionFreeFallContextElement.cs", "C#", 0, 0, 19, 0, 0, 0, 7, 26
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Motion/State/Context/Element/Interface/ICancelMotionContextElement.cs", "C#", 0, 0, 6, 0, 0, 6, 3, 15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Motion/State/Context/Element/Interface/IInMotionFreeFallContextElement.cs", "C#", 0, 0, 5, 0, 0, 5, 1, 11
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Motion/State/Context/InMotionFreeFallContext.cs", "C#", 0, 0, 38, 0, 0, 4, 15, 57
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Motion/State/Context/Interface/ICancelMotionContext.cs", "C#", 0, 0, 7, 0, 0, 0, 2, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Motion/State/Context/Interface/IInMotionFreeFallContext.cs", "C#", 0, 0, 6, 0, 0, 8, 4, 18
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Motion/State/MotionStateController.cs", "C#", 0, 0, 53, 0, 0, 7, 26, 86
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/Data/CharacterData.cs", "C#", 0, 0, 11, 0, 0, 0, 3, 14
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/Data/Element/StatusElement.cs", "C#", 0, 0, 11, 0, 0, 0, 4, 15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/Data/Element/TagsElement.cs", "C#", 0, 0, 12, 0, 0, 0, 3, 15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/Data/Interface/ICharacterDataHolder.cs", "C#", 0, 0, 5, 0, 0, 0, 0, 5
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/LockManage/Interface/ILockTargetHolder.cs", "C#", 0, 0, 7, 0, 0, 0, 2, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/LockManage/Interface/ILockTargetSelector.cs", "C#", 0, 0, 6, 0, 0, 9, 3, 18
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/LockManage/Interface/ITargetContext.cs", "C#", 0, 0, 9, 0, 0, 9, 5, 23
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/LockManage/Interface/ITargetContextHolder.cs", "C#", 0, 0, 5, 0, 0, 0, 0, 5
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/LockManage/LockTargetManger.cs", "C#", 0, 0, 16, 0, 0, 0, 8, 24
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/LockManage/Selector/PlayerTargetSelector.cs", "C#", 0, 0, 64, 0, 0, 1, 27, 92
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/LockManage/TargetContext.cs", "C#", 0, 0, 101, 0, 0, 1, 23, 125
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/LockManage/TargetContextManager.cs", "C#", 0, 0, 23, 0, 0, 0, 11, 34
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/Player.cs", "C#", 0, 0, 7, 0, 0, 3, 3, 13
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/Shooter/CharacterMagicShoter.cs", "C#", 0, 0, 27, 0, 0, 0, 7, 34
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/Shooter/ContextManager.cs", "C#", 0, 0, 58, 0, 0, 3, 17, 78
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Player/Shooter/Interface/IPlayerBulletShoter.cs", "C#", 0, 0, 7, 0, 0, 0, 2, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Rune/RuneData/RuneData.cs", "C#", 0, 0, -1, 0, 0, 0, 1, 0
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Rune/RuneInstance/Factory/SubEffectInstanceFactory.cs", "C#", 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Scope/GameLifeTimeScope.cs", "C#", 0, 0, 0, 0, 0, 3, 0, 3
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spawner/Character/CharacterSpawner.cs", "C#", 0, 0, 11, 0, 0, 0, 4, 15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spawner/Position/RoundSpawnPosition.cs", "C#", 0, 0, 25, 0, 0, 0, 9, 34
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Data/ASpellData.cs", "C#", 0, 0, 22, 0, 0, 0, 8, 30
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Data/Interface/ISpellData.cs", "C#", 0, 0, 8, 0, 0, 0, 5, 13
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Data/Main/Interface/IMainSpellData.cs", "C#", 0, 0, 7, 0, 0, 0, 3, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Data/Main/MainSpellData.cs", "C#", 0, 0, 16, 0, 0, 0, 3, 19
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Data/Main/Module/Interface/ISpellCastAction.cs", "C#", 0, 0, 6, 0, 0, 0, 3, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Data/Sub/Interface/ISubSpellData.cs", "C#", 0, 0, 13, 0, 0, 0, 7, 20
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Data/Sub/SubSpellData.cs", "C#", 0, 0, 35, 0, 0, 0, 11, 46
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Effect/Interface/ISpellEffect.cs", "C#", 0, 0, 6, 0, 0, 7, 3, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/ASpellFactory.cs", "C#", 0, 0, 37, 0, 0, 0, 10, 47
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Interface/ISpellFactory.cs", "C#", 0, 0, 12, 0, 0, 0, 4, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Main/Interface/IMainSpellFactory.cs", "C#", 0, 0, 7, 0, 0, 0, 3, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Main/MainSpellFactory.cs", "C#", 0, 0, 29, 0, 0, 0, 7, 36
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Pattern/ASpellLotteryPattern.cs", "C#", 0, 0, 41, 0, 0, 0, 12, 53
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Pattern/Interface/ISpellLotteryPattern.cs", "C#", 0, 0, 10, 0, 0, 4, 2, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Pattern/Main/Interface/IMainSpellLotteryPattern.cs", "C#", 0, 0, 6, 0, 0, 0, 3, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Pattern/Main/MainSpellLotteryPattern.cs", "C#", 0, 0, 9, 0, 0, 0, 1, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Pattern/Sub/Interface/ISubSpellLotteryPattern.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Pattern/Sub/SubSpellLotteryPattern.cs", "C#", 0, 0, 8, 0, 0, 0, 2, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Sub/Interface/ISubSpellFactory.cs", "C#", 0, 0, 7, 0, 0, 0, 3, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Factory/Sub/SubSpellFactory.cs", "C#", 0, 0, 31, 0, 0, 0, 4, 35
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Installer/MainManagerInstaller.cs", "C#", 0, 0, 14, 0, 0, 0, 2, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Installer/SpellFactoryInstaller.cs", "C#", 0, 0, 42, 0, 0, 0, 11, 53
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Installer/SpellSelectorInstaller.cs", "C#", 0, 0, 23, 0, 0, 0, 9, 32
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Installer/SpellSlotFactoryInstaller.cs", "C#", 0, 0, 34, 0, 0, 0, 9, 43
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Installer/SubManagerInstaller.cs", "C#", 0, 0, 14, 0, 0, 0, 2, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Instance/ASpellInstance.cs", "C#", 0, 0, 29, 0, 0, 0, 12, 41
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Instance/Interface/ISpellInstance.cs", "C#", 0, 0, 10, 0, 0, 0, 5, 15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Instance/Main/Interface/IMainSpellInstance.cs", "C#", 0, 0, 10, 0, 0, 0, 4, 14
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Instance/Main/MainSpellInstance.cs", "C#", 0, 0, 16, 0, 0, 0, 4, 20
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Instance/Module/AmountCounter.cs", "C#", 0, 0, 24, 0, 0, 0, 10, 34
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Instance/Module/Interface/IAmountCounter.cs", "C#", 0, 0, 10, 0, 0, 0, 8, 18
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Instance/Sub/Insterface/ISubSpellInstance.cs", "C#", 0, 0, 13, 0, 0, 0, 6, 19
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Instance/Sub/SubSpellInstance.cs", "C#", 0, 0, 34, 0, 0, 0, 17, 51
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/ASpellManager.cs", "C#", 0, 0, 48, 0, 0, 4, 21, 73
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Container/Interface/ISelectSpellContainer.cs", "C#", 0, 0, 8, 0, 0, 6, 4, 18
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Container/SelectSpellContainer.cs", "C#", 0, 0, 47, 0, 0, 5, 17, 69
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/EventBus/OnSelectSpellEventBus.cs", "C#", 0, 0, 14, 0, 0, 3, 4, 21
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Interface/ISpellManager.cs", "C#", 0, 0, 11, 0, 0, 17, 6, 34
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Main/Interface/IMainSpellManager.cs", "C#", 0, 0, 7, 0, 0, 3, 2, 12
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Main/MainSpellManager.cs", "C#", 0, 0, 8, 0, 0, 0, 2, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Module/Interface/IManagerFillObserver.cs", "C#", 0, 0, 6, 0, 0, 6, 3, 15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Module/ManagerFillObserver.cs", "C#", 0, 0, 57, 0, 0, 3, 25, 85
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Selector/Interface/ISpellSelector.cs", "C#", 0, 0, 8, 0, 0, 8, 3, 19
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Selector/SpellSelector.cs", "C#", 0, 0, 38, 0, 0, 3, 15, 56
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Sub/Interface/ISubSpellManager.cs", "C#", 0, 0, 7, 0, 0, 0, 3, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Sub/SubSpellManager.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Supplier/Interface/ISpellSupplier.cs", "C#", 0, 0, 11, 0, 0, 16, 6, 33
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Manager/Supplier/SpellSupplier.cs", "C#", 0, 0, 49, 0, 0, 0, 18, 67
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Factory/ASpellSlotFactory.cs", "C#", 0, 0, 13, 0, 0, 0, 3, 16
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Factory/Interface/IMainSpellSlotFactory.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Factory/Interface/ISelectorSpellSlotFactory.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Factory/Interface/ISpellSlotFactory.cs", "C#", 0, 0, 8, 0, 0, 9, 1, 18
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Factory/Interface/ISubSpellSlotFactory.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Factory/MainSpellSlotFactory.cs", "C#", 0, 0, 12, 0, 0, 0, 2, 14
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Factory/SelectorSpellSlotFactory.cs", "C#", 0, 0, 11, 0, 0, 0, 3, 14
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Factory/SubSpellSlotFactory.cs", "C#", 0, 0, 13, 0, 0, 0, 2, 15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Interface/ISpellSlot.cs", "C#", 0, 0, 12, 0, 0, 16, 7, 35
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Main/Interface/IMainSpellSlot.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Selector/Interface/ISelectorSpellSlot.cs", "C#", 0, 0, 7, 0, 0, 4, 1, 12
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/Spell/Slot/Sub/Interface/ISubSpellSlot.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/StatusEffect/AStatusEffect.cs", "C#", 0, 0, -1, 0, 0, 0, 1, 0
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/StatusEffect/Instance/StatusEffectInstance.cs", "C#", 0, 0, 8, 0, 0, 0, 4, 12
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Rune/ARuneListPresenter.cs", "C#", 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/ASpellManagerPresenter.cs", "C#", 0, 0, 86, 0, 0, 19, 36, 141
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/ASpellManagerView.cs", "C#", 0, 0, 31, 0, 0, 0, 11, 42
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Installer/SelectorUIInstaller.cs", "C#", 0, 0, 13, 0, 0, 0, 5, 18
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Installer/SlotPresenterFactoryInstaller.cs", "C#", 0, 0, 24, 0, 0, 0, 6, 30
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Interface/ISpellManagerPresenter.cs", "C#", 0, 0, 7, 0, 0, 0, 3, 10
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Interface/ISpellManagerView.cs", "C#", 0, 0, 15, 0, 0, 5, 4, 24
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/Interface/ISpellSelectorPresenter.cs", "C#", 0, 0, 6, 0, 0, 0, 3, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/Interface/ISpellSelectorView.cs", "C#", 0, 0, 7, 0, 0, 0, 2, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/SpellSelectorPresenter.cs", "C#", 0, 0, 17, 0, 0, 0, 5, 22
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/SpellSelectorView.cs", "C#", 0, 0, 7, 0, 0, 0, 2, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/ASpellSlotPresenter.cs", "C#", 0, 0, 30, 0, 0, 5, 16, 51
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/IMainSpellSlotPresenterFactory.cs", "C#", 0, 0, 9, 0, 0, 0, 2, 11
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/ISpellSelectorSlotPresenterFactory.cs", "C#", 0, 0, 12, 0, 0, 0, 2, 14
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/ISpellSlotPresenterFactory.cs", "C#", 0, 0, 13, 0, 0, 0, 1, 14
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/ISubSpellSlotPresenterFactory.cs", "C#", 0, 0, 10, 0, 0, 0, 2, 12
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/SelectorSpellSlotPresenterFactory.cs", "C#", 0, 0, 13, 0, 0, 0, 2, 15
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Interface/ISpellSlotPresenter.cs", "C#", 0, 0, 11, 0, 0, 0, 2, 13
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Interface/ISpellSlotUIView.cs", "C#", 0, 0, 6, 0, 0, 0, 3, 9
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Main/Interface/IMainSpellSlotPresenter.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Selector/Interface/ISelectorSpellSlotPresenter.cs", "C#", 0, 0, 6, 0, 0, 0, 2, 8
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Selector/SelectorSpellSlotPresenter.cs", "C#", 0, 0, 9, 0, 0, 0, 3, 12
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Sub/Interface/ISubSpellSlotPresenter.cs", "C#", 0, 0, 9, 0, 0, 0, 2, 11
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl", "UnityShader", 0, 0, 0, 130, 0, 18, 31, 179
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader", "UnityShader", 0, 0, 0, 113, 0, 2, 31, 146
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader", "UnityShader", 0, 0, 0, 123, 0, 3, 30, 156
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader", "UnityShader", 0, 0, 0, 113, 0, 2, 31, 146
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader", "UnityShader", 0, 0, 0, 253, 0, 4, 70, 327
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader", "UnityShader", 0, 0, 0, 253, 0, 4, 65, 322
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader", "UnityShader", 0, 0, 0, 198, 0, 10, 51, 259
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader", "UnityShader", 0, 0, 0, 193, 0, 8, 52, 253
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader", "UnityShader", 0, 0, 0, 82, 0, 4, 21, 107
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader", "UnityShader", 0, 0, 0, 290, 0, 15, 85, 390
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader", "UnityShader", 0, 0, 0, 192, 0, 8, 51, 251
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader", "UnityShader", 0, 0, 0, 104, 0, 8, 28, 140
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader", "UnityShader", 0, 0, 0, 123, 0, 4, 33, 160
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_SDF.shader", "UnityShader", 0, 0, 0, 253, 0, 4, 70, 327
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMP_Sprite.shader", "UnityShader", 0, 0, 0, 111, 0, 0, 21, 132
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMPro.cginc", "UnityShader", 0, 0, 0, 63, 0, 2, 20, 85
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc", "UnityShader", 0, 0, 0, 129, 0, 2, 35, 166
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc", "UnityShader", 0, 0, 0, 62, 0, 6, 13, 81
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc", "UnityShader", 0, 0, 0, 75, 0, 7, 18, 100
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TextMesh Pro/Sprites/EmojiOne.json", "JSON", 0, 0, 0, 0, 155, 0, 2, 157
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs", "C#", 0, 0, 195, 0, 0, 1, 47, 243
+"/Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets/TutorialInfo/Scripts/Readme.cs", "C#", 0, 0, 14, 0, 0, 0, 3, 17
+"Total", "-", 44620, 81, 3513, 3328, 166, 450, 2387, 54545

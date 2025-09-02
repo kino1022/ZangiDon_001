@@ -1,0 +1,421 @@
+# Details
+
+Date : 2025-08-30 16:44:41
+
+Directory /Users/fujitayuuta/Documents/GitHub/ZangiDon_001/Assets
+
+Total : 406 files,  55793 codes, 922 comments, 3663 blanks, all 60378 lines
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
+
+## Files
+| filename | language | code | comment | blank | total |
+| :--- | :--- | ---: | ---: | ---: | ---: |
+| [Assets/Kevin Iglesias/Human Animations/Scripts/SpineProxy.cs](/Assets/Kevin%20Iglesias/Human%20Animations/Scripts/SpineProxy.cs) | C# | 45 | 13 | 8 | 66 |
+| [Assets/Mock/MockCharacterController.cs](/Assets/Mock/MockCharacterController.cs) | C# | 23 | 3 | 10 | 36 |
+| [Assets/Mock/MockController.cs](/Assets/Mock/MockController.cs) | C# | 45 | 0 | 5 | 50 |
+| [Assets/Mock/MortionState.cs](/Assets/Mock/MortionState.cs) | C# | 10 | 0 | 6 | 16 |
+| [Assets/Packages/Microsoft.Bcl.AsyncInterfaces.6.0.0/Microsoft.Bcl.AsyncInterfaces.nuspec](/Assets/Packages/Microsoft.Bcl.AsyncInterfaces.6.0.0/Microsoft.Bcl.AsyncInterfaces.nuspec) | XML | 30 | 0 | 1 | 31 |
+| [Assets/Packages/Microsoft.Bcl.AsyncInterfaces.6.0.0/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml](/Assets/Packages/Microsoft.Bcl.AsyncInterfaces.6.0.0/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml) | XML | 8 | 0 | 1 | 9 |
+| [Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/Microsoft.Bcl.TimeProvider.nuspec](/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/Microsoft.Bcl.TimeProvider.nuspec) | XML | 31 | 0 | 1 | 32 |
+| [Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/PACKAGE.md](/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/PACKAGE.md) | Markdown | 40 | 0 | 17 | 57 |
+| [Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/buildTransitive/net461/Microsoft.Bcl.TimeProvider.targets](/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/buildTransitive/net461/Microsoft.Bcl.TimeProvider.targets) | XML | 6 | 0 | 1 | 7 |
+| [Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/buildTransitive/netcoreapp2.0/Microsoft.Bcl.TimeProvider.targets](/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/buildTransitive/netcoreapp2.0/Microsoft.Bcl.TimeProvider.targets) | XML | 6 | 0 | 1 | 7 |
+| [Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/lib/netstandard2.0/Microsoft.Bcl.TimeProvider.xml](/Assets/Packages/Microsoft.Bcl.TimeProvider.8.0.0/lib/netstandard2.0/Microsoft.Bcl.TimeProvider.xml) | XML | 415 | 0 | 1 | 416 |
+| [Assets/Packages/ObservableCollections.3.3.3/ObservableCollections.nuspec](/Assets/Packages/ObservableCollections.3.3.3/ObservableCollections.nuspec) | XML | 27 | 0 | 0 | 27 |
+| [Assets/Packages/ObservableCollections.3.3.3/lib/netstandard2.1/ObservableCollections.xml](/Assets/Packages/ObservableCollections.3.3.3/lib/netstandard2.1/ObservableCollections.xml) | XML | 389 | 0 | 3 | 392 |
+| [Assets/Packages/ObservableCollections.R3.3.3.3/ObservableCollections.R3.nuspec](/Assets/Packages/ObservableCollections.R3.3.3.3/ObservableCollections.R3.nuspec) | XML | 34 | 0 | 0 | 34 |
+| [Assets/Packages/ObservableCollections.R3.3.3.3/lib/netstandard2.1/ObservableCollections.R3.xml](/Assets/Packages/ObservableCollections.R3.3.3.3/lib/netstandard2.1/ObservableCollections.R3.xml) | XML | 350 | 0 | 3 | 353 |
+| [Assets/Packages/R3.1.3.0/R3.nuspec](/Assets/Packages/R3.1.3.0/R3.nuspec) | XML | 36 | 0 | 0 | 36 |
+| [Assets/Packages/R3.1.3.0/lib/netstandard2.1/R3.xml](/Assets/Packages/R3.1.3.0/lib/netstandard2.1/R3.xml) | XML | 444 | 0 | 3 | 447 |
+| [Assets/Packages/System.ComponentModel.Annotations.5.0.0/System.ComponentModel.Annotations.nuspec](/Assets/Packages/System.ComponentModel.Annotations.5.0.0/System.ComponentModel.Annotations.nuspec) | XML | 68 | 0 | 2 | 70 |
+| [Assets/Packages/System.ComponentModel.Annotations.5.0.0/lib/netstandard2.1/System.ComponentModel.Annotations.xml](/Assets/Packages/System.ComponentModel.Annotations.5.0.0/lib/netstandard2.1/System.ComponentModel.Annotations.xml) | XML | 1,201 | 0 | 9 | 1,210 |
+| [Assets/Packages/System.Runtime.CompilerServices.Unsafe.6.0.0/System.Runtime.CompilerServices.Unsafe.nuspec](/Assets/Packages/System.Runtime.CompilerServices.Unsafe.6.0.0/System.Runtime.CompilerServices.Unsafe.nuspec) | XML | 28 | 0 | 1 | 29 |
+| [Assets/Packages/System.Runtime.CompilerServices.Unsafe.6.0.0/buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets](/Assets/Packages/System.Runtime.CompilerServices.Unsafe.6.0.0/buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets) | XML | 6 | 0 | 1 | 7 |
+| [Assets/Packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml](/Assets/Packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml) | XML | 289 | 0 | 2 | 291 |
+| [Assets/Packages/System.Threading.Channels.8.0.0/PACKAGE.md](/Assets/Packages/System.Threading.Channels.8.0.0/PACKAGE.md) | Markdown | 41 | 7 | 25 | 73 |
+| [Assets/Packages/System.Threading.Channels.8.0.0/System.Threading.Channels.nuspec](/Assets/Packages/System.Threading.Channels.8.0.0/System.Threading.Channels.nuspec) | XML | 33 | 0 | 1 | 34 |
+| [Assets/Packages/System.Threading.Channels.8.0.0/buildTransitive/net461/System.Threading.Channels.targets](/Assets/Packages/System.Threading.Channels.8.0.0/buildTransitive/net461/System.Threading.Channels.targets) | XML | 6 | 0 | 1 | 7 |
+| [Assets/Packages/System.Threading.Channels.8.0.0/buildTransitive/netcoreapp2.0/System.Threading.Channels.targets](/Assets/Packages/System.Threading.Channels.8.0.0/buildTransitive/netcoreapp2.0/System.Threading.Channels.targets) | XML | 6 | 0 | 1 | 7 |
+| [Assets/Packages/System.Threading.Channels.8.0.0/lib/netstandard2.1/System.Threading.Channels.xml](/Assets/Packages/System.Threading.Channels.8.0.0/lib/netstandard2.1/System.Threading.Channels.xml) | XML | 243 | 0 | 0 | 243 |
+| [Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml](/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml) | XML | 6,178 | 2 | 262 | 6,442 |
+| [Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml](/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml) | XML | 11,200 | 0 | 113 | 11,313 |
+| [Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinValidator.Editor.xml](/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinValidator.Editor.xml) | XML | 39 | 0 | 1 | 40 |
+| [Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml](/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml) | XML | 202 | 0 | 1 | 203 |
+| [Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml](/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml) | XML | 9,858 | 0 | 7 | 9,865 |
+| [Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml](/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml) | XML | 9,771 | 2 | 18 | 9,791 |
+| [Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml](/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml) | XML | 3,710 | 0 | 4 | 3,714 |
+| [Assets/Plugins/Sirenix/Assemblies/link.xml](/Assets/Plugins/Sirenix/Assemblies/link.xml) | XML | 6 | 0 | 0 | 6 |
+| [Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/ExtractSpriteShader.shader](/Assets/Plugins/Sirenix/Odin%20Inspector/Assets/Editor/Hidden/ExtractSpriteShader.shader) | UnityShader | 44 | 1 | 6 | 51 |
+| [Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/GUIUtilShader.shader](/Assets/Plugins/Sirenix/Odin%20Inspector/Assets/Editor/Hidden/GUIUtilShader.shader) | UnityShader | 80 | 3 | 15 | 98 |
+| [Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/LazyEditorIconShader.shader](/Assets/Plugins/Sirenix/Odin%20Inspector/Assets/Editor/Hidden/LazyEditorIconShader.shader) | UnityShader | 41 | 7 | 9 | 57 |
+| [Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/SdfIconShader.shader](/Assets/Plugins/Sirenix/Odin%20Inspector/Assets/Editor/Hidden/SdfIconShader.shader) | UnityShader | 81 | 0 | 14 | 95 |
+| [Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs](/Assets/Plugins/Sirenix/Odin%20Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs) | C# | 744 | 29 | 110 | 883 |
+| [Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef](/Assets/Plugins/Sirenix/Odin%20Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef) | JSON | 11 | 0 | 0 | 11 |
+| [Assets/Plugins/Sirenix/Odin Validator/Assets/Editor/Hidden/ValidatorSpinningShader.shader](/Assets/Plugins/Sirenix/Odin%20Validator/Assets/Editor/Hidden/ValidatorSpinningShader.shader) | UnityShader | 222 | 8 | 52 | 282 |
+| [Assets/Plugins/Sirenix/Odin Validator/EnsureCorrectOdinVersion.cs](/Assets/Plugins/Sirenix/Odin%20Validator/EnsureCorrectOdinVersion.cs) | C# | 160 | 6 | 31 | 197 |
+| [Assets/Project/Script/Asset/Bullet/Context/DamageCorrectionContext.cs](/Assets/Project/Script/Asset/Bullet/Context/DamageCorrectionContext.cs) | C# | 24 | 0 | 6 | 30 |
+| [Assets/Project/Script/Asset/Bullet/Context/HomingCorrectionContext.cs](/Assets/Project/Script/Asset/Bullet/Context/HomingCorrectionContext.cs) | C# | 16 | 0 | 5 | 21 |
+| [Assets/Project/Script/Asset/Bullet/Context/Interface/IDamageCorrectionContext.cs](/Assets/Project/Script/Asset/Bullet/Context/Interface/IDamageCorrectionContext.cs) | C# | 8 | 3 | 3 | 14 |
+| [Assets/Project/Script/Asset/EffectHolder/ApplyStatusEffect.cs](/Assets/Project/Script/Asset/EffectHolder/ApplyStatusEffect.cs) | C# | 16 | 0 | 3 | 19 |
+| [Assets/Project/Script/Asset/EffectHolder/HealHealth.cs](/Assets/Project/Script/Asset/EffectHolder/HealHealth.cs) | C# | 21 | 3 | 5 | 29 |
+| [Assets/Project/Script/Asset/MainEffect/DummyCastable.cs](/Assets/Project/Script/Asset/MainEffect/DummyCastable.cs) | C# | 9 | 0 | 2 | 11 |
+| [Assets/Project/Script/Asset/MainEffect/InstanceAnyObject.cs](/Assets/Project/Script/Asset/MainEffect/InstanceAnyObject.cs) | C# | 41 | 3 | 13 | 57 |
+| [Assets/Project/Script/Asset/MainEffect/Interface/IInstancePositionHolder.cs](/Assets/Project/Script/Asset/MainEffect/Interface/IInstancePositionHolder.cs) | C# | 6 | 0 | 3 | 9 |
+| [Assets/Project/Script/Asset/MainEffect/Interface/IInstanceRotationHolder.cs](/Assets/Project/Script/Asset/MainEffect/Interface/IInstanceRotationHolder.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Asset/MainEffect/Position/GameObjectPosition.cs](/Assets/Project/Script/Asset/MainEffect/Position/GameObjectPosition.cs) | C# | 16 | 0 | 4 | 20 |
+| [Assets/Project/Script/Asset/MainEffect/Rotation/CasterFront.cs](/Assets/Project/Script/Asset/MainEffect/Rotation/CasterFront.cs) | C# | 13 | 0 | 5 | 18 |
+| [Assets/Project/Script/Asset/Status/Health/DamageModule.cs](/Assets/Project/Script/Asset/Status/Health/DamageModule.cs) | C# | 35 | 0 | 13 | 48 |
+| [Assets/Project/Script/Asset/Status/Health/HealModule.cs](/Assets/Project/Script/Asset/Status/Health/HealModule.cs) | C# | 40 | 0 | 12 | 52 |
+| [Assets/Project/Script/Asset/Status/Health/Health.cs](/Assets/Project/Script/Asset/Status/Health/Health.cs) | C# | 38 | 0 | 15 | 53 |
+| [Assets/Project/Script/Asset/Status/Health/Interface/IDamageable.cs](/Assets/Project/Script/Asset/Status/Health/Interface/IDamageable.cs) | C# | 9 | 3 | 7 | 19 |
+| [Assets/Project/Script/Asset/Status/Health/Interface/IHealable.cs](/Assets/Project/Script/Asset/Status/Health/Interface/IHealable.cs) | C# | 12 | 16 | 8 | 36 |
+| [Assets/Project/Script/Asset/Status/Health/Interface/IHealth.cs](/Assets/Project/Script/Asset/Status/Health/Interface/IHealth.cs) | C# | 10 | 0 | 3 | 13 |
+| [Assets/Project/Script/Asset/Status/Health/Interface/IMaxHealth.cs](/Assets/Project/Script/Asset/Status/Health/Interface/IMaxHealth.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Asset/Status/Health/MaxHealth.cs](/Assets/Project/Script/Asset/Status/Health/MaxHealth.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/Asset/StatusEffect/HealCorrect.cs](/Assets/Project/Script/Asset/StatusEffect/HealCorrect.cs) | C# | 22 | 0 | 8 | 30 |
+| [Assets/Project/Script/Asset/StatusEffect/Poison.cs](/Assets/Project/Script/Asset/StatusEffect/Poison.cs) | C# | 38 | 0 | 13 | 51 |
+| [Assets/Project/Script/Asset/TargetSelector/RoundFromSelfSelector.cs](/Assets/Project/Script/Asset/TargetSelector/RoundFromSelfSelector.cs) | C# | 15 | 3 | 3 | 21 |
+| [Assets/Project/Script/Asset/TargetSelector/SelfSelector.cs](/Assets/Project/Script/Asset/TargetSelector/SelfSelector.cs) | C# | 12 | 3 | 1 | 16 |
+| [Assets/Project/Script/Bullet/Context/Asset/AccelerationCorrector.cs](/Assets/Project/Script/Bullet/Context/Asset/AccelerationCorrector.cs) | C# | 18 | 0 | 4 | 22 |
+| [Assets/Project/Script/Bullet/Context/Asset/FirstSpeedCorrector.cs](/Assets/Project/Script/Bullet/Context/Asset/FirstSpeedCorrector.cs) | C# | 29 | 0 | 5 | 34 |
+| [Assets/Project/Script/Bullet/Context/Context/BulletContext.cs](/Assets/Project/Script/Bullet/Context/Context/BulletContext.cs) | C# | 19 | 0 | 5 | 24 |
+| [Assets/Project/Script/Bullet/Context/Context/Integrator/BulletContextIntegrator.cs](/Assets/Project/Script/Bullet/Context/Context/Integrator/BulletContextIntegrator.cs) | C# | 24 | 0 | 8 | 32 |
+| [Assets/Project/Script/Bullet/Context/Context/Integrator/Interface/IBulletContextIntegrator.cs](/Assets/Project/Script/Bullet/Context/Context/Integrator/Interface/IBulletContextIntegrator.cs) | C# | 7 | 3 | 3 | 13 |
+| [Assets/Project/Script/Bullet/Context/Context/Interface/IBulletContext.cs](/Assets/Project/Script/Bullet/Context/Context/Interface/IBulletContext.cs) | C# | 7 | 3 | 4 | 14 |
+| [Assets/Project/Script/Bullet/Context/Element/Interface/IBulletContextElement.cs](/Assets/Project/Script/Bullet/Context/Element/Interface/IBulletContextElement.cs) | C# | 6 | 7 | 3 | 16 |
+| [Assets/Project/Script/Bullet/Context/Intetface/IBulletContextApplicable.cs](/Assets/Project/Script/Bullet/Context/Intetface/IBulletContextApplicable.cs) | C# | 5 | 7 | 3 | 15 |
+| [Assets/Project/Script/Bullet/Context/Intetface/IBulletContextHolder.cs](/Assets/Project/Script/Bullet/Context/Intetface/IBulletContextHolder.cs) | C# | 5 | 0 | 0 | 5 |
+| [Assets/Project/Script/Bullet/Context/Intetface/IBulletDamageCorrection.cs](/Assets/Project/Script/Bullet/Context/Intetface/IBulletDamageCorrection.cs) | C# | 8 | 3 | 2 | 13 |
+| [Assets/Project/Script/Bullet/Context/Manager/BulletContextManager.cs](/Assets/Project/Script/Bullet/Context/Manager/BulletContextManager.cs) | C# | 6 | 0 | 4 | 10 |
+| [Assets/Project/Script/Bullet/Context/Manager/Interface/IBulletContextManager.cs](/Assets/Project/Script/Bullet/Context/Manager/Interface/IBulletContextManager.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/Bullet/Damage/DamageManager.cs](/Assets/Project/Script/Bullet/Damage/DamageManager.cs) | C# | 16 | 3 | 9 | 28 |
+| [Assets/Project/Script/Bullet/Damage/Interface/IBulletDamageHolder.cs](/Assets/Project/Script/Bullet/Damage/Interface/IBulletDamageHolder.cs) | C# | 7 | 3 | 3 | 13 |
+| [Assets/Project/Script/Bullet/Damage/Interface/IDamageExecutor.cs](/Assets/Project/Script/Bullet/Damage/Interface/IDamageExecutor.cs) | C# | 6 | 3 | 1 | 10 |
+| [Assets/Project/Script/Bullet/Data/BulletData.cs](/Assets/Project/Script/Bullet/Data/BulletData.cs) | C# | 10 | 0 | 3 | 13 |
+| [Assets/Project/Script/Bullet/Data/Element/EffectElement.cs](/Assets/Project/Script/Bullet/Data/Element/EffectElement.cs) | C# | 13 | 3 | 3 | 19 |
+| [Assets/Project/Script/Bullet/Data/Element/KnockBackElement.cs](/Assets/Project/Script/Bullet/Data/Element/KnockBackElement.cs) | C# | 14 | 0 | 5 | 19 |
+| [Assets/Project/Script/Bullet/Destroy/Conditions/ADestroyCondition.cs](/Assets/Project/Script/Bullet/Destroy/Conditions/ADestroyCondition.cs) | C# | 15 | 0 | 6 | 21 |
+| [Assets/Project/Script/Bullet/Destroy/Conditions/RangeDestroyCondition.cs](/Assets/Project/Script/Bullet/Destroy/Conditions/RangeDestroyCondition.cs) | C# | 36 | 0 | 7 | 43 |
+| [Assets/Project/Script/Bullet/Destroy/DestroyConditionManager.cs](/Assets/Project/Script/Bullet/Destroy/DestroyConditionManager.cs) | C# | 49 | 3 | 15 | 67 |
+| [Assets/Project/Script/Bullet/Destroy/Interface/IDestroyCondition.cs](/Assets/Project/Script/Bullet/Destroy/Interface/IDestroyCondition.cs) | C# | 9 | 12 | 3 | 24 |
+| [Assets/Project/Script/Bullet/Homing/HomingModule.cs](/Assets/Project/Script/Bullet/Homing/HomingModule.cs) | C# | 12 | 3 | 5 | 20 |
+| [Assets/Project/Script/Bullet/Homing/Interface/IAbleHomingJudger.cs](/Assets/Project/Script/Bullet/Homing/Interface/IAbleHomingJudger.cs) | C# | 5 | 3 | 2 | 10 |
+| [Assets/Project/Script/Bullet/Instance/Factory/BulletFactory.cs](/Assets/Project/Script/Bullet/Instance/Factory/BulletFactory.cs) | C# | 24 | 0 | 7 | 31 |
+| [Assets/Project/Script/Bullet/Instance/Interface/IBulletFactory.cs](/Assets/Project/Script/Bullet/Instance/Interface/IBulletFactory.cs) | C# | 8 | 0 | 1 | 9 |
+| [Assets/Project/Script/Bullet/Movement/Acceleration/ConstantAcceleration.cs](/Assets/Project/Script/Bullet/Movement/Acceleration/ConstantAcceleration.cs) | C# | 26 | 3 | 9 | 38 |
+| [Assets/Project/Script/Bullet/Movement/Acceleration/Interface/IBulletAccelaretionHolder.cs](/Assets/Project/Script/Bullet/Movement/Acceleration/Interface/IBulletAccelaretionHolder.cs) | C# | 8 | 3 | 3 | 14 |
+| [Assets/Project/Script/Bullet/Movement/Acceleration/VariableAcceleration.cs](/Assets/Project/Script/Bullet/Movement/Acceleration/VariableAcceleration.cs) | C# | 50 | 0 | 22 | 72 |
+| [Assets/Project/Script/Bullet/Movement/BulletMoveExecutor.cs](/Assets/Project/Script/Bullet/Movement/BulletMoveExecutor.cs) | C# | 44 | 3 | 16 | 63 |
+| [Assets/Project/Script/Bullet/Movement/BulletSpeedManager.cs](/Assets/Project/Script/Bullet/Movement/BulletSpeedManager.cs) | C# | 52 | 0 | 19 | 71 |
+| [Assets/Project/Script/Bullet/Movement/Direction/DirectionManager.cs](/Assets/Project/Script/Bullet/Movement/Direction/DirectionManager.cs) | C# | 35 | 3 | 7 | 45 |
+| [Assets/Project/Script/Bullet/Movement/Direction/Interface/IMoveDirectionHolder.cs](/Assets/Project/Script/Bullet/Movement/Direction/Interface/IMoveDirectionHolder.cs) | C# | 6 | 6 | 1 | 13 |
+| [Assets/Project/Script/Bullet/Movement/Direction/Pattern/DebugDirectionPattern.cs](/Assets/Project/Script/Bullet/Movement/Direction/Pattern/DebugDirectionPattern.cs) | C# | 16 | 3 | 7 | 26 |
+| [Assets/Project/Script/Bullet/Movement/Direction/Pattern/Interface/IDirectionPattern.cs](/Assets/Project/Script/Bullet/Movement/Direction/Pattern/Interface/IDirectionPattern.cs) | C# | 8 | 7 | 4 | 19 |
+| [Assets/Project/Script/Bullet/Movement/Direction/Pattern/StraightPattern.cs](/Assets/Project/Script/Bullet/Movement/Direction/Pattern/StraightPattern.cs) | C# | 28 | 3 | 10 | 41 |
+| [Assets/Project/Script/Bullet/Movement/Direction/Pattern/TargetDirectionManager.cs](/Assets/Project/Script/Bullet/Movement/Direction/Pattern/TargetDirectionManager.cs) | C# | 23 | 0 | 7 | 30 |
+| [Assets/Project/Script/Bullet/Movement/FirstSpeed/Interface/IBulletFirstSpeedHolder.cs](/Assets/Project/Script/Bullet/Movement/FirstSpeed/Interface/IBulletFirstSpeedHolder.cs) | C# | 8 | 6 | 2 | 16 |
+| [Assets/Project/Script/Bullet/Movement/FirstSpeed/NormalFirstSpeed.cs](/Assets/Project/Script/Bullet/Movement/FirstSpeed/NormalFirstSpeed.cs) | C# | 36 | 0 | 11 | 47 |
+| [Assets/Project/Script/Bullet/Movement/Interface/IBulletSpeedHolder.cs](/Assets/Project/Script/Bullet/Movement/Interface/IBulletSpeedHolder.cs) | C# | 6 | 3 | 1 | 10 |
+| [Assets/Project/Script/Bullet/Range/BulletRangeCounter.cs](/Assets/Project/Script/Bullet/Range/BulletRangeCounter.cs) | C# | 33 | 0 | 13 | 46 |
+| [Assets/Project/Script/Bullet/Range/Interface/IRangeCounter.cs](/Assets/Project/Script/Bullet/Range/Interface/IRangeCounter.cs) | C# | 5 | 3 | 0 | 8 |
+| [Assets/Project/Script/Bullet/Target/BulletTargetHolder.cs](/Assets/Project/Script/Bullet/Target/BulletTargetHolder.cs) | C# | 17 | 3 | 6 | 26 |
+| [Assets/Project/Script/Bullet/Target/Interface/IBulletTargetHolder.cs](/Assets/Project/Script/Bullet/Target/Interface/IBulletTargetHolder.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Camera/Angle/Interface/ICameraAngleCalculater.cs](/Assets/Project/Script/Camera/Angle/Interface/ICameraAngleCalculater.cs) | C# | 6 | 7 | 1 | 14 |
+| [Assets/Project/Script/Camera/Angle/Interface/ICameraAngleHolder.cs](/Assets/Project/Script/Camera/Angle/Interface/ICameraAngleHolder.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/Camera/Angle/Interface/ICameraAngleLimiter.cs](/Assets/Project/Script/Camera/Angle/Interface/ICameraAngleLimiter.cs) | C# | 6 | 8 | 2 | 16 |
+| [Assets/Project/Script/Camera/Angle/Limiter/NormalAngleLimiter.cs](/Assets/Project/Script/Camera/Angle/Limiter/NormalAngleLimiter.cs) | C# | 23 | 0 | 9 | 32 |
+| [Assets/Project/Script/Camera/Angle/NormalAngleCalculater.cs](/Assets/Project/Script/Camera/Angle/NormalAngleCalculater.cs) | C# | 30 | 0 | 14 | 44 |
+| [Assets/Project/Script/Camera/Angle/NormalAngleController.cs](/Assets/Project/Script/Camera/Angle/NormalAngleController.cs) | C# | 78 | 5 | 23 | 106 |
+| [Assets/Project/Script/Camera/Angle/TestAngleController.cs](/Assets/Project/Script/Camera/Angle/TestAngleController.cs) | C# | 93 | 0 | 33 | 126 |
+| [Assets/Project/Script/Camera/CameraBrain.cs](/Assets/Project/Script/Camera/CameraBrain.cs) | C# | 53 | 3 | 23 | 79 |
+| [Assets/Project/Script/Camera/Interface/ICameraControlElement.cs](/Assets/Project/Script/Camera/Interface/ICameraControlElement.cs) | C# | 7 | 8 | 3 | 18 |
+| [Assets/Project/Script/Camera/Position/Interface/ICameraOffSetHolder.cs](/Assets/Project/Script/Camera/Position/Interface/ICameraOffSetHolder.cs) | C# | 6 | 9 | 2 | 17 |
+| [Assets/Project/Script/Camera/Position/Interface/ICameraPositionCalculator.cs](/Assets/Project/Script/Camera/Position/Interface/ICameraPositionCalculator.cs) | C# | 6 | 3 | 1 | 10 |
+| [Assets/Project/Script/Camera/Position/Interface/ICameraPositionHolder.cs](/Assets/Project/Script/Camera/Position/Interface/ICameraPositionHolder.cs) | C# | 8 | 6 | 4 | 18 |
+| [Assets/Project/Script/Camera/Position/NormalOffsetController.cs](/Assets/Project/Script/Camera/Position/NormalOffsetController.cs) | C# | 21 | 0 | 6 | 27 |
+| [Assets/Project/Script/Camera/Position/NormalPositionCalculator.cs](/Assets/Project/Script/Camera/Position/NormalPositionCalculator.cs) | C# | 32 | 2 | 11 | 45 |
+| [Assets/Project/Script/Camera/Position/NormalPositionController.cs](/Assets/Project/Script/Camera/Position/NormalPositionController.cs) | C# | 104 | 12 | 34 | 150 |
+| [Assets/Project/Script/Camera/Smooth/Interface/IAngleSmoothHolder.cs](/Assets/Project/Script/Camera/Smooth/Interface/IAngleSmoothHolder.cs) | C# | 5 | 3 | 2 | 10 |
+| [Assets/Project/Script/Camera/Smooth/Interface/IMoveSmoothHolder.cs](/Assets/Project/Script/Camera/Smooth/Interface/IMoveSmoothHolder.cs) | C# | 4 | 3 | 1 | 8 |
+| [Assets/Project/Script/Camera/Smooth/Interface/ISmoothHolder.cs](/Assets/Project/Script/Camera/Smooth/Interface/ISmoothHolder.cs) | C# | 6 | 3 | 1 | 10 |
+| [Assets/Project/Script/Camera/Smooth/RelativeMoveSmooth.cs](/Assets/Project/Script/Camera/Smooth/RelativeMoveSmooth.cs) | C# | 50 | 4 | 20 | 74 |
+| [Assets/Project/Script/Character/AEntity.cs](/Assets/Project/Script/Character/AEntity.cs) | C# | 19 | 3 | 8 | 30 |
+| [Assets/Project/Script/Character/Group/CharacterGroup.cs](/Assets/Project/Script/Character/Group/CharacterGroup.cs) | C# | 14 | 3 | 5 | 22 |
+| [Assets/Project/Script/Character/Group/Group.cs](/Assets/Project/Script/Character/Group/Group.cs) | C# | 10 | 0 | 5 | 15 |
+| [Assets/Project/Script/Character/Group/GroupEntityManager.cs](/Assets/Project/Script/Character/Group/GroupEntityManager.cs) | C# | 115 | 0 | 36 | 151 |
+| [Assets/Project/Script/Character/Group/Interface/IGroup.cs](/Assets/Project/Script/Character/Group/Interface/IGroup.cs) | C# | 4 | 0 | 2 | 6 |
+| [Assets/Project/Script/Character/Group/Interface/IGroupEntityManager.cs](/Assets/Project/Script/Character/Group/Interface/IGroupEntityManager.cs) | C# | 9 | 3 | 4 | 16 |
+| [Assets/Project/Script/Character/Group/Interface/IGroupHolder.cs](/Assets/Project/Script/Character/Group/Interface/IGroupHolder.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Character/StatusEffect/Interface/IStatusEffectList.cs](/Assets/Project/Script/Character/StatusEffect/Interface/IStatusEffectList.cs) | C# | 4 | 0 | 2 | 6 |
+| [Assets/Project/Script/Character/Tag/CharacterTag.cs](/Assets/Project/Script/Character/Tag/CharacterTag.cs) | C# | 8 | 0 | 3 | 11 |
+| [Assets/Project/Script/Character/Tag/CharacterTagManager.cs](/Assets/Project/Script/Character/Tag/CharacterTagManager.cs) | C# | 40 | 0 | 11 | 51 |
+| [Assets/Project/Script/Character/Tag/Interface/ICharacterTag.cs](/Assets/Project/Script/Character/Tag/Interface/ICharacterTag.cs) | C# | 4 | 0 | 1 | 5 |
+| [Assets/Project/Script/Character/Tag/Interface/ICharacterTagHolder.cs](/Assets/Project/Script/Character/Tag/Interface/ICharacterTagHolder.cs) | C# | 9 | 0 | 4 | 13 |
+| [Assets/Project/Script/Damage/Damage.cs](/Assets/Project/Script/Damage/Damage.cs) | C# | 57 | 8 | 17 | 82 |
+| [Assets/Project/Script/Damage/Factory/DamageInstanceFactory.cs](/Assets/Project/Script/Damage/Factory/DamageInstanceFactory.cs) | C# | 27 | 3 | 10 | 40 |
+| [Assets/Project/Script/Damage/Factory/Interface/IDamageFactory.cs](/Assets/Project/Script/Damage/Factory/Interface/IDamageFactory.cs) | C# | 7 | 8 | 3 | 18 |
+| [Assets/Project/Script/Damage/Interface/IDamage.cs](/Assets/Project/Script/Damage/Interface/IDamage.cs) | C# | 4 | 3 | 1 | 8 |
+| [Assets/Project/Script/Damage/Interface/IDamageWithTag.cs](/Assets/Project/Script/Damage/Interface/IDamageWithTag.cs) | C# | 9 | 16 | 6 | 31 |
+| [Assets/Project/Script/Damage/Processor/DamageProcessor.cs](/Assets/Project/Script/Damage/Processor/DamageProcessor.cs) | C# | 49 | 0 | 18 | 67 |
+| [Assets/Project/Script/Damage/Processor/Interface/IDamageProcessElement.cs](/Assets/Project/Script/Damage/Processor/Interface/IDamageProcessElement.cs) | C# | 6 | 8 | 2 | 16 |
+| [Assets/Project/Script/Damage/Processor/Interface/IDamageProcessor.cs](/Assets/Project/Script/Damage/Processor/Interface/IDamageProcessor.cs) | C# | 8 | 8 | 1 | 17 |
+| [Assets/Project/Script/Damage/Processor/Pointer/Interface/IDamageEndPoint.cs](/Assets/Project/Script/Damage/Processor/Pointer/Interface/IDamageEndPoint.cs) | C# | 5 | 3 | 2 | 10 |
+| [Assets/Project/Script/Damage/Processor/Pointer/Interface/IDamageEntryPoint.cs](/Assets/Project/Script/Damage/Processor/Pointer/Interface/IDamageEntryPoint.cs) | C# | 5 | 3 | 2 | 10 |
+| [Assets/Project/Script/Damage/Tag/Interface/IDamageTag.cs](/Assets/Project/Script/Damage/Tag/Interface/IDamageTag.cs) | C# | 4 | 3 | 1 | 8 |
+| [Assets/Project/Script/Enemy/Data/EnemyData.cs](/Assets/Project/Script/Enemy/Data/EnemyData.cs) | C# | 10 | 3 | 3 | 16 |
+| [Assets/Project/Script/Enemy/Enemy.cs](/Assets/Project/Script/Enemy/Enemy.cs) | C# | 5 | 3 | 3 | 11 |
+| [Assets/Project/Script/EventBus/Character/ChangeAnimation.cs](/Assets/Project/Script/EventBus/Character/ChangeAnimation.cs) | C# | 11 | 0 | 6 | 17 |
+| [Assets/Project/Script/EventBus/Character/TakeDamageEventBus.cs](/Assets/Project/Script/EventBus/Character/TakeDamageEventBus.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/EventBus/EntityDeath.cs](/Assets/Project/Script/EventBus/EntityDeath.cs) | C# | 9 | 0 | 3 | 12 |
+| [Assets/Project/Script/EventBus/EntitySpown.cs](/Assets/Project/Script/EventBus/EntitySpown.cs) | C# | 11 | 3 | 6 | 20 |
+| [Assets/Project/Script/EventBus/EntityTakeDamage.cs](/Assets/Project/Script/EventBus/EntityTakeDamage.cs) | C# | 12 | 3 | 5 | 20 |
+| [Assets/Project/Script/GameManager/EntityManager.cs](/Assets/Project/Script/GameManager/EntityManager.cs) | C# | 57 | 3 | 21 | 81 |
+| [Assets/Project/Script/GameManager/Interface/IEntityManager.cs](/Assets/Project/Script/GameManager/Interface/IEntityManager.cs) | C# | 7 | 4 | 2 | 13 |
+| [Assets/Project/Script/Installer/Bullet/BulletInstaller.cs](/Assets/Project/Script/Installer/Bullet/BulletInstaller.cs) | C# | 14 | 0 | 8 | 22 |
+| [Assets/Project/Script/Installer/Camera/CameraInstaller.cs](/Assets/Project/Script/Installer/Camera/CameraInstaller.cs) | C# | 13 | 0 | 4 | 17 |
+| [Assets/Project/Script/Installer/Character/CharacterInstaller.cs](/Assets/Project/Script/Installer/Character/CharacterInstaller.cs) | C# | 24 | 1 | 9 | 34 |
+| [Assets/Project/Script/Installer/Character/Player/PlayerInstaller.cs](/Assets/Project/Script/Installer/Character/Player/PlayerInstaller.cs) | C# | 19 | 0 | 8 | 27 |
+| [Assets/Project/Script/Installer/Character/Player/RuneReferenceInstaller.cs](/Assets/Project/Script/Installer/Character/Player/RuneReferenceInstaller.cs) | C# | 24 | 3 | 10 | 37 |
+| [Assets/Project/Script/Installer/Character/Player/ShooterReferenceInstaller.cs](/Assets/Project/Script/Installer/Character/Player/ShooterReferenceInstaller.cs) | C# | 22 | 0 | 7 | 29 |
+| [Assets/Project/Script/Installer/GamaManager/EntityManagerInstaller.cs](/Assets/Project/Script/Installer/GamaManager/EntityManagerInstaller.cs) | C# | 22 | 0 | 6 | 28 |
+| [Assets/Project/Script/Installer/GamaManager/GameManagerInstaller.cs](/Assets/Project/Script/Installer/GamaManager/GameManagerInstaller.cs) | C# | 10 | 0 | 2 | 12 |
+| [Assets/Project/Script/Installer/InstallerList.cs](/Assets/Project/Script/Installer/InstallerList.cs) | C# | 12 | 0 | 6 | 18 |
+| [Assets/Project/Script/Installer/Interface/IInstallerList.cs](/Assets/Project/Script/Installer/Interface/IInstallerList.cs) | C# | 7 | 0 | 4 | 11 |
+| [Assets/Project/Script/Installer/UI/PlayerHUD/PlayerHUDInstaller.cs](/Assets/Project/Script/Installer/UI/PlayerHUD/PlayerHUDInstaller.cs) | C# | 15 | 0 | 8 | 23 |
+| [Assets/Project/Script/Installer/UI/PlayerHUD/PlayerHealthBarInstaller.cs](/Assets/Project/Script/Installer/UI/PlayerHUD/PlayerHealthBarInstaller.cs) | C# | 26 | 3 | 7 | 36 |
+| [Assets/Project/Script/Installer/UI/PlayerHUD/RuneUI/MainRuneSlotInstaller.cs](/Assets/Project/Script/Installer/UI/PlayerHUD/RuneUI/MainRuneSlotInstaller.cs) | C# | 21 | 0 | 7 | 28 |
+| [Assets/Project/Script/Installer/UI/PlayerHUD/RuneUI/RuneSelectorInstaller.cs](/Assets/Project/Script/Installer/UI/PlayerHUD/RuneUI/RuneSelectorInstaller.cs) | C# | 21 | 0 | 8 | 29 |
+| [Assets/Project/Script/Installer/UI/PlayerHUD/RuneUI/SubRuneSlotInstaller.cs](/Assets/Project/Script/Installer/UI/PlayerHUD/RuneUI/SubRuneSlotInstaller.cs) | C# | 21 | 0 | 7 | 28 |
+| [Assets/Project/Script/Interface/IOnDestroy.cs](/Assets/Project/Script/Interface/IOnDestroy.cs) | C# | 8 | 6 | 0 | 14 |
+| [Assets/Project/Script/Interface/IOnFixedUpdate.cs](/Assets/Project/Script/Interface/IOnFixedUpdate.cs) | C# | 8 | 3 | 1 | 12 |
+| [Assets/Project/Script/Interface/IOnInstance.cs](/Assets/Project/Script/Interface/IOnInstance.cs) | C# | 8 | 7 | 0 | 15 |
+| [Assets/Project/Script/Interface/IOnStart.cs](/Assets/Project/Script/Interface/IOnStart.cs) | C# | 8 | 2 | 1 | 11 |
+| [Assets/Project/Script/Interface/IOnUpdate.cs](/Assets/Project/Script/Interface/IOnUpdate.cs) | C# | 8 | 7 | 1 | 16 |
+| [Assets/Project/Script/Interface/IReceiveHandler.cs](/Assets/Project/Script/Interface/IReceiveHandler.cs) | C# | 6 | 4 | 2 | 12 |
+| [Assets/Project/Script/Interface/IReceiver.cs](/Assets/Project/Script/Interface/IReceiver.cs) | C# | 7 | 4 | 3 | 14 |
+| [Assets/Project/Script/Interface/ISender.cs](/Assets/Project/Script/Interface/ISender.cs) | C# | 8 | 18 | 3 | 29 |
+| [Assets/Project/Script/Interface/Interface.asmdef](/Assets/Project/Script/Interface/Interface.asmdef) | JSON | 14 | 0 | 0 | 14 |
+| [Assets/Project/Script/Motion/State/Context/CancelMotionContext.cs](/Assets/Project/Script/Motion/State/Context/CancelMotionContext.cs) | C# | 37 | 0 | 15 | 52 |
+| [Assets/Project/Script/Motion/State/Context/Element/CancelMotionContextElement.cs](/Assets/Project/Script/Motion/State/Context/Element/CancelMotionContextElement.cs) | C# | 27 | 0 | 14 | 41 |
+| [Assets/Project/Script/Motion/State/Context/Element/InMotionFreeFallContextElement.cs](/Assets/Project/Script/Motion/State/Context/Element/InMotionFreeFallContextElement.cs) | C# | 19 | 0 | 7 | 26 |
+| [Assets/Project/Script/Motion/State/Context/Element/Interface/ICancelMotionContextElement.cs](/Assets/Project/Script/Motion/State/Context/Element/Interface/ICancelMotionContextElement.cs) | C# | 6 | 6 | 3 | 15 |
+| [Assets/Project/Script/Motion/State/Context/Element/Interface/IInMotionFreeFallContextElement.cs](/Assets/Project/Script/Motion/State/Context/Element/Interface/IInMotionFreeFallContextElement.cs) | C# | 5 | 5 | 1 | 11 |
+| [Assets/Project/Script/Motion/State/Context/InMotionFreeFallContext.cs](/Assets/Project/Script/Motion/State/Context/InMotionFreeFallContext.cs) | C# | 38 | 4 | 15 | 57 |
+| [Assets/Project/Script/Motion/State/Context/Interface/ICancelMotionContext.cs](/Assets/Project/Script/Motion/State/Context/Interface/ICancelMotionContext.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/Motion/State/Context/Interface/IInMotionFreeFallContext.cs](/Assets/Project/Script/Motion/State/Context/Interface/IInMotionFreeFallContext.cs) | C# | 6 | 8 | 4 | 18 |
+| [Assets/Project/Script/Motion/State/MotionStateController.cs](/Assets/Project/Script/Motion/State/MotionStateController.cs) | C# | 53 | 7 | 26 | 86 |
+| [Assets/Project/Script/Player/Data/CharacterData.cs](/Assets/Project/Script/Player/Data/CharacterData.cs) | C# | 11 | 0 | 3 | 14 |
+| [Assets/Project/Script/Player/Data/Element/StatusElement.cs](/Assets/Project/Script/Player/Data/Element/StatusElement.cs) | C# | 11 | 0 | 4 | 15 |
+| [Assets/Project/Script/Player/Data/Element/TagsElement.cs](/Assets/Project/Script/Player/Data/Element/TagsElement.cs) | C# | 12 | 0 | 3 | 15 |
+| [Assets/Project/Script/Player/Data/Interface/ICharacterDataHolder.cs](/Assets/Project/Script/Player/Data/Interface/ICharacterDataHolder.cs) | C# | 5 | 0 | 0 | 5 |
+| [Assets/Project/Script/Player/LockManage/Interface/ILockTargetHolder.cs](/Assets/Project/Script/Player/LockManage/Interface/ILockTargetHolder.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/Player/LockManage/Interface/ILockTargetSelector.cs](/Assets/Project/Script/Player/LockManage/Interface/ILockTargetSelector.cs) | C# | 6 | 9 | 3 | 18 |
+| [Assets/Project/Script/Player/LockManage/Interface/ITargetContext.cs](/Assets/Project/Script/Player/LockManage/Interface/ITargetContext.cs) | C# | 9 | 9 | 5 | 23 |
+| [Assets/Project/Script/Player/LockManage/Interface/ITargetContextHolder.cs](/Assets/Project/Script/Player/LockManage/Interface/ITargetContextHolder.cs) | C# | 5 | 0 | 0 | 5 |
+| [Assets/Project/Script/Player/LockManage/LockTargetManger.cs](/Assets/Project/Script/Player/LockManage/LockTargetManger.cs) | C# | 16 | 0 | 8 | 24 |
+| [Assets/Project/Script/Player/LockManage/Selector/PlayerTargetSelector.cs](/Assets/Project/Script/Player/LockManage/Selector/PlayerTargetSelector.cs) | C# | 64 | 1 | 27 | 92 |
+| [Assets/Project/Script/Player/LockManage/TargetContext.cs](/Assets/Project/Script/Player/LockManage/TargetContext.cs) | C# | 101 | 1 | 23 | 125 |
+| [Assets/Project/Script/Player/LockManage/TargetContextManager.cs](/Assets/Project/Script/Player/LockManage/TargetContextManager.cs) | C# | 23 | 0 | 11 | 34 |
+| [Assets/Project/Script/Player/Player.cs](/Assets/Project/Script/Player/Player.cs) | C# | 7 | 3 | 3 | 13 |
+| [Assets/Project/Script/Player/Shooter/CharacterMagicShoter.cs](/Assets/Project/Script/Player/Shooter/CharacterMagicShoter.cs) | C# | 27 | 0 | 7 | 34 |
+| [Assets/Project/Script/Player/Shooter/ContextManager.cs](/Assets/Project/Script/Player/Shooter/ContextManager.cs) | C# | 58 | 3 | 17 | 78 |
+| [Assets/Project/Script/Player/Shooter/Interface/IPlayerBulletShoter.cs](/Assets/Project/Script/Player/Shooter/Interface/IPlayerBulletShoter.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/Rune/Definition/ActivateTiming.cs](/Assets/Project/Script/Rune/Definition/ActivateTiming.cs) | C# | 8 | 12 | 0 | 20 |
+| [Assets/Project/Script/Rune/Effect/EffectInstance.cs](/Assets/Project/Script/Rune/Effect/EffectInstance.cs) | C# | 25 | 7 | 6 | 38 |
+| [Assets/Project/Script/Rune/Effect/Interface/IEffect.cs](/Assets/Project/Script/Rune/Effect/Interface/IEffect.cs) | C# | 6 | 0 | 1 | 7 |
+| [Assets/Project/Script/Rune/Effect/Interface/IEffectHolder.cs](/Assets/Project/Script/Rune/Effect/Interface/IEffectHolder.cs) | C# | 7 | 7 | 1 | 15 |
+| [Assets/Project/Script/Rune/Effect/Interface/ITargetSelector.cs](/Assets/Project/Script/Rune/Effect/Interface/ITargetSelector.cs) | C# | 7 | 8 | 1 | 16 |
+| [Assets/Project/Script/Rune/Interface/IRune.cs](/Assets/Project/Script/Rune/Interface/IRune.cs) | C# | 9 | 6 | 7 | 22 |
+| [Assets/Project/Script/Rune/Interface/IRuneDisposeHandler.cs](/Assets/Project/Script/Rune/Interface/IRuneDisposeHandler.cs) | C# | 6 | 0 | 1 | 7 |
+| [Assets/Project/Script/Rune/MagicCastModule.cs](/Assets/Project/Script/Rune/MagicCastModule.cs) | C# | 35 | 0 | 8 | 43 |
+| [Assets/Project/Script/Rune/Manager/ARuneManager.cs](/Assets/Project/Script/Rune/Manager/ARuneManager.cs) | C# | 119 | 6 | 35 | 160 |
+| [Assets/Project/Script/Rune/Manager/Interface/IMainRuneSlot.cs](/Assets/Project/Script/Rune/Manager/Interface/IMainRuneSlot.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Rune/Manager/Interface/IRuneListManager.cs](/Assets/Project/Script/Rune/Manager/Interface/IRuneListManager.cs) | C# | 13 | 3 | 5 | 21 |
+| [Assets/Project/Script/Rune/Manager/Interface/IRuneSelector.cs](/Assets/Project/Script/Rune/Manager/Interface/IRuneSelector.cs) | C# | 5 | 0 | 3 | 8 |
+| [Assets/Project/Script/Rune/Manager/Interface/IRuneSupplier.cs](/Assets/Project/Script/Rune/Manager/Interface/IRuneSupplier.cs) | C# | 6 | 0 | 1 | 7 |
+| [Assets/Project/Script/Rune/Manager/Interface/ISubRuneSlot.cs](/Assets/Project/Script/Rune/Manager/Interface/ISubRuneSlot.cs) | C# | 11 | 0 | 5 | 16 |
+| [Assets/Project/Script/Rune/Manager/MainRuneSlot.cs](/Assets/Project/Script/Rune/Manager/MainRuneSlot.cs) | C# | 12 | 0 | 3 | 15 |
+| [Assets/Project/Script/Rune/Manager/Module/SelectedRuneSender.cs](/Assets/Project/Script/Rune/Manager/Module/SelectedRuneSender.cs) | C# | 30 | 0 | 4 | 34 |
+| [Assets/Project/Script/Rune/Manager/RuneFactory.cs](/Assets/Project/Script/Rune/Manager/RuneFactory.cs) | C# | 33 | 0 | 12 | 45 |
+| [Assets/Project/Script/Rune/Manager/RuneSelector.cs](/Assets/Project/Script/Rune/Manager/RuneSelector.cs) | C# | 45 | 4 | 12 | 61 |
+| [Assets/Project/Script/Rune/Manager/SubRuneSlot.cs](/Assets/Project/Script/Rune/Manager/SubRuneSlot.cs) | C# | 30 | 0 | 7 | 37 |
+| [Assets/Project/Script/Rune/RuneData/AMainEffectData.cs](/Assets/Project/Script/Rune/RuneData/AMainEffectData.cs) | C# | 12 | 0 | 4 | 16 |
+| [Assets/Project/Script/Rune/RuneData/Interface/IMainEffectData.cs](/Assets/Project/Script/Rune/RuneData/Interface/IMainEffectData.cs) | C# | 6 | 0 | 1 | 7 |
+| [Assets/Project/Script/Rune/RuneData/Interface/IRuneEffectData.cs](/Assets/Project/Script/Rune/RuneData/Interface/IRuneEffectData.cs) | C# | 5 | 6 | 0 | 11 |
+| [Assets/Project/Script/Rune/RuneData/Interface/ISubEffectData.cs](/Assets/Project/Script/Rune/RuneData/Interface/ISubEffectData.cs) | C# | 12 | 0 | 7 | 19 |
+| [Assets/Project/Script/Rune/RuneData/RuneData.cs](/Assets/Project/Script/Rune/RuneData/RuneData.cs) | C# | 18 | 3 | 5 | 26 |
+| [Assets/Project/Script/Rune/RuneData/SubEffectData.cs](/Assets/Project/Script/Rune/RuneData/SubEffectData.cs) | C# | 50 | 3 | 17 | 70 |
+| [Assets/Project/Script/Rune/RuneInstance/Factory/Interface/IMainEffectInstanceFactory.cs](/Assets/Project/Script/Rune/RuneInstance/Factory/Interface/IMainEffectInstanceFactory.cs) | C# | 6 | 0 | 1 | 7 |
+| [Assets/Project/Script/Rune/RuneInstance/Factory/Interface/IRuneInstanceFactory.cs](/Assets/Project/Script/Rune/RuneInstance/Factory/Interface/IRuneInstanceFactory.cs) | C# | 6 | 0 | 1 | 7 |
+| [Assets/Project/Script/Rune/RuneInstance/Factory/Interface/ISubEffectInstanceFactory.cs](/Assets/Project/Script/Rune/RuneInstance/Factory/Interface/ISubEffectInstanceFactory.cs) | C# | 6 | 0 | 1 | 7 |
+| [Assets/Project/Script/Rune/RuneInstance/Factory/MainEffectInstanceFactory.cs](/Assets/Project/Script/Rune/RuneInstance/Factory/MainEffectInstanceFactory.cs) | C# | 17 | 0 | 4 | 21 |
+| [Assets/Project/Script/Rune/RuneInstance/Factory/RuneInstanceFactory.cs](/Assets/Project/Script/Rune/RuneInstance/Factory/RuneInstanceFactory.cs) | C# | 17 | 0 | 4 | 21 |
+| [Assets/Project/Script/Rune/RuneInstance/Factory/SubEffectInstanceFactory.cs](/Assets/Project/Script/Rune/RuneInstance/Factory/SubEffectInstanceFactory.cs) | C# | 30 | 0 | 6 | 36 |
+| [Assets/Project/Script/Rune/RuneInstance/Interface/IMainEffect.cs](/Assets/Project/Script/Rune/RuneInstance/Interface/IMainEffect.cs) | C# | 7 | 3 | 3 | 13 |
+| [Assets/Project/Script/Rune/RuneInstance/Interface/IRuneEffect.cs](/Assets/Project/Script/Rune/RuneInstance/Interface/IRuneEffect.cs) | C# | 6 | 6 | 0 | 12 |
+| [Assets/Project/Script/Rune/RuneInstance/Interface/ISubEffect.cs](/Assets/Project/Script/Rune/RuneInstance/Interface/ISubEffect.cs) | C# | 14 | 3 | 6 | 23 |
+| [Assets/Project/Script/Rune/RuneInstance/MainEffectInstance.cs](/Assets/Project/Script/Rune/RuneInstance/MainEffectInstance.cs) | C# | 39 | 0 | 10 | 49 |
+| [Assets/Project/Script/Rune/RuneInstance/Module/RuneCastCount.cs](/Assets/Project/Script/Rune/RuneInstance/Module/RuneCastCount.cs) | C# | 47 | 3 | 16 | 66 |
+| [Assets/Project/Script/Rune/RuneInstance/RuneInstance.cs](/Assets/Project/Script/Rune/RuneInstance/RuneInstance.cs) | C# | 53 | 2 | 13 | 68 |
+| [Assets/Project/Script/Rune/RuneInstance/SubEffectInstance.cs](/Assets/Project/Script/Rune/RuneInstance/SubEffectInstance.cs) | C# | 45 | 0 | 6 | 51 |
+| [Assets/Project/Script/Scope/Bullet/BulletLifeTimeScope.cs](/Assets/Project/Script/Scope/Bullet/BulletLifeTimeScope.cs) | C# | 14 | 0 | 5 | 19 |
+| [Assets/Project/Script/Scope/Camera/CameraLifeTimeScope.cs](/Assets/Project/Script/Scope/Camera/CameraLifeTimeScope.cs) | C# | 8 | 0 | 3 | 11 |
+| [Assets/Project/Script/Scope/GameLifeTimeScope.cs](/Assets/Project/Script/Scope/GameLifeTimeScope.cs) | C# | 28 | 3 | 11 | 42 |
+| [Assets/Project/Script/Scope/RootLifeTimeScope.cs](/Assets/Project/Script/Scope/RootLifeTimeScope.cs) | C# | 11 | 3 | 5 | 19 |
+| [Assets/Project/Script/Spawner/Character/CharacterSpawner.cs](/Assets/Project/Script/Spawner/Character/CharacterSpawner.cs) | C# | 97 | 0 | 36 | 133 |
+| [Assets/Project/Script/Spawner/Character/Data/CharacterSpawnerData.cs](/Assets/Project/Script/Spawner/Character/Data/CharacterSpawnerData.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/Spawner/Enemy/EnemySpawner.cs](/Assets/Project/Script/Spawner/Enemy/EnemySpawner.cs) | C# | 6 | 0 | 3 | 9 |
+| [Assets/Project/Script/Spawner/Interface/ISpawnDecorator.cs](/Assets/Project/Script/Spawner/Interface/ISpawnDecorator.cs) | C# | 9 | 12 | 3 | 24 |
+| [Assets/Project/Script/Spawner/Interface/ISpawner.cs](/Assets/Project/Script/Spawner/Interface/ISpawner.cs) | C# | 6 | 6 | 3 | 15 |
+| [Assets/Project/Script/Spawner/Position/Interface/ISpawnPositionManager.cs](/Assets/Project/Script/Spawner/Position/Interface/ISpawnPositionManager.cs) | C# | 8 | 12 | 4 | 24 |
+| [Assets/Project/Script/Spawner/Position/RoundSpawnPosition.cs](/Assets/Project/Script/Spawner/Position/RoundSpawnPosition.cs) | C# | 25 | 0 | 9 | 34 |
+| [Assets/Project/Script/Spell/Data/ASpellData.cs](/Assets/Project/Script/Spell/Data/ASpellData.cs) | C# | 22 | 0 | 8 | 30 |
+| [Assets/Project/Script/Spell/Data/Interface/ISpellData.cs](/Assets/Project/Script/Spell/Data/Interface/ISpellData.cs) | C# | 8 | 0 | 5 | 13 |
+| [Assets/Project/Script/Spell/Data/Main/Interface/IMainSpellData.cs](/Assets/Project/Script/Spell/Data/Main/Interface/IMainSpellData.cs) | C# | 7 | 0 | 3 | 10 |
+| [Assets/Project/Script/Spell/Data/Main/MainSpellData.cs](/Assets/Project/Script/Spell/Data/Main/MainSpellData.cs) | C# | 16 | 0 | 3 | 19 |
+| [Assets/Project/Script/Spell/Data/Main/Module/Interface/ISpellCastAction.cs](/Assets/Project/Script/Spell/Data/Main/Module/Interface/ISpellCastAction.cs) | C# | 6 | 0 | 3 | 9 |
+| [Assets/Project/Script/Spell/Data/Sub/Interface/ISubSpellData.cs](/Assets/Project/Script/Spell/Data/Sub/Interface/ISubSpellData.cs) | C# | 13 | 0 | 7 | 20 |
+| [Assets/Project/Script/Spell/Data/Sub/SubSpellData.cs](/Assets/Project/Script/Spell/Data/Sub/SubSpellData.cs) | C# | 35 | 0 | 11 | 46 |
+| [Assets/Project/Script/Spell/Effect/Interface/ISpellEffect.cs](/Assets/Project/Script/Spell/Effect/Interface/ISpellEffect.cs) | C# | 6 | 7 | 3 | 16 |
+| [Assets/Project/Script/Spell/Factory/ASpellFactory.cs](/Assets/Project/Script/Spell/Factory/ASpellFactory.cs) | C# | 37 | 0 | 10 | 47 |
+| [Assets/Project/Script/Spell/Factory/Interface/ISpellFactory.cs](/Assets/Project/Script/Spell/Factory/Interface/ISpellFactory.cs) | C# | 12 | 0 | 4 | 16 |
+| [Assets/Project/Script/Spell/Factory/Main/Interface/IMainSpellFactory.cs](/Assets/Project/Script/Spell/Factory/Main/Interface/IMainSpellFactory.cs) | C# | 7 | 0 | 3 | 10 |
+| [Assets/Project/Script/Spell/Factory/Main/MainSpellFactory.cs](/Assets/Project/Script/Spell/Factory/Main/MainSpellFactory.cs) | C# | 29 | 0 | 7 | 36 |
+| [Assets/Project/Script/Spell/Factory/Pattern/ASpellLotteryPattern.cs](/Assets/Project/Script/Spell/Factory/Pattern/ASpellLotteryPattern.cs) | C# | 41 | 0 | 12 | 53 |
+| [Assets/Project/Script/Spell/Factory/Pattern/Interface/ISpellLotteryPattern.cs](/Assets/Project/Script/Spell/Factory/Pattern/Interface/ISpellLotteryPattern.cs) | C# | 10 | 4 | 2 | 16 |
+| [Assets/Project/Script/Spell/Factory/Pattern/Main/Interface/IMainSpellLotteryPattern.cs](/Assets/Project/Script/Spell/Factory/Pattern/Main/Interface/IMainSpellLotteryPattern.cs) | C# | 6 | 0 | 3 | 9 |
+| [Assets/Project/Script/Spell/Factory/Pattern/Main/MainSpellLotteryPattern.cs](/Assets/Project/Script/Spell/Factory/Pattern/Main/MainSpellLotteryPattern.cs) | C# | 9 | 0 | 1 | 10 |
+| [Assets/Project/Script/Spell/Factory/Pattern/Sub/Interface/ISubSpellLotteryPattern.cs](/Assets/Project/Script/Spell/Factory/Pattern/Sub/Interface/ISubSpellLotteryPattern.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Spell/Factory/Pattern/Sub/SubSpellLotteryPattern.cs](/Assets/Project/Script/Spell/Factory/Pattern/Sub/SubSpellLotteryPattern.cs) | C# | 8 | 0 | 2 | 10 |
+| [Assets/Project/Script/Spell/Factory/Sub/Interface/ISubSpellFactory.cs](/Assets/Project/Script/Spell/Factory/Sub/Interface/ISubSpellFactory.cs) | C# | 7 | 0 | 3 | 10 |
+| [Assets/Project/Script/Spell/Factory/Sub/SubSpellFactory.cs](/Assets/Project/Script/Spell/Factory/Sub/SubSpellFactory.cs) | C# | 31 | 0 | 4 | 35 |
+| [Assets/Project/Script/Spell/Installer/MainManagerInstaller.cs](/Assets/Project/Script/Spell/Installer/MainManagerInstaller.cs) | C# | 14 | 0 | 2 | 16 |
+| [Assets/Project/Script/Spell/Installer/SpellFactoryInstaller.cs](/Assets/Project/Script/Spell/Installer/SpellFactoryInstaller.cs) | C# | 42 | 0 | 11 | 53 |
+| [Assets/Project/Script/Spell/Installer/SpellSelectorInstaller.cs](/Assets/Project/Script/Spell/Installer/SpellSelectorInstaller.cs) | C# | 23 | 0 | 9 | 32 |
+| [Assets/Project/Script/Spell/Installer/SpellSlotFactoryInstaller.cs](/Assets/Project/Script/Spell/Installer/SpellSlotFactoryInstaller.cs) | C# | 34 | 0 | 9 | 43 |
+| [Assets/Project/Script/Spell/Installer/SubManagerInstaller.cs](/Assets/Project/Script/Spell/Installer/SubManagerInstaller.cs) | C# | 14 | 0 | 2 | 16 |
+| [Assets/Project/Script/Spell/Instance/ASpellInstance.cs](/Assets/Project/Script/Spell/Instance/ASpellInstance.cs) | C# | 29 | 0 | 12 | 41 |
+| [Assets/Project/Script/Spell/Instance/Interface/ISpellInstance.cs](/Assets/Project/Script/Spell/Instance/Interface/ISpellInstance.cs) | C# | 10 | 0 | 5 | 15 |
+| [Assets/Project/Script/Spell/Instance/Main/Interface/IMainSpellInstance.cs](/Assets/Project/Script/Spell/Instance/Main/Interface/IMainSpellInstance.cs) | C# | 10 | 0 | 4 | 14 |
+| [Assets/Project/Script/Spell/Instance/Main/MainSpellInstance.cs](/Assets/Project/Script/Spell/Instance/Main/MainSpellInstance.cs) | C# | 16 | 0 | 4 | 20 |
+| [Assets/Project/Script/Spell/Instance/Module/AmountCounter.cs](/Assets/Project/Script/Spell/Instance/Module/AmountCounter.cs) | C# | 24 | 0 | 10 | 34 |
+| [Assets/Project/Script/Spell/Instance/Module/Interface/IAmountCounter.cs](/Assets/Project/Script/Spell/Instance/Module/Interface/IAmountCounter.cs) | C# | 10 | 0 | 8 | 18 |
+| [Assets/Project/Script/Spell/Instance/Sub/Insterface/ISubSpellInstance.cs](/Assets/Project/Script/Spell/Instance/Sub/Insterface/ISubSpellInstance.cs) | C# | 13 | 0 | 6 | 19 |
+| [Assets/Project/Script/Spell/Instance/Sub/SubSpellInstance.cs](/Assets/Project/Script/Spell/Instance/Sub/SubSpellInstance.cs) | C# | 34 | 0 | 17 | 51 |
+| [Assets/Project/Script/Spell/Manager/ASpellManager.cs](/Assets/Project/Script/Spell/Manager/ASpellManager.cs) | C# | 48 | 4 | 21 | 73 |
+| [Assets/Project/Script/Spell/Manager/Container/Interface/ISelectSpellContainer.cs](/Assets/Project/Script/Spell/Manager/Container/Interface/ISelectSpellContainer.cs) | C# | 8 | 6 | 4 | 18 |
+| [Assets/Project/Script/Spell/Manager/Container/SelectSpellContainer.cs](/Assets/Project/Script/Spell/Manager/Container/SelectSpellContainer.cs) | C# | 47 | 5 | 17 | 69 |
+| [Assets/Project/Script/Spell/Manager/EventBus/OnSelectSpellEventBus.cs](/Assets/Project/Script/Spell/Manager/EventBus/OnSelectSpellEventBus.cs) | C# | 14 | 3 | 4 | 21 |
+| [Assets/Project/Script/Spell/Manager/Interface/ISpellManager.cs](/Assets/Project/Script/Spell/Manager/Interface/ISpellManager.cs) | C# | 11 | 17 | 6 | 34 |
+| [Assets/Project/Script/Spell/Manager/Main/Interface/IMainSpellManager.cs](/Assets/Project/Script/Spell/Manager/Main/Interface/IMainSpellManager.cs) | C# | 7 | 3 | 2 | 12 |
+| [Assets/Project/Script/Spell/Manager/Main/MainSpellManager.cs](/Assets/Project/Script/Spell/Manager/Main/MainSpellManager.cs) | C# | 8 | 0 | 2 | 10 |
+| [Assets/Project/Script/Spell/Manager/Module/Interface/IManagerFillObserver.cs](/Assets/Project/Script/Spell/Manager/Module/Interface/IManagerFillObserver.cs) | C# | 6 | 6 | 3 | 15 |
+| [Assets/Project/Script/Spell/Manager/Module/ManagerFillObserver.cs](/Assets/Project/Script/Spell/Manager/Module/ManagerFillObserver.cs) | C# | 57 | 3 | 25 | 85 |
+| [Assets/Project/Script/Spell/Manager/Selector/Interface/ISpellSelector.cs](/Assets/Project/Script/Spell/Manager/Selector/Interface/ISpellSelector.cs) | C# | 8 | 8 | 3 | 19 |
+| [Assets/Project/Script/Spell/Manager/Selector/SpellSelector.cs](/Assets/Project/Script/Spell/Manager/Selector/SpellSelector.cs) | C# | 38 | 3 | 15 | 56 |
+| [Assets/Project/Script/Spell/Manager/Sub/Interface/ISubSpellManager.cs](/Assets/Project/Script/Spell/Manager/Sub/Interface/ISubSpellManager.cs) | C# | 7 | 0 | 3 | 10 |
+| [Assets/Project/Script/Spell/Manager/Sub/SubSpellManager.cs](/Assets/Project/Script/Spell/Manager/Sub/SubSpellManager.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Spell/Manager/Supplier/Interface/ISpellSupplier.cs](/Assets/Project/Script/Spell/Manager/Supplier/Interface/ISpellSupplier.cs) | C# | 11 | 16 | 6 | 33 |
+| [Assets/Project/Script/Spell/Manager/Supplier/SpellSupplier.cs](/Assets/Project/Script/Spell/Manager/Supplier/SpellSupplier.cs) | C# | 49 | 0 | 18 | 67 |
+| [Assets/Project/Script/Spell/Slot/Factory/ASpellSlotFactory.cs](/Assets/Project/Script/Spell/Slot/Factory/ASpellSlotFactory.cs) | C# | 13 | 0 | 3 | 16 |
+| [Assets/Project/Script/Spell/Slot/Factory/Interface/IMainSpellSlotFactory.cs](/Assets/Project/Script/Spell/Slot/Factory/Interface/IMainSpellSlotFactory.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Spell/Slot/Factory/Interface/ISelectorSpellSlotFactory.cs](/Assets/Project/Script/Spell/Slot/Factory/Interface/ISelectorSpellSlotFactory.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Spell/Slot/Factory/Interface/ISpellSlotFactory.cs](/Assets/Project/Script/Spell/Slot/Factory/Interface/ISpellSlotFactory.cs) | C# | 8 | 9 | 1 | 18 |
+| [Assets/Project/Script/Spell/Slot/Factory/Interface/ISubSpellSlotFactory.cs](/Assets/Project/Script/Spell/Slot/Factory/Interface/ISubSpellSlotFactory.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Spell/Slot/Factory/MainSpellSlotFactory.cs](/Assets/Project/Script/Spell/Slot/Factory/MainSpellSlotFactory.cs) | C# | 12 | 0 | 2 | 14 |
+| [Assets/Project/Script/Spell/Slot/Factory/SelectorSpellSlotFactory.cs](/Assets/Project/Script/Spell/Slot/Factory/SelectorSpellSlotFactory.cs) | C# | 11 | 0 | 3 | 14 |
+| [Assets/Project/Script/Spell/Slot/Factory/SubSpellSlotFactory.cs](/Assets/Project/Script/Spell/Slot/Factory/SubSpellSlotFactory.cs) | C# | 13 | 0 | 2 | 15 |
+| [Assets/Project/Script/Spell/Slot/Interface/ISpellSlot.cs](/Assets/Project/Script/Spell/Slot/Interface/ISpellSlot.cs) | C# | 12 | 16 | 7 | 35 |
+| [Assets/Project/Script/Spell/Slot/Main/Interface/IMainSpellSlot.cs](/Assets/Project/Script/Spell/Slot/Main/Interface/IMainSpellSlot.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/Spell/Slot/Selector/Interface/ISelectorSpellSlot.cs](/Assets/Project/Script/Spell/Slot/Selector/Interface/ISelectorSpellSlot.cs) | C# | 7 | 4 | 1 | 12 |
+| [Assets/Project/Script/Spell/Slot/Sub/Interface/ISubSpellSlot.cs](/Assets/Project/Script/Spell/Slot/Sub/Interface/ISubSpellSlot.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/StatusEffect/AStatusEffect.cs](/Assets/Project/Script/StatusEffect/AStatusEffect.cs) | C# | 14 | 0 | 6 | 20 |
+| [Assets/Project/Script/StatusEffect/Data/StatusEffectData.cs](/Assets/Project/Script/StatusEffect/Data/StatusEffectData.cs) | C# | 11 | 0 | 6 | 17 |
+| [Assets/Project/Script/StatusEffect/Definition/EffectType.cs](/Assets/Project/Script/StatusEffect/Definition/EffectType.cs) | C# | 6 | 3 | 0 | 9 |
+| [Assets/Project/Script/StatusEffect/Instance/StatusEffectInstance.cs](/Assets/Project/Script/StatusEffect/Instance/StatusEffectInstance.cs) | C# | 8 | 0 | 4 | 12 |
+| [Assets/Project/Script/UIControl/HealthPopUp/HealthPopUp.cs](/Assets/Project/Script/UIControl/HealthPopUp/HealthPopUp.cs) | C# | 9 | 0 | 4 | 13 |
+| [Assets/Project/Script/UIControl/HealthPopUp/Interface/IHealthPopUpType.cs](/Assets/Project/Script/UIControl/HealthPopUp/Interface/IHealthPopUpType.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/UIControl/PlayerHUD/HealthBar/HealthState.cs](/Assets/Project/Script/UIControl/PlayerHUD/HealthBar/HealthState.cs) | C# | 14 | 6 | 7 | 27 |
+| [Assets/Project/Script/UIControl/PlayerHUD/HealthBar/Interface/IPlayerHealthBarPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/HealthBar/Interface/IPlayerHealthBarPresenter.cs) | C# | 5 | 0 | 3 | 8 |
+| [Assets/Project/Script/UIControl/PlayerHUD/HealthBar/Interface/IPlayerHelathBarView.cs](/Assets/Project/Script/UIControl/PlayerHUD/HealthBar/Interface/IPlayerHelathBarView.cs) | C# | 5 | 0 | 1 | 6 |
+| [Assets/Project/Script/UIControl/PlayerHUD/HealthBar/PlayerHealthBarPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/HealthBar/PlayerHealthBarPresenter.cs) | C# | 63 | 3 | 22 | 88 |
+| [Assets/Project/Script/UIControl/PlayerHUD/HealthBar/PlayerHealthView.cs](/Assets/Project/Script/UIControl/PlayerHUD/HealthBar/PlayerHealthView.cs) | C# | 46 | 4 | 15 | 65 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Interface/IPlayerHUDFactory.cs](/Assets/Project/Script/UIControl/PlayerHUD/Interface/IPlayerHUDFactory.cs) | C# | 6 | 0 | 1 | 7 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/ARuneListPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/ARuneListPresenter.cs) | C# | 91 | 5 | 24 | 120 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/ARuneListView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/ARuneListView.cs) | C# | 30 | 0 | 8 | 38 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/Definition/RunePosition.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/Definition/RunePosition.cs) | C# | 8 | 3 | 0 | 11 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/Interface/IRuneListPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/Interface/IRuneListPresenter.cs) | C# | 4 | 0 | 1 | 5 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/Interface/IRuneListView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/Interface/IRuneListView.cs) | C# | 7 | 0 | 4 | 11 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/Interface/IRuneSelectorPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/Interface/IRuneSelectorPresenter.cs) | C# | 5 | 0 | 2 | 7 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/Interface/IRuneSelectorView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/Interface/IRuneSelectorView.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/Interface/ISelectorSlot.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/Interface/ISelectorSlot.cs) | C# | 8 | 0 | 3 | 11 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/RuneSelectorPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/RuneSelectorPresenter.cs) | C# | 18 | 3 | 2 | 23 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/RuneSelectorView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSelector/RuneSelectorView.cs) | C# | 13 | 0 | 1 | 14 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Main/Interface/IMainRuneSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Main/Interface/IMainRuneSlotPresenter.cs) | C# | 5 | 0 | 2 | 7 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Main/Interface/IMainRuneSlotView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Main/Interface/IMainRuneSlotView.cs) | C# | 5 | 0 | 2 | 7 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Main/MainRuneSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Main/MainRuneSlotPresenter.cs) | C# | 10 | 0 | 2 | 12 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Main/MainRuneSlotView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Main/MainRuneSlotView.cs) | C# | 10 | 0 | 2 | 12 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Sub/Interface/ISubRuneSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Sub/Interface/ISubRuneSlotPresenter.cs) | C# | 5 | 0 | 2 | 7 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Sub/Interface/ISubRuneSlotView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Sub/Interface/ISubRuneSlotView.cs) | C# | 5 | 0 | 2 | 7 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Sub/SubRuneSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Sub/SubRuneSlotPresenter.cs) | C# | 10 | 0 | 2 | 12 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Sub/SubRuneSlotView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneSlot/Sub/SubRuneSlotView.cs) | C# | 10 | 0 | 2 | 12 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/AListView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/AListView.cs) | C# | 7 | 0 | 3 | 10 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/Interface/IRuneAmountUI.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/Interface/IRuneAmountUI.cs) | C# | 7 | 0 | 4 | 11 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/Interface/IRuneUI.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/Interface/IRuneUI.cs) | C# | 9 | 0 | 4 | 13 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/RuneAmountUI.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/RuneAmountUI.cs) | C# | 42 | 0 | 11 | 53 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/RuneUI.cs](/Assets/Project/Script/UIControl/PlayerHUD/Rune/RuneUI/RuneUI.cs) | C# | 79 | 11 | 21 | 111 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/ASpellManagerPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/ASpellManagerPresenter.cs) | C# | 86 | 19 | 36 | 141 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/ASpellManagerView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/ASpellManagerView.cs) | C# | 31 | 0 | 11 | 42 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Installer/SelectorUIInstaller.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Installer/SelectorUIInstaller.cs) | C# | 13 | 0 | 5 | 18 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Installer/SlotPresenterFactoryInstaller.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Installer/SlotPresenterFactoryInstaller.cs) | C# | 24 | 0 | 6 | 30 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Interface/ISpellManagerPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Interface/ISpellManagerPresenter.cs) | C# | 7 | 0 | 3 | 10 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Interface/ISpellManagerView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Interface/ISpellManagerView.cs) | C# | 15 | 5 | 4 | 24 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/Interface/ISpellSelectorPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/Interface/ISpellSelectorPresenter.cs) | C# | 6 | 0 | 3 | 9 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/Interface/ISpellSelectorView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/Interface/ISpellSelectorView.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/SpellSelectorPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/SpellSelectorPresenter.cs) | C# | 17 | 0 | 5 | 22 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/SpellSelectorView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Selector/SpellSelectorView.cs) | C# | 7 | 0 | 2 | 9 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/ASpellSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/ASpellSlotPresenter.cs) | C# | 30 | 5 | 16 | 51 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/IMainSpellSlotPresenterFactory.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/IMainSpellSlotPresenterFactory.cs) | C# | 9 | 0 | 2 | 11 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/ISpellSelectorSlotPresenterFactory.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/ISpellSelectorSlotPresenterFactory.cs) | C# | 12 | 0 | 2 | 14 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/ISpellSlotPresenterFactory.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/ISpellSlotPresenterFactory.cs) | C# | 13 | 0 | 1 | 14 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/ISubSpellSlotPresenterFactory.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/Interface/ISubSpellSlotPresenterFactory.cs) | C# | 10 | 0 | 2 | 12 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/SelectorSpellSlotPresenterFactory.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Factory/SelectorSpellSlotPresenterFactory.cs) | C# | 13 | 0 | 2 | 15 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Interface/ISpellSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Interface/ISpellSlotPresenter.cs) | C# | 11 | 0 | 2 | 13 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Interface/ISpellSlotUIView.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Interface/ISpellSlotUIView.cs) | C# | 6 | 0 | 3 | 9 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Main/Interface/IMainSpellSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Main/Interface/IMainSpellSlotPresenter.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Selector/Interface/ISelectorSpellSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Selector/Interface/ISelectorSpellSlotPresenter.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Selector/SelectorSpellSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Selector/SelectorSpellSlotPresenter.cs) | C# | 9 | 0 | 3 | 12 |
+| [Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Sub/Interface/ISubSpellSlotPresenter.cs](/Assets/Project/Script/UIControl/PlayerHUD/Spell/Slot/Sub/Interface/ISubSpellSlotPresenter.cs) | C# | 9 | 0 | 2 | 11 |
+| [Assets/Project/Script/UIControl/StatusEffectUI/StatusEffectUI.cs](/Assets/Project/Script/UIControl/StatusEffectUI/StatusEffectUI.cs) | C# | 26 | 5 | 10 | 41 |
+| [Assets/Project/Script/UIControl/Utility/AListPresenter.cs](/Assets/Project/Script/UIControl/Utility/AListPresenter.cs) | C# | 46 | 4 | 17 | 67 |
+| [Assets/Project/Script/UIControl/Utility/PlayerCharacterHolder.cs](/Assets/Project/Script/UIControl/Utility/PlayerCharacterHolder.cs) | C# | 21 | 4 | 6 | 31 |
+| [Assets/Project/Script/UIControl/Utility/TextElement/FontSizeElement.cs](/Assets/Project/Script/UIControl/Utility/TextElement/FontSizeElement.cs) | C# | 17 | 0 | 6 | 23 |
+| [Assets/Project/Script/UIControl/Utility/TextElement/OutlineElement.cs](/Assets/Project/Script/UIControl/Utility/TextElement/OutlineElement.cs) | C# | 6 | 0 | 2 | 8 |
+| [Assets/Project/Script/UIControl/Utility/TextElement/TextElement.cs](/Assets/Project/Script/UIControl/Utility/TextElement/TextElement.cs) | C# | 8 | 0 | 4 | 12 |
+| [Assets/Project/Script/UIControl/Utility/UiDestroyModule.cs](/Assets/Project/Script/UIControl/Utility/UiDestroyModule.cs) | C# | 22 | 0 | 7 | 29 |
+| [Assets/Project/Script/Utility/ComponentsUtility.cs](/Assets/Project/Script/Utility/ComponentsUtility.cs) | C# | 31 | 0 | 8 | 39 |
+| [Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl](/Assets/TextMesh%20Pro/Shaders/SDFFunctions.hlsl) | UnityShader | 130 | 18 | 31 | 179 |
+| [Assets/TextMesh Pro/Shaders/TMP\_Bitmap-Custom-Atlas.shader](/Assets/TextMesh%20Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader) | UnityShader | 113 | 2 | 31 | 146 |
+| [Assets/TextMesh Pro/Shaders/TMP\_Bitmap-Mobile.shader](/Assets/TextMesh%20Pro/Shaders/TMP_Bitmap-Mobile.shader) | UnityShader | 123 | 3 | 30 | 156 |
+| [Assets/TextMesh Pro/Shaders/TMP\_Bitmap.shader](/Assets/TextMesh%20Pro/Shaders/TMP_Bitmap.shader) | UnityShader | 113 | 2 | 31 | 146 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF Overlay.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF%20Overlay.shader) | UnityShader | 253 | 4 | 70 | 327 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF SSD.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF%20SSD.shader) | UnityShader | 253 | 4 | 65 | 322 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF-Mobile Masking.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF-Mobile%20Masking.shader) | UnityShader | 198 | 10 | 51 | 259 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF-Mobile Overlay.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF-Mobile%20Overlay.shader) | UnityShader | 193 | 8 | 52 | 253 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF-Mobile SSD.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF-Mobile%20SSD.shader) | UnityShader | 82 | 4 | 21 | 107 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF-Mobile-2-Pass.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader) | UnityShader | 290 | 15 | 85 | 390 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF-Mobile.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF-Mobile.shader) | UnityShader | 192 | 8 | 51 | 251 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF-Surface-Mobile.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF-Surface-Mobile.shader) | UnityShader | 104 | 8 | 28 | 140 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF-Surface.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF-Surface.shader) | UnityShader | 123 | 4 | 33 | 160 |
+| [Assets/TextMesh Pro/Shaders/TMP\_SDF.shader](/Assets/TextMesh%20Pro/Shaders/TMP_SDF.shader) | UnityShader | 253 | 4 | 70 | 327 |
+| [Assets/TextMesh Pro/Shaders/TMP\_Sprite.shader](/Assets/TextMesh%20Pro/Shaders/TMP_Sprite.shader) | UnityShader | 111 | 0 | 21 | 132 |
+| [Assets/TextMesh Pro/Shaders/TMPro.cginc](/Assets/TextMesh%20Pro/Shaders/TMPro.cginc) | UnityShader | 63 | 2 | 20 | 85 |
+| [Assets/TextMesh Pro/Shaders/TMPro\_Mobile.cginc](/Assets/TextMesh%20Pro/Shaders/TMPro_Mobile.cginc) | UnityShader | 129 | 2 | 35 | 166 |
+| [Assets/TextMesh Pro/Shaders/TMPro\_Properties.cginc](/Assets/TextMesh%20Pro/Shaders/TMPro_Properties.cginc) | UnityShader | 62 | 6 | 13 | 81 |
+| [Assets/TextMesh Pro/Shaders/TMPro\_Surface.cginc](/Assets/TextMesh%20Pro/Shaders/TMPro_Surface.cginc) | UnityShader | 75 | 7 | 18 | 100 |
+| [Assets/TextMesh Pro/Sprites/EmojiOne.json](/Assets/TextMesh%20Pro/Sprites/EmojiOne.json) | JSON | 155 | 0 | 2 | 157 |
+| [Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs](/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs) | C# | 195 | 1 | 47 | 243 |
+| [Assets/TutorialInfo/Scripts/Readme.cs](/Assets/TutorialInfo/Scripts/Readme.cs) | C# | 14 | 0 | 3 | 17 |
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
