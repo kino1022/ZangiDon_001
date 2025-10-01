@@ -29,5 +29,17 @@ namespace Teiwas.Script.Spell.Manager.Interface {
         /// <value></value>
         bool IsFull { get; }
 
+        /// <summary>
+        /// スペルをセットする
+        /// </summary>
+        /// <param name="instance"></param>
+        void Set(Instance instance);
+
+        /// <summary>
+        /// スペルを除外する
+        /// </summary>
+        /// <param name="index"></param>
+        void Remove(int index);
+
     }
 }
